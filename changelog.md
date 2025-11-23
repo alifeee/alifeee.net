@@ -97,3 +97,6 @@
 
 2025-10-26 12:00
 : add another dog to my [favourite images](/favourites#images). I'm a cat person I swear.
+
+2025-11-23
+: add Penumbra to [video games](./video_games/). made it this summer ;]
