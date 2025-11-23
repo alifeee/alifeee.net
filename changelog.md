@@ -103,3 +103,6 @@
 
 2025-11-23 18:00
 : add [`/films/`](/films/) page, mainly to re-host sortable, filterable versions of lists from Mubi (have a look ;])
+
+2025-11-23 19:00
+: added a [robots.txt](./robots.txt) file to my site, stolen (with kindness) from <https://caolan.uk/>

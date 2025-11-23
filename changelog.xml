@@ -4,12 +4,21 @@
 
 <title>alifeee's website changelog</title>
 <link href='https://alifeee.co.uk/changelog.xml' rel='self' />
-<updated>2025-11-23T18:00:00+00:00</updated>
+<updated>2025-11-23T19:00:00+00:00</updated>
 <author>
   <name>alifeee</name>
 </author>
 <id>https://alifeee.co.uk/</id>
 <icon>https://alifeee.co.uk/profile-picture.png</icon>
+<entry>
+    <title>update 2025-11-23 19:00</title>
+    <link href="https://alifeee.co.uk/#2025-11-23%2019:00" />
+    <id>https://alifeee.co.uk/#2025-11-23%2019:00</id>
+    <updated>2025-11-23T19:00:00+00:00</updated>
+    <summary>
+added a [robots.txt](./robots.txt) file to my site, stolen (with kindness) from &lt;https://caolan.uk/&gt;
+  </summary>
+</entry>
 <entry>
     <title>update 2025-11-23 18:00</title>
     <link href="https://alifeee.co.uk/#2025-11-23%2018:00" />
