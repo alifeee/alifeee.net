@@ -100,3 +100,6 @@
 
 2025-11-23
 : add Penumbra to [video games](./video_games/). made it this summer ;]
+
+2025-11-23 18:00
+: add [`/films/`](/films/) page, mainly to re-host sortable, filterable versions of lists from Mubi (have a look ;])
