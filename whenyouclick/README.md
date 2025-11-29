@@ -6,6 +6,6 @@
 
 The images didn't come with it, so I found my own (by googling `"Tim Berners Lee imagesize:250x200"` and `"computer imagesize:96x175"`).
 
-View the site on <https://alifeee.co.uk/whenyouclick>
+View the site on <https://alifeee.net/whenyouclick>
 
 ![Screenshot of website](images/screenshot.png)

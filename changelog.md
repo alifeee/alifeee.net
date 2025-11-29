@@ -2,10 +2,10 @@
 : added a changelog to my site. it may be quite brittle and I imagine the RSS feed will stop validating almost immediately. but what's a website without some fun.
 
 2025-02-10 10:00
-: removed (well, retired) my [favourites RSS feed](https://alifeee.co.uk/favourites/feed.xml) in preference to this one. made one final post to it.
+: removed (well, retired) my [favourites RSS feed](/favourites/feed.xml) in preference to this one. made one final post to it.
 
 2025-02-10 10:30
-: added two more mobile games to my [favourites](https://alifeee.co.uk/favourites/#mobile%20games), 80 Days and Slice & Dice
+: added two more mobile games to my [favourites](/favourites/#mobile%20games), 80 Days and Slice & Dice
 : fixed some [GitHub workflows](https://github.com/alifeee/alifeee.github.io/commit/483e667514f2d2a80b709bc53a53bd91de96d42a)
 
 2025-02-15
@@ -24,7 +24,7 @@
 : added [favourites section on alternatives to big tech](/favourites/#big%20tech%20alternatives)
 
 2025-03-13
-: added [hardware hacking](/favourites/#hardware%20hacking) to favourites page, because I wanted to link to it from [a note about microcontrollers](https://blog.alifeee.co.uk/notes/testing-micropython-on-an-esp-8266-d1-mini/) and... it didn't exist yet
+: added [hardware hacking](/favourites/#hardware%20hacking) to favourites page, because I wanted to link to it from [a note about microcontrollers](https://blog.alifeee.net/notes/testing-micropython-on-an-esp-8266-d1-mini/) and... it didn't exist yet
 
 2025-03-18
 : added a section about RSS feeds to my favourites page -> [`/favourites/#RSS feeds`](/favourites/#RSS feeds). I love RSS feeds.
@@ -33,7 +33,7 @@
 : added link to [fundraiser](https://gofund.me/d8fcca90) on homepage
 
 2025-04-16
-: added [Europe trips](https://alifeee.co.uk/europe-trips/) webpage to [maps page](/maps/#trips-to-europe). I love geojson :]
+: added [Europe trips](/europe-trips/) webpage to [maps page](/maps/#trips-to-europe). I love geojson :]
 
 2025-05-06
 : add some items to Sheffield page: Festival of Debate, DocFest, ScrapDragon, CeilidhSoc, NowThen and NowThen feed. There is much more that still remains only in my head. Such is life.
@@ -45,7 +45,7 @@
 : added interrail trip from 2022 to my [europe trips map](/europe-trips/). the traces aren't true to the actual trains I took, sadly.
 
 2025-05-09
-: removed links to weeknotes from here and from my blog. The site is still on <https://weeknotes.alifeee.co.uk/>.
+: removed links to weeknotes from here and from my blog. The site is still on <https://weeknotes.alifeee.net/>.
 
 2025-05-14 15:00
 : some updates to [`/europe-trips/`](/europe-trips/) which is now fairly complete! (added mpptp route and made all routes toggleable)
@@ -72,7 +72,7 @@
 : add 2022-2023 and 2023-2024 to ["slash finances"](./finances/). maybe I'll ignore it til next year now.
 
 2025-08-13
-: add link to the [TransPennine Express Soundboard](https://alifeee.co.uk/tpe-soundboard/) that I made to the "things I've made" section :]
+: add link to the [TransPennine Express Soundboard](https://alifeee.net/tpe-soundboard/) that I made to the "things I've made" section :]
 
 2025-08-26
 : add section on [Sheffield Council Open Data](/sheffield/#Sheffield Council Open Data) to my [Sheffield](/sheffield/) page. love open data ;] thanks to [David](https://about.cubictype.com/) to pointing me at it
@@ -84,7 +84,7 @@
 : add creepy dog to [favourite images](/favourites#images)
 
 2025-10-09
-: add [some bookmarks](https://github.com/alifeee/firefox-bookmarks/commit/debb64be960d8819e770eb60bec4d98b7f2673f6) to my [bookmarks page](https://alifeee.co.uk/bookmarks/)
+: add [some bookmarks](https://github.com/alifeee/firefox-bookmarks/commit/debb64be960d8819e770eb60bec4d98b7f2673f6) to my [bookmarks page](https://alifeee.net/bookmarks/)
 
 2025-10-21
 : add some places to my [Sheffield](/sheffield/#some%20of%20my%20google%20maps%20saved%20places) page from Google maps

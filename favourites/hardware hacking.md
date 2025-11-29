@@ -12,7 +12,7 @@ screwed around with web requests
 : <https://github.com/alifeee/discord-webhooks-from-esp8266>
 
 screwed around with old transport signs
-: <https://blog.alifeee.co.uk/hull-bus-sign/>
+: <https://blog.alifeee.net/hull-bus-sign/>
 : <https://github.com/ConnectedHumber/Bus-Terminal-Signs>
 : <https://github.com/sheffieldhackspace/train-signs>
 : <https://github.com/alifeee/openbenches-train-sign>

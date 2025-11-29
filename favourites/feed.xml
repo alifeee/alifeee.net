@@ -2,59 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 <title>alifeee's favourite things</title>
-<link href='https://alifeee.co.uk/favourites/' rel='self' />
+<link href='https://alifeee.net/favourites/' rel='self' />
 <updated>2025-01-01T00:00:00+00:00</updated>
 <author>
   <name>alifeee</name>
 </author>
-<id>https://alifeee.co.uk/favourites/</id>
-<icon>https://alifeee.co.uk/profile-picture.png</icon>
+<id>https://alifeee.net/favourites/</id>
+<icon>https://alifeee.net/profile-picture.png</icon>
 <entry>
   <title>retiring this feed</title>
-  <link href="https://alifeee.co.uk/changelog.xml" />
-  <id>https://alifeee.co.uk/changelog.xml</id>
+  <link href="https://alifeee.net/changelog.xml" />
+  <id>https://alifeee.net/changelog.xml</id>
   <updated>2025-02-10T10:00:00+00:00</updated>
-  <summary>retiring this feed, use https://alifeee.co.uk/changelog.xml instead</summary>
+  <summary>retiring this feed, use https://alifeee.net/changelog.xml instead</summary>
 </entry>
 <entry>
   <title>update 2025-02-04</title>
-  <link href="https://alifeee.co.uk/favourites/" />
-  <id>https://alifeee.co.uk/favourites/#2025-02-04</id>
+  <link href="https://alifeee.net/favourites/" />
+  <id>https://alifeee.net/favourites/#2025-02-04</id>
   <updated>2025-02-04T00:00:00+00:00</updated>
   <summary>added mobile games section</summary>
 </entry>
 <entry>
   <title>update 2025-01-31</title>
-  <link href="https://alifeee.co.uk/favourites/" />
-  <id>https://alifeee.co.uk/favourites/#2025-01-31</id>
+  <link href="https://alifeee.net/favourites/" />
+  <id>https://alifeee.net/favourites/#2025-01-31</id>
   <updated>2025-01-31T00:00:00+00:00</updated>
   <summary>added books section</summary>
 </entry>
 <entry>
   <title>update 2025-01-17</title>
-  <link href="https://alifeee.co.uk/favourites/" />
-  <id>https://alifeee.co.uk/favourites/#2025-01-17</id>
+  <link href="https://alifeee.net/favourites/" />
+  <id>https://alifeee.net/favourites/#2025-01-17</id>
   <updated>2025-01-17T00:00:00+00:00</updated>
   <summary>added articles</summary>
 </entry>
 <entry>
   <title>update 2025-01-17</title>
-  <link href="https://alifeee.co.uk/favourites/" />
-  <id>https://alifeee.co.uk/favourites/#2025-01-17</id>
+  <link href="https://alifeee.net/favourites/" />
+  <id>https://alifeee.net/favourites/#2025-01-17</id>
   <updated>2025-01-17T00:00:00+00:00</updated>
   <summary>added documentaries</summary>
 </entry>
 <entry>
   <title>update 2025-01-05</title>
-  <link href="https://alifeee.co.uk/favourites/" />
-  <id>https://alifeee.co.uk/favourites/#2025-01-05</id>
+  <link href="https://alifeee.net/favourites/" />
+  <id>https://alifeee.net/favourites/#2025-01-05</id>
   <updated>2025-01-05T00:00:00+00:00</updated>
   <summary>added forum threads</summary>
 </entry>
 <entry>
   <title>update 2025-01-01</title>
-  <link href="https://alifeee.co.uk/favourites/" />
-  <id>https://alifeee.co.uk/favourites/#2025-01-01</id>
+  <link href="https://alifeee.net/favourites/" />
+  <id>https://alifeee.net/favourites/#2025-01-01</id>
   <updated>2025-01-01T00:00:00+00:00</updated>
   <summary>created page with images and documentaries</summary>
 </entry>

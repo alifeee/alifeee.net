@@ -21,7 +21,7 @@ here are 30 semi-random personal websites:
 - <https://nutcroft.com/>
 - <http://tom7.org/>
 - <https://lobi.to/>
-- <https://alifeee.co.uk/>
+- <https://alifeee.net/>
 - <https://caolan.uk/>
 - <http://kaimac.org/>
 - <https://novalis.org/>
@@ -104,7 +104,7 @@ If the sites above didn't give you any ideas of what to put on a website, maybe 
 ### cheatsheets
 
 - how to steal from other websites (using inspect element)
-- HTML \<head\> template with all metadata (look at intro of https://alifeee.co.uk/)
+- HTML \<head\> template with all metadata (look at intro of https://alifeee.net/)
 - HTML, e.g., <https://htmlcheatsheet.com/>, <https://developer.mozilla.org/en-US/docs/Learn/HTML/Cheatsheet>
 - CSS, e.g., <https://htmlcheatsheet.com/css/>, <https://devhints.io/css>
 

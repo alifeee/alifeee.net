@@ -2,7 +2,7 @@
 
 My personal website!
 
-<https://alifeee.co.uk/>
+<https://alifeee.net/>
 
 ![Screenshot of buttons from main page](images/website-buttons.png)
 

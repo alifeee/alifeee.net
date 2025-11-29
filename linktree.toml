@@ -16,17 +16,17 @@ url = "mailto:webserf@alifeee.net"
 [[links]]
 name = "blog"
 icon = ""
-url = "https://blog.alifeee.co.uk/"
+url = "https://blog.alifeee.net/"
 
 [[links]]
 name = "notes"
 icon = ""
-url = "https://blog.alifeee.co.uk/notes/"
+url = "https://blog.alifeee.net/notes/"
 
 [[links]]
 name = "weeknotes"
 icon = ""
-url = "https://weeknotes.alifeee.co.uk/"
+url = "https://weeknotes.alifeee.net/"
 
 [[links]]
 name = "server"

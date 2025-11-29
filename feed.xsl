@@ -92,7 +92,7 @@
 
   <xsl:template match="atom:feed">
     <header>
-        <h1>changelog for <a href="./">alifeee.co.uk</a> (web feed)</h1>
+        <h1>changelog for <a href="./">alifeee.net</a> (web feed)</h1>
     </header>
 
     <section>

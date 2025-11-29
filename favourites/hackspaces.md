@@ -1,6 +1,6 @@
 I love [hackspaces](https://en.wikipedia.org/wiki/Hackerspace)!
 
-They're great [third spaces](https://blog.alifeee.co.uk/what-is-a-third-space/) where you can get up to a [bunch of stuff](https://blog.alifeee.co.uk/hackspace-adventures/) while everyone else also gets up to a [bunch of stuff](https://www.sheffieldhackspace.org.uk/blog/). While you're doing it, you can even share your ideas and skills!
+They're great [third spaces](https://blog.alifeee.net/what-is-a-third-space/) where you can get up to a [bunch of stuff](https://blog.alifeee.net/hackspace-adventures/) while everyone else also gets up to a [bunch of stuff](https://www.sheffieldhackspace.org.uk/blog/). While you're doing it, you can even share your ideas and skills!
 
 I'm currently a director of [Sheffield Hackspace](https://www.sheffieldhackspace.org.uk/) which is in Sheffield and is a Hackspace.
 

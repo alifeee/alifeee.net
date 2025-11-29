@@ -10,7 +10,7 @@ to get started:
         c uploading a file
 
 links/see also
-    https://blog.alifeee.co.uk/notes/testing-micropython-on-an-esp-8266-d1-mini/
+    https://blog.alifeee.net/notes/testing-micropython-on-an-esp-8266-d1-mini/
     https://docs.micropython.org/en/latest/
     quickref for ESP
       https://docs.micropython.org/en/latest/esp8266/quickref.html

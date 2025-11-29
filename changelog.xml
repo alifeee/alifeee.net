@@ -3,17 +3,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 <title>alifeee's website changelog</title>
-<link href='https://alifeee.co.uk/changelog.xml' rel='self' />
+<link href='https://alifeee.net/changelog.xml' rel='self' />
 <updated>2025-11-23T19:00:00+00:00</updated>
 <author>
   <name>alifeee</name>
 </author>
-<id>https://alifeee.co.uk/</id>
-<icon>https://alifeee.co.uk/profile-picture.png</icon>
+<id>https://alifeee.net/</id>
+<icon>https://alifeee.net/profile-picture.png</icon>
 <entry>
     <title>update 2025-11-23 19:00</title>
-    <link href="https://alifeee.co.uk/#2025-11-23%2019:00" />
-    <id>https://alifeee.co.uk/#2025-11-23%2019:00</id>
+    <link href="https://alifeee.net/#2025-11-23%2019:00" />
+    <id>https://alifeee.net/#2025-11-23%2019:00</id>
     <updated>2025-11-23T19:00:00+00:00</updated>
     <summary>
 added a [robots.txt](./robots.txt) file to my site, stolen (with kindness) from &lt;https://caolan.uk/&gt;
@@ -21,8 +21,8 @@ added a [robots.txt](./robots.txt) file to my site, stolen (with kindness) from 
 </entry>
 <entry>
     <title>update 2025-11-23 18:00</title>
-    <link href="https://alifeee.co.uk/#2025-11-23%2018:00" />
-    <id>https://alifeee.co.uk/#2025-11-23%2018:00</id>
+    <link href="https://alifeee.net/#2025-11-23%2018:00" />
+    <id>https://alifeee.net/#2025-11-23%2018:00</id>
     <updated>2025-11-23T18:00:00+00:00</updated>
     <summary>
 add [`/films/`](/films/) page, mainly to re-host sortable, filterable versions of lists from Mubi (have a look ;])
@@ -30,8 +30,8 @@ add [`/films/`](/films/) page, mainly to re-host sortable, filterable versions o
 </entry>
 <entry>
     <title>update 2025-11-23</title>
-    <link href="https://alifeee.co.uk/#2025-11-23" />
-    <id>https://alifeee.co.uk/#2025-11-23</id>
+    <link href="https://alifeee.net/#2025-11-23" />
+    <id>https://alifeee.net/#2025-11-23</id>
     <updated>2025-11-23T00:00:00+00:00</updated>
     <summary>
 add Penumbra to [video games](./video_games/). made it this summer ;]
@@ -39,8 +39,8 @@ add Penumbra to [video games](./video_games/). made it this summer ;]
 </entry>
 <entry>
     <title>update 2025-10-26 12:00</title>
-    <link href="https://alifeee.co.uk/#2025-10-26%2012:00" />
-    <id>https://alifeee.co.uk/#2025-10-26%2012:00</id>
+    <link href="https://alifeee.net/#2025-10-26%2012:00" />
+    <id>https://alifeee.net/#2025-10-26%2012:00</id>
     <updated>2025-10-26T12:00:00+00:00</updated>
     <summary>
 add another dog to my [favourite images](/favourites#images). I&#x27;m a cat person I swear.
@@ -48,8 +48,8 @@ add another dog to my [favourite images](/favourites#images). I&#x27;m a cat per
 </entry>
 <entry>
     <title>update 2025-10-26</title>
-    <link href="https://alifeee.co.uk/#2025-10-26" />
-    <id>https://alifeee.co.uk/#2025-10-26</id>
+    <link href="https://alifeee.net/#2025-10-26" />
+    <id>https://alifeee.net/#2025-10-26</id>
     <updated>2025-10-26T00:00:00+01:00</updated>
     <summary>
 added [independent venue guide](/sheffield/#independent venue guide) to Sheffield page
@@ -57,8 +57,8 @@ added [independent venue guide](/sheffield/#independent venue guide) to Sheffiel
 </entry>
 <entry>
     <title>update 2025-10-23</title>
-    <link href="https://alifeee.co.uk/#2025-10-23" />
-    <id>https://alifeee.co.uk/#2025-10-23</id>
+    <link href="https://alifeee.net/#2025-10-23" />
+    <id>https://alifeee.net/#2025-10-23</id>
     <updated>2025-10-23T00:00:00+01:00</updated>
     <summary>
 added a [linktree](#linktree)! very exciting! don&#x27;t have to rely on that damn linktree company!
@@ -66,8 +66,8 @@ added a [linktree](#linktree)! very exciting! don&#x27;t have to rely on that da
 </entry>
 <entry>
     <title>update 2025-10-21</title>
-    <link href="https://alifeee.co.uk/#2025-10-21" />
-    <id>https://alifeee.co.uk/#2025-10-21</id>
+    <link href="https://alifeee.net/#2025-10-21" />
+    <id>https://alifeee.net/#2025-10-21</id>
     <updated>2025-10-21T00:00:00+01:00</updated>
     <summary>
 add some places to my [Sheffield](/sheffield/#some%20of%20my%20google%20maps%20saved%20places) page from Google maps
@@ -75,17 +75,17 @@ add some places to my [Sheffield](/sheffield/#some%20of%20my%20google%20maps%20s
 </entry>
 <entry>
     <title>update 2025-10-09</title>
-    <link href="https://alifeee.co.uk/#2025-10-09" />
-    <id>https://alifeee.co.uk/#2025-10-09</id>
+    <link href="https://alifeee.net/#2025-10-09" />
+    <id>https://alifeee.net/#2025-10-09</id>
     <updated>2025-10-09T00:00:00+01:00</updated>
     <summary>
-add [some bookmarks](https://github.com/alifeee/firefox-bookmarks/commit/debb64be960d8819e770eb60bec4d98b7f2673f6) to my [bookmarks page](https://alifeee.co.uk/bookmarks/)
+add [some bookmarks](https://github.com/alifeee/firefox-bookmarks/commit/debb64be960d8819e770eb60bec4d98b7f2673f6) to my [bookmarks page](https://alifeee.net/bookmarks/)
   </summary>
 </entry>
 <entry>
     <title>update 2025-09-24</title>
-    <link href="https://alifeee.co.uk/#2025-09-24" />
-    <id>https://alifeee.co.uk/#2025-09-24</id>
+    <link href="https://alifeee.net/#2025-09-24" />
+    <id>https://alifeee.net/#2025-09-24</id>
     <updated>2025-09-24T00:00:00+01:00</updated>
     <summary>
 add creepy dog to [favourite images](/favourites#images)
@@ -93,8 +93,8 @@ add creepy dog to [favourite images](/favourites#images)
 </entry>
 <entry>
     <title>update 2025-09-15</title>
-    <link href="https://alifeee.co.uk/#2025-09-15" />
-    <id>https://alifeee.co.uk/#2025-09-15</id>
+    <link href="https://alifeee.net/#2025-09-15" />
+    <id>https://alifeee.net/#2025-09-15</id>
     <updated>2025-09-15T00:00:00+01:00</updated>
     <summary>
 added [bookmarklets](/favourites#bookmarklets) to my favourites page :]
@@ -102,8 +102,8 @@ added [bookmarklets](/favourites#bookmarklets) to my favourites page :]
 </entry>
 <entry>
     <title>update 2025-08-26</title>
-    <link href="https://alifeee.co.uk/#2025-08-26" />
-    <id>https://alifeee.co.uk/#2025-08-26</id>
+    <link href="https://alifeee.net/#2025-08-26" />
+    <id>https://alifeee.net/#2025-08-26</id>
     <updated>2025-08-26T00:00:00+01:00</updated>
     <summary>
 add section on [Sheffield Council Open Data](/sheffield/#Sheffield Council Open Data) to my [Sheffield](/sheffield/) page. love open data ;] thanks to [David](https://about.cubictype.com/) to pointing me at it
@@ -111,17 +111,17 @@ add section on [Sheffield Council Open Data](/sheffield/#Sheffield Council Open 
 </entry>
 <entry>
     <title>update 2025-08-13</title>
-    <link href="https://alifeee.co.uk/#2025-08-13" />
-    <id>https://alifeee.co.uk/#2025-08-13</id>
+    <link href="https://alifeee.net/#2025-08-13" />
+    <id>https://alifeee.net/#2025-08-13</id>
     <updated>2025-08-13T00:00:00+01:00</updated>
     <summary>
-add link to the [TransPennine Express Soundboard](https://alifeee.co.uk/tpe-soundboard/) that I made to the &quot;things I&#x27;ve made&quot; section :]
+add link to the [TransPennine Express Soundboard](https://alifeee.net/tpe-soundboard/) that I made to the &quot;things I&#x27;ve made&quot; section :]
   </summary>
 </entry>
 <entry>
     <title>update 2025-08-09</title>
-    <link href="https://alifeee.co.uk/#2025-08-09" />
-    <id>https://alifeee.co.uk/#2025-08-09</id>
+    <link href="https://alifeee.net/#2025-08-09" />
+    <id>https://alifeee.net/#2025-08-09</id>
     <updated>2025-08-09T00:00:00+01:00</updated>
     <summary>
 add 2022-2023 and 2023-2024 to [&quot;slash finances&quot;](./finances/). maybe I&#x27;ll ignore it til next year now.
@@ -129,8 +129,8 @@ add 2022-2023 and 2023-2024 to [&quot;slash finances&quot;](./finances/). maybe 
 </entry>
 <entry>
     <title>update 2025-07-30 21:00</title>
-    <link href="https://alifeee.co.uk/#2025-07-30%2021:00" />
-    <id>https://alifeee.co.uk/#2025-07-30%2021:00</id>
+    <link href="https://alifeee.net/#2025-07-30%2021:00" />
+    <id>https://alifeee.net/#2025-07-30%2021:00</id>
     <updated>2025-07-30T21:00:00+01:00</updated>
     <summary>
 add [&quot;slash finances&quot;](./finances/) (first pass) — more to add later!
@@ -138,8 +138,8 @@ add [&quot;slash finances&quot;](./finances/) (first pass) — more to add later
 </entry>
 <entry>
     <title>update 2025-07-30</title>
-    <link href="https://alifeee.co.uk/#2025-07-30" />
-    <id>https://alifeee.co.uk/#2025-07-30</id>
+    <link href="https://alifeee.net/#2025-07-30" />
+    <id>https://alifeee.net/#2025-07-30</id>
     <updated>2025-07-30T00:00:00+01:00</updated>
     <summary>
 add &quot;AI is for losers&quot; to [favourites](./favourites/#images) page and add Godot cheatsheet to [video games](./video_games/) page
@@ -147,8 +147,8 @@ add &quot;AI is for losers&quot; to [favourites](./favourites/#images) page and 
 </entry>
 <entry>
     <title>update 2025-06-06</title>
-    <link href="https://alifeee.co.uk/#2025-06-06" />
-    <id>https://alifeee.co.uk/#2025-06-06</id>
+    <link href="https://alifeee.net/#2025-06-06" />
+    <id>https://alifeee.net/#2025-06-06</id>
     <updated>2025-06-06T00:00:00+01:00</updated>
     <summary>
 reformatted [sheffield](/sheffield/) page to be a bit easier to edit (now works like [favourites](/favourites) page
@@ -156,8 +156,8 @@ reformatted [sheffield](/sheffield/) page to be a bit easier to edit (now works 
 </entry>
 <entry>
     <title>update 2025-05-29</title>
-    <link href="https://alifeee.co.uk/#2025-05-29" />
-    <id>https://alifeee.co.uk/#2025-05-29</id>
+    <link href="https://alifeee.net/#2025-05-29" />
+    <id>https://alifeee.net/#2025-05-29</id>
     <updated>2025-05-29T00:00:00+01:00</updated>
     <summary>
 added [hackspaces](/favourites#hackspaces), [openstreetmap](/favourites#openstreetmap), [dimensional analysis](/favourites#dimensional_analysis) and [modded kindles](/favourites#modded%20kindles) to my [favourites](/favourites/) page!
@@ -165,8 +165,8 @@ added [hackspaces](/favourites#hackspaces), [openstreetmap](/favourites#openstre
 </entry>
 <entry>
     <title>update 2025-05-24</title>
-    <link href="https://alifeee.co.uk/#2025-05-24" />
-    <id>https://alifeee.co.uk/#2025-05-24</id>
+    <link href="https://alifeee.net/#2025-05-24" />
+    <id>https://alifeee.net/#2025-05-24</id>
     <updated>2025-05-24T00:00:00+01:00</updated>
     <summary>
 added a [micropython hackathon](/talks-and-workshops/#micropython-hackathon) to [/talks-and-workshops/](/talks-and-workshops/), and added some pictures to the [personal website workshop](/talks-and-workshops/#personal-website-workshop) (just promo pics)
@@ -174,8 +174,8 @@ added a [micropython hackathon](/talks-and-workshops/#micropython-hackathon) to 
 </entry>
 <entry>
     <title>update 2025-05-14 17:00</title>
-    <link href="https://alifeee.co.uk/#2025-05-14%2017:00" />
-    <id>https://alifeee.co.uk/#2025-05-14%2017:00</id>
+    <link href="https://alifeee.net/#2025-05-14%2017:00" />
+    <id>https://alifeee.net/#2025-05-14%2017:00</id>
     <updated>2025-05-14T17:00:00+01:00</updated>
     <summary>
 put my collection of river walk coordinates into a [repository](https://github.com/alifeee/river-walks/), so now there&#x27;s a nicer combined map on [`/maps/#river-walks`](/maps/#river-walks)
@@ -183,8 +183,8 @@ put my collection of river walk coordinates into a [repository](https://github.c
 </entry>
 <entry>
     <title>update 2025-05-14 15:00</title>
-    <link href="https://alifeee.co.uk/#2025-05-14%2015:00" />
-    <id>https://alifeee.co.uk/#2025-05-14%2015:00</id>
+    <link href="https://alifeee.net/#2025-05-14%2015:00" />
+    <id>https://alifeee.net/#2025-05-14%2015:00</id>
     <updated>2025-05-14T15:00:00+01:00</updated>
     <summary>
 some updates to [`/europe-trips/`](/europe-trips/) which is now fairly complete! (added mpptp route and made all routes toggleable)
@@ -192,17 +192,17 @@ some updates to [`/europe-trips/`](/europe-trips/) which is now fairly complete!
 </entry>
 <entry>
     <title>update 2025-05-09</title>
-    <link href="https://alifeee.co.uk/#2025-05-09" />
-    <id>https://alifeee.co.uk/#2025-05-09</id>
+    <link href="https://alifeee.net/#2025-05-09" />
+    <id>https://alifeee.net/#2025-05-09</id>
     <updated>2025-05-09T00:00:00+01:00</updated>
     <summary>
-removed links to weeknotes from here and from my blog. The site is still on &lt;https://weeknotes.alifeee.co.uk/&gt;.
+removed links to weeknotes from here and from my blog. The site is still on &lt;https://weeknotes.alifeee.net/&gt;.
   </summary>
 </entry>
 <entry>
     <title>update 2025-05-06 18:00</title>
-    <link href="https://alifeee.co.uk/#2025-05-06%2018:00" />
-    <id>https://alifeee.co.uk/#2025-05-06%2018:00</id>
+    <link href="https://alifeee.net/#2025-05-06%2018:00" />
+    <id>https://alifeee.net/#2025-05-06%2018:00</id>
     <updated>2025-05-06T18:00:00+01:00</updated>
     <summary>
 added interrail trip from 2022 to my [europe trips map](/europe-trips/). the traces aren&#x27;t true to the actual trains I took, sadly.
@@ -210,8 +210,8 @@ added interrail trip from 2022 to my [europe trips map](/europe-trips/). the tra
 </entry>
 <entry>
     <title>update 2025-05-06 12:00</title>
-    <link href="https://alifeee.co.uk/#2025-05-06%2012:00" />
-    <id>https://alifeee.co.uk/#2025-05-06%2012:00</id>
+    <link href="https://alifeee.net/#2025-05-06%2012:00" />
+    <id>https://alifeee.net/#2025-05-06%2012:00</id>
     <updated>2025-05-06T12:00:00+01:00</updated>
     <summary>
 removed fundraiser... it got funded !
@@ -219,8 +219,8 @@ removed fundraiser... it got funded !
 </entry>
 <entry>
     <title>update 2025-05-06</title>
-    <link href="https://alifeee.co.uk/#2025-05-06" />
-    <id>https://alifeee.co.uk/#2025-05-06</id>
+    <link href="https://alifeee.net/#2025-05-06" />
+    <id>https://alifeee.net/#2025-05-06</id>
     <updated>2025-05-06T00:00:00+01:00</updated>
     <summary>
 add some items to Sheffield page: Festival of Debate, DocFest, ScrapDragon, CeilidhSoc, NowThen and NowThen feed. There is much more that still remains only in my head. Such is life.
@@ -228,17 +228,17 @@ add some items to Sheffield page: Festival of Debate, DocFest, ScrapDragon, Ceil
 </entry>
 <entry>
     <title>update 2025-04-16</title>
-    <link href="https://alifeee.co.uk/#2025-04-16" />
-    <id>https://alifeee.co.uk/#2025-04-16</id>
+    <link href="https://alifeee.net/#2025-04-16" />
+    <id>https://alifeee.net/#2025-04-16</id>
     <updated>2025-04-16T00:00:00+01:00</updated>
     <summary>
-added [Europe trips](https://alifeee.co.uk/europe-trips/) webpage to [maps page](/maps/#trips-to-europe). I love geojson :]
+added [Europe trips](/europe-trips/) webpage to [maps page](/maps/#trips-to-europe). I love geojson :]
   </summary>
 </entry>
 <entry>
     <title>update 2025-03-28</title>
-    <link href="https://alifeee.co.uk/#2025-03-28" />
-    <id>https://alifeee.co.uk/#2025-03-28</id>
+    <link href="https://alifeee.net/#2025-03-28" />
+    <id>https://alifeee.net/#2025-03-28</id>
     <updated>2025-03-28T00:00:00+00:00</updated>
     <summary>
 added link to [fundraiser](https://gofund.me/d8fcca90) on homepage
@@ -246,8 +246,8 @@ added link to [fundraiser](https://gofund.me/d8fcca90) on homepage
 </entry>
 <entry>
     <title>update 2025-03-18</title>
-    <link href="https://alifeee.co.uk/#2025-03-18" />
-    <id>https://alifeee.co.uk/#2025-03-18</id>
+    <link href="https://alifeee.net/#2025-03-18" />
+    <id>https://alifeee.net/#2025-03-18</id>
     <updated>2025-03-18T00:00:00+00:00</updated>
     <summary>
 added a section about RSS feeds to my favourites page -&gt; [`/favourites/#RSS feeds`](/favourites/#RSS feeds). I love RSS feeds.
@@ -255,17 +255,17 @@ added a section about RSS feeds to my favourites page -&gt; [`/favourites/#RSS f
 </entry>
 <entry>
     <title>update 2025-03-13</title>
-    <link href="https://alifeee.co.uk/#2025-03-13" />
-    <id>https://alifeee.co.uk/#2025-03-13</id>
+    <link href="https://alifeee.net/#2025-03-13" />
+    <id>https://alifeee.net/#2025-03-13</id>
     <updated>2025-03-13T00:00:00+00:00</updated>
     <summary>
-added [hardware hacking](/favourites/#hardware%20hacking) to favourites page, because I wanted to link to it from [a note about microcontrollers](https://blog.alifeee.co.uk/notes/testing-micropython-on-an-esp-8266-d1-mini/) and... it didn&#x27;t exist yet
+added [hardware hacking](/favourites/#hardware%20hacking) to favourites page, because I wanted to link to it from [a note about microcontrollers](https://blog.alifeee.net/notes/testing-micropython-on-an-esp-8266-d1-mini/) and... it didn&#x27;t exist yet
   </summary>
 </entry>
 <entry>
     <title>update 2025-02-24 12:30</title>
-    <link href="https://alifeee.co.uk/#2025-02-24%2012:30" />
-    <id>https://alifeee.co.uk/#2025-02-24%2012:30</id>
+    <link href="https://alifeee.net/#2025-02-24%2012:30" />
+    <id>https://alifeee.net/#2025-02-24%2012:30</id>
     <updated>2025-02-24T12:30:00+00:00</updated>
     <summary>
 added [favourites section on alternatives to big tech](/favourites/#big%20tech%20alternatives)
@@ -273,8 +273,8 @@ added [favourites section on alternatives to big tech](/favourites/#big%20tech%2
 </entry>
 <entry>
     <title>update 2025-02-24</title>
-    <link href="https://alifeee.co.uk/#2025-02-24" />
-    <id>https://alifeee.co.uk/#2025-02-24</id>
+    <link href="https://alifeee.net/#2025-02-24" />
+    <id>https://alifeee.net/#2025-02-24</id>
     <updated>2025-02-24T00:00:00+00:00</updated>
     <summary>
 added [favourites section on cooperatives](/favourites/#coop%20resources)
@@ -282,8 +282,8 @@ added [favourites section on cooperatives](/favourites/#coop%20resources)
 </entry>
 <entry>
     <title>update 2025-02-19</title>
-    <link href="https://alifeee.co.uk/#2025-02-19" />
-    <id>https://alifeee.co.uk/#2025-02-19</id>
+    <link href="https://alifeee.net/#2025-02-19" />
+    <id>https://alifeee.net/#2025-02-19</id>
     <updated>2025-02-19T00:00:00+00:00</updated>
     <summary>
 added some articles about LLMs/AI to [favourites](./favourites/#articles)
@@ -291,8 +291,8 @@ added some articles about LLMs/AI to [favourites](./favourites/#articles)
 </entry>
 <entry>
     <title>update 2025-02-18</title>
-    <link href="https://alifeee.co.uk/#2025-02-18" />
-    <id>https://alifeee.co.uk/#2025-02-18</id>
+    <link href="https://alifeee.net/#2025-02-18" />
+    <id>https://alifeee.net/#2025-02-18</id>
     <updated>2025-02-18T00:00:00+00:00</updated>
     <summary>
 updated [bookmarks](./bookmarks/), new since last time is a fair few personal websites, some interesting websites, and a few articles. [changelog](https://github.com/alifeee/firefox-bookmarks)
@@ -300,8 +300,8 @@ updated [bookmarks](./bookmarks/), new since last time is a fair few personal we
 </entry>
 <entry>
     <title>update 2025-02-15</title>
-    <link href="https://alifeee.co.uk/#2025-02-15" />
-    <id>https://alifeee.co.uk/#2025-02-15</id>
+    <link href="https://alifeee.net/#2025-02-15" />
+    <id>https://alifeee.net/#2025-02-15</id>
     <updated>2025-02-15T00:00:00+00:00</updated>
     <summary>
 created &lt;http://mycelium.alifeee.net/&gt; which is the same as this page but it loses 10 characters from the HTML file every day. a slow decay.
@@ -309,27 +309,27 @@ created &lt;http://mycelium.alifeee.net/&gt; which is the same as this page but 
 </entry>
 <entry>
     <title>update 2025-02-10 10:30</title>
-    <link href="https://alifeee.co.uk/#2025-02-10%2010:30" />
-    <id>https://alifeee.co.uk/#2025-02-10%2010:30</id>
+    <link href="https://alifeee.net/#2025-02-10%2010:30" />
+    <id>https://alifeee.net/#2025-02-10%2010:30</id>
     <updated>2025-02-10T10:30:00+00:00</updated>
     <summary>
-added two more mobile games to my [favourites](https://alifeee.co.uk/favourites/#mobile%20games), 80 Days and Slice &amp; Dice
+added two more mobile games to my [favourites](/favourites/#mobile%20games), 80 Days and Slice &amp; Dice
 fixed some [GitHub workflows](https://github.com/alifeee/alifeee.github.io/commit/483e667514f2d2a80b709bc53a53bd91de96d42a)
   </summary>
 </entry>
 <entry>
     <title>update 2025-02-10 10:00</title>
-    <link href="https://alifeee.co.uk/#2025-02-10%2010:00" />
-    <id>https://alifeee.co.uk/#2025-02-10%2010:00</id>
+    <link href="https://alifeee.net/#2025-02-10%2010:00" />
+    <id>https://alifeee.net/#2025-02-10%2010:00</id>
     <updated>2025-02-10T10:00:00+00:00</updated>
     <summary>
-removed (well, retired) my [favourites RSS feed](https://alifeee.co.uk/favourites/feed.xml) in preference to this one. made one final post to it.
+removed (well, retired) my [favourites RSS feed](/favourites/feed.xml) in preference to this one. made one final post to it.
   </summary>
 </entry>
 <entry>
     <title>update 2025-02-10</title>
-    <link href="https://alifeee.co.uk/#2025-02-10" />
-    <id>https://alifeee.co.uk/#2025-02-10</id>
+    <link href="https://alifeee.net/#2025-02-10" />
+    <id>https://alifeee.net/#2025-02-10</id>
     <updated>2025-02-10T00:00:00+00:00</updated>
     <summary>
 added a changelog to my site. it may be quite brittle and I imagine the RSS feed will stop validating almost immediately. but what&#x27;s a website without some fun.

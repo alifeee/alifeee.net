@@ -89,13 +89,13 @@ cat >> $RSS_FILE << EOF
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 <title>alifeee's website changelog</title>
-<link href='https://alifeee.co.uk/changelog.xml' rel='self' />
+<link href='https://alifeee.net/changelog.xml' rel='self' />
 <updated>${last_date_rfc3339}</updated>
 <author>
   <name>alifeee</name>
 </author>
-<id>https://alifeee.co.uk/</id>
-<icon>https://alifeee.co.uk/profile-picture.png</icon>
+<id>https://alifeee.net/</id>
+<icon>https://alifeee.net/profile-picture.png</icon>
 EOF
 
 printf "<entry>" >> $RSS_FILE
@@ -108,8 +108,8 @@ while read -r line; do
     cat >> $RSS_FILE << EOF
 
     <title>update ${date_str}</title>
-    <link href="https://alifeee.co.uk/#${date_esc}" />
-    <id>https://alifeee.co.uk/#${date_esc}</id>
+    <link href="https://alifeee.net/#${date_esc}" />
+    <id>https://alifeee.net/#${date_esc}</id>
     <updated>${date_rfc3339}</updated>
     <summary>
 EOF

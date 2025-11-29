@@ -236,7 +236,7 @@ scoreSubstring trigrams substring =
 loadTrigramCounts : Cmd Msg
 loadTrigramCounts =
     Http.get
-        { url = "https://alifeee.co.uk/cryptography/elm/src/trigrams.json"
+        { url = "https://alifeee.net/cryptography/elm/src/trigrams.json"
         , expect = Http.expectJson LoadedTrigrams trigramDecoder
         }
 
