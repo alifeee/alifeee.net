@@ -4,12 +4,21 @@
 
 <title>alifeee's website changelog</title>
 <link href='https://alifeee.net/changelog.xml' rel='self' />
-<updated>2025-11-23T19:00:00+00:00</updated>
+<updated>2025-11-29T00:00:00+00:00</updated>
 <author>
   <name>alifeee</name>
 </author>
 <id>https://alifeee.net/</id>
 <icon>https://alifeee.net/profile-picture.png</icon>
+<entry>
+    <title>update 2025-11-29</title>
+    <link href="https://alifeee.net/#2025-11-29" />
+    <id>https://alifeee.net/#2025-11-29</id>
+    <updated>2025-11-29T00:00:00+00:00</updated>
+    <summary>
+change all references to `alifeee.co.uk` to `alifeee.net` (new domain ! wahoo !)
+  </summary>
+</entry>
 <entry>
     <title>update 2025-11-23 19:00</title>
     <link href="https://alifeee.net/#2025-11-23%2019:00" />

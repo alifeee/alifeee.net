@@ -106,3 +106,6 @@
 
 2025-11-23 19:00
 : added a [robots.txt](./robots.txt) file to my site, stolen (with kindness) from <https://caolan.uk/>
+
+2025-11-29
+: change all references to `alifeee.co.uk` to `alifeee.net` (new domain ! wahoo !)
