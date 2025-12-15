@@ -112,3 +112,6 @@
 
 2025-12-15
 : move [bookmarks](/bookmarks/) code generation to my website (away from some [random GitHub repository](https://github.com/alifeee/firefox-bookmarks))
+
+2025-12-15 12:00
+: remove Google fonts dependency! I serve my fonts direct to you now ;]
