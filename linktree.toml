@@ -71,7 +71,7 @@ url = "https://open.spotify.com/user/alifeeerenn"
 
 [[links]]
 name = "Bookwyrm"
-icon = "https://alifeee.net/icons/rambling-readers.jpg"
+icon = "/rambling-readers.jpg"
 url = "https://ramblingreaders.org/user/alifeee/"
 
 [[links]]

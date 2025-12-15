@@ -1,6 +1,8 @@
 #!/bin/bash
 # build all dynamic parts of website
 
+set -euo pipefail
+
 echo "===== changelog ====="
 ./changelog_build.sh
 

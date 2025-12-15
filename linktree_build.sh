@@ -42,6 +42,8 @@ html=$(
         "icons/linktree/profile.svg"
       elif (.icon | startswith("http")) then
         .icon
+      elif (.icon | startswith("/")) then
+        "icons\(.icon)"
       else
         "icons/linktree/\(.icon).svg"
       end
