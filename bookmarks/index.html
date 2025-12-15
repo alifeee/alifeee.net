@@ -1,2980 +1,2982 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>alifeee</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/stylesheet.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto"
-    />
+<head>
+  <title>alifeee</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- anchorjs - https://www.bryanbraun.com/anchorjs/ -->
-    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheet.css" />
 
-    <!-- relative time -->
-    <script>
-      function timeSince(date) {
-        var seconds = Math.floor((new Date() - date) / 1000);
+  <!-- anchorjs - https://www.bryanbraun.com/anchorjs/ -->
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
 
-        var interval = seconds / 31536000;
+  <!-- relative time -->
+  <script>
+    function timeSince(date) {
+      var seconds = Math.floor((new Date() - date) / 1000);
 
-        if (interval > 1) {
-          return Math.floor(interval) + " years";
-        }
-        interval = seconds / 2592000;
-        if (interval > 1) {
-          return Math.floor(interval) + " months";
-        }
-        interval = seconds / 86400;
-        if (interval > 1) {
-          return Math.floor(interval) + " days";
-        }
-        interval = seconds / 3600;
-        if (interval > 1) {
-          return Math.floor(interval) + " hours";
-        }
-        interval = seconds / 60;
-        if (interval > 1) {
-          return Math.floor(interval) + " minutes";
-        }
-        return Math.floor(seconds) + " seconds";
+      var interval = seconds / 31536000;
+
+      if (interval > 1) {
+        return Math.floor(interval) + " years";
       }
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        anchors.add();
+      interval = seconds / 2592000;
+      if (interval > 1) {
+        return Math.floor(interval) + " months";
+      }
+      interval = seconds / 86400;
+      if (interval > 1) {
+        return Math.floor(interval) + " days";
+      }
+      interval = seconds / 3600;
+      if (interval > 1) {
+        return Math.floor(interval) + " hours";
+      }
+      interval = seconds / 60;
+      if (interval > 1) {
+        return Math.floor(interval) + " minutes";
+      }
+      return Math.floor(seconds) + " seconds";
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      anchors.add();
 
-        var relativeTime = document.getElementById("relative-time");
-        var absoluteTime = document.getElementById("absolute-time");
-        var time = document.querySelector("time");
-        var datetime = time.getAttribute("datetime");
-        relativeTime.innerHTML = timeSince(Date.parse(datetime)) + " ago";
-        absoluteTime.innerHTML = "(" + datetime + ")";
-      });
-    </script>
-  </head>
-  <body>
-    <header>
-      <h1>
-        <a href="/">alifeee</a>
-      </h1>
-    </header>
+      var relativeTime = document.getElementById("relative-time");
+      var absoluteTime = document.getElementById("absolute-time");
+      var time = document.querySelector("time");
+      var datetime = time.getAttribute("datetime");
+      relativeTime.innerHTML = timeSince(Date.parse(datetime)) + " ago";
+      absoluteTime.innerHTML = "(" + datetime + ")";
+    });
+  </script>
+</head>
 
-    <main>
-      <h1>Bookmarks!</h1>
-      <p>
-        This is a collection of bookmark collections that I often want to share.
-      </p>
-      <p>
-        They are unsorted, unlabelled, and come directly from my Firefox bookmarks with a script: <a href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">https://github.com/alifeee/alifeee.net/tree/main/bookmarks</a>
-      </p>
-      <p>
-        For a nicer experience, see a curated list of labelled favourite things on <a href="/favourites/">/favourites/</a>.
-      </p>
-      <p>
-        Also see in json format as <a href="bookmarks.json">bookmarks.json</a> :)
-      </p>
-      <h2>Collections</h2>
-      <p>
-        Click one of these to scroll to the section.
-      </p>
+<body>
+  <header>
+    <h1>
+      <a href="/">alifeee</a>
+    </h1>
+  </header>
+
+  <main>
+    <h1>Bookmarks!</h1>
+    <p>
+      This is a collection of bookmark collections that I often want to share.
+    </p>
+    <p>
+      They are unsorted, unlabelled, and come directly from my Firefox bookmarks with a script: <a
+        href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">https://github.com/alifeee/alifeee.net/tree/main/bookmarks</a>
+    </p>
+    <p>
+      For a nicer experience, see a curated list of labelled favourite things on <a
+        href="/favourites/">/favourites/</a>.
+    </p>
+    <p>
+      Also see in json format as <a href="bookmarks.json">bookmarks.json</a> :)
+    </p>
+    <h2>Collections</h2>
+    <p>
+      Click one of these to scroll to the section.
+    </p>
+    <ul>
+      <li>
+        <a href="#TOP 10 personal websites/blogs">TOP 10 personal websites/blogs</a>
+      </li>
+      <li>
+        <a href="#other bookmarks lists">other bookmarks lists</a>
+      </li>
+      <li>
+        <a href="#webrings">webrings</a>
+      </li>
+      <li>
+        <a href="#personal websites (with blog)">personal websites (with blog)</a>
+      </li>
+      <li>
+        <a href="#personal websites (without blog)">personal websites (without blog)</a>
+      </li>
+      <li>
+        <a href="#interesting websites">interesting websites</a>
+      </li>
+      <li>
+        <a href="#Articles (random)">Articles (random)</a>
+      </li>
+      <li>
+        <a href="#Articles (programming)">Articles (programming)</a>
+      </li>
+      <li>
+        <a href="#video playlists/channels">video playlists/channels</a>
+      </li>
+      <li>
+        <a href="#wordles">wordles</a>
+      </li>
+      <li>
+        <a href="#mobile games">mobile games</a>
+      </li>
+      <li>
+        <a href="#multiplayer browser games">multiplayer browser games</a>
+      </li>
+    </ul>
+    <div id="bookmarks">
+      <h2 id="TOP 10 personal websites/blogs">TOP 10 personal websites/blogs</h2>
       <ul>
-          <li>
-              <a href="#TOP 10 personal websites/blogs">TOP 10 personal websites/blogs</a>
-          </li>
-          <li>
-              <a href="#other bookmarks lists">other bookmarks lists</a>
-          </li>
-          <li>
-              <a href="#webrings">webrings</a>
-          </li>
-          <li>
-              <a href="#personal websites (with blog)">personal websites (with blog)</a>
-          </li>
-          <li>
-              <a href="#personal websites (without blog)">personal websites (without blog)</a>
-          </li>
-          <li>
-              <a href="#interesting websites">interesting websites</a>
-          </li>
-          <li>
-              <a href="#Articles (random)">Articles (random)</a>
-          </li>
-          <li>
-              <a href="#Articles (programming)">Articles (programming)</a>
-          </li>
-          <li>
-              <a href="#video playlists/channels">video playlists/channels</a>
-          </li>
-          <li>
-              <a href="#wordles">wordles</a>
-          </li>
-          <li>
-              <a href="#mobile games">mobile games</a>
-          </li>
-          <li>
-              <a href="#multiplayer browser games">multiplayer browser games</a>
-          </li>
+        <li>
+          <a href="https://www.tomforth.co.uk/">
+            Tom Forth&#x27;s Homepage
+          </a>
+        </li>
+        <li>
+          <a href="https://nonnullish.pages.dev/">
+            nonnullish
+          </a>
+        </li>
+        <li>
+          <a href="https://brr.fyi/">
+            brr
+          </a>
+        </li>
+        <li>
+          <a href="https://www.timhunkin.com/">
+            tim hunkin home page
+          </a>
+        </li>
+        <li>
+          <a href="https://www.experimental-history.com/">
+            Experimental History | Adam Mastroianni | Substack
+          </a>
+        </li>
+        <li>
+          <a href="https://dynomight.substack.com/">
+            DYNOMIGHT INTERNET NEWSLETTER | Substack
+          </a>
+        </li>
+        <li>
+          <a href="https://jedevc.com/">
+            jedevc
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cameronsworld.net/">
+            Cameron&#x27;s World
+          </a>
+        </li>
+        <li>
+          <a href="https://vlad.roam.garden/Vlad&#x27;s-Dating-Profile">
+            Vlad&#x27;s Dating Profile
+          </a>
+        </li>
+        <li>
+          <a href="http://helivium.com/">
+            Healing Light Viseum
+          </a>
+        </li>
       </ul>
-        <div id="bookmarks">
-          <h2 id="TOP 10 personal websites/blogs">TOP 10 personal websites/blogs</h2>
-          <ul>
-              <li>
-                <a href="https://www.tomforth.co.uk/">
-                  Tom Forth&#x27;s Homepage
-                </a>
-              </li>
-              <li>
-                <a href="https://nonnullish.pages.dev/">
-                  nonnullish
-                </a>
-              </li>
-              <li>
-                <a href="https://brr.fyi/">
-                  brr
-                </a>
-              </li>
-              <li>
-                <a href="https://www.timhunkin.com/">
-                  tim hunkin home page
-                </a>
-              </li>
-              <li>
-                <a href="https://www.experimental-history.com/">
-                  Experimental History | Adam Mastroianni | Substack
-                </a>
-              </li>
-              <li>
-                <a href="https://dynomight.substack.com/">
-                  DYNOMIGHT INTERNET NEWSLETTER | Substack
-                </a>
-              </li>
-              <li>
-                <a href="https://jedevc.com/">
-                  jedevc
-                </a>
-              </li>
-              <li>
-                <a href="https://www.cameronsworld.net/">
-                  Cameron&#x27;s World
-                </a>
-              </li>
-              <li>
-                <a href="https://vlad.roam.garden/Vlad&#x27;s-Dating-Profile">
-                  Vlad&#x27;s Dating Profile
-                </a>
-              </li>
-              <li>
-                <a href="http://helivium.com/">
-                  Healing Light Viseum
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="other bookmarks lists">other bookmarks lists</h2>
-          <ul>
-              <li>
-                <a href="https://www.marginalia.nu/links/bookmarks/">
-                  Bookmarks @ marginalia.nu
-                </a>
-              </li>
-              <li>
-                <a href="https://rknight.me/links/">
-                  Links • Robb Knight
-                </a>
-              </li>
-              <li>
-                <a href="https://nonnullish.pages.dev/links/">
-                  links
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="webrings">webrings</h2>
-          <ul>
-              <li>
-                <a href="https://webring.alifeee.co.uk/">
-                  alifeee&#x27;s webring!
-                </a>
-              </li>
-              <li>
-                <a href="https://sike.pona.la/">
-                  sike pona
-                </a>
-              </li>
-              <li>
-                <a href="https://garlic.garden/onionring/">
-                  🌿 garlic 🧄 garden 🌿
-                </a>
-              </li>
-              <li>
-                <a href="http://www.naturalworlds.org/beetlering/beetle_sites.htm">
-                  The Beetle Ring - List of Member Sites
-                </a>
-              </li>
-              <li>
-                <a href="https://neossg.neocities.org/">
-                  NeoSSG: A webring for Neocities sites made with static site generators
-                </a>
-              </li>
-              <li>
-                <a href="https://weirdwidewebring.net/">
-                  Weird Wide Webring
-                </a>
-              </li>
-              <li>
-                <a href="https://nuthead.neocities.org/ring/">
-                  null webring
-                </a>
-              </li>
-              <li>
-                <a href="https://the-blob-system.neocities.org/mante_webring/webring">
-                  kulupu ko&#x27;s Web site
-                </a>
-              </li>
-              <li>
-                <a href="https://furryring.neocities.org/">
-                  furryring: the furry webring
-                </a>
-              </li>
-              <li>
-                <a href="https://hotlinewebring.club/">
-                  Hotline Webring
-                </a>
-              </li>
-              <li>
-                <a href="https://webring.bucketfish.me/">
-                  bucket webring!
-                </a>
-              </li>
-              <li>
-                <a href="https://webring.xxiivv.com/#arcade">
-                  Webring
-                </a>
-              </li>
-              <li>
-                <a href="https://webring.xxiivv.com/#random">
-                  Webring
-                </a>
-              </li>
-              <li>
-                <a href="https://webring.stavros.io/">
-                  Tech makers
-                </a>
-              </li>
-              <li>
-                <a href="https://xn--sr8hvo.ws/directory">
-                  Directory | An IndieWeb Webring
-                </a>
-              </li>
-              <li>
-                <a href="https://brisray.com/utils/webrings.htm">
-                  Webrings
-                </a>
-              </li>
-              <li>
-                <a href="https://webring.xxiivv.com/">
-                  Webring
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="personal websites (with blog)">personal websites (with blog)</h2>
-          <ul>
-              <li>
-                <a href="https://ryanmulligan.dev/">
-                  Ryan Mulligan
-                </a>
-              </li>
-              <li>
-                <a href="https://tomhazledine.com/">
-                  Tom Hazledine
-                </a>
-              </li>
-              <li>
-                <a href="https://chuniversiteit.nl/">
-                  Chun Fei Lung’s personal website | Chuniversiteit
-                </a>
-              </li>
-              <li>
-                <a href="http://datacolada.org/">
-                  Data Colada - Thinking about evidence and vice versa
-                </a>
-              </li>
-              <li>
-                <a href="https://robinprice.net/">
-                  Robin Price
-                </a>
-              </li>
-              <li>
-                <a href="https://blinry.org/">
-                  blinry&#x27;s homepage
-                </a>
-              </li>
-              <li>
-                <a href="https://jakearchibald.com/">
-                  Blog - JakeArchibald.com
-                </a>
-              </li>
-              <li>
-                <a href="https://mindofahitchhiker.com/">
-                  Mind of a Hitchhiker
-                </a>
-              </li>
-              <li>
-                <a href="https://www.robmiles.com/">
-                  robmiles.com
-                </a>
-              </li>
-              <li>
-                <a href="https://adamdrake.com/">
-                  Adam Drake
-                </a>
-              </li>
-              <li>
-                <a href="https://tholman.com/">
-                  Tims Curious Creations
-                </a>
-              </li>
-              <li>
-                <a href="https://lathonez.com/">
-                  Lathonez&#x27; Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://nasauber.de/">
-                  Open Source und Weblog von Tobias Leupold | nasauber.de
-                </a>
-              </li>
-              <li>
-                <a href="http://jhcloos.com/">
-                  James Cloos
-                </a>
-              </li>
-              <li>
-                <a href="https://unop.uk/">
-                  unop
-                </a>
-              </li>
-              <li>
-                <a href="https://russ.garrett.co.uk/">
-                  Russ Garrett
-                </a>
-              </li>
-              <li>
-                <a href="https://nutcroft.com/">
-                  nutcroft
-                </a>
-              </li>
-              <li>
-                <a href="https://laymonage.com/">
-                  laymonage
-                </a>
-              </li>
-              <li>
-                <a href="https://roycoding.com/">
-                  Roy Keyes
-                </a>
-              </li>
-              <li>
-                <a href="https://peter-noble.github.io/">
-                  Peter Noble | Personal portfolio. Code, film, theatre etc…
-                </a>
-              </li>
-              <li>
-                <a href="https://webjeda.com/">
-                  Webjeda
-                </a>
-              </li>
-              <li>
-                <a href="https://geoffboeing.com/">
-                  Geoff Boeing – Urban planning and spatial analysis professor at USC
-                </a>
-              </li>
-              <li>
-                <a href="https://www.jvt.me/">
-                  Jamie Tanna | Software Engineer
-                </a>
-              </li>
-              <li>
-                <a href="https://drewdevault.com/">
-                  Drew DeVault&#x27;s blog
-                </a>
-              </li>
-              <li>
-                <a href="https://www.asialakay.net/">
-                  Asia Lakay
-                </a>
-              </li>
-              <li>
-                <a href="https://pierre.palatin.fr/">
-                  Pierre Palatin&#x27;s corner - Random posts about some stuff I&#x27;ve been doing.
-                </a>
-              </li>
-              <li>
-                <a href="https://plocki.org/archive.html">
-                  plocki.org - Linux und so...
-                </a>
-              </li>
-              <li>
-                <a href="https://tanishqkancharla.dev/">
-                  Tanishq K.: TK&#x27;s website
-                </a>
-              </li>
-              <li>
-                <a href="https://hillelwayne.com/">
-                  Hillel Wayne
-                </a>
-              </li>
-              <li>
-                <a href="https://outofambit.format.com/">
-                  evelyn masso - evelyn masso
-                </a>
-              </li>
-              <li>
-                <a href="https://vitalik.ca/">
-                  Vitalik Buterin&#x27;s website
-                </a>
-              </li>
-              <li>
-                <a href="https://www.davidkemp.uk.com/">
-                  David Kemp
-                </a>
-              </li>
-              <li>
-                <a href="https://ash7.io/">
-                  Hugo ʕ•ᴥ•ʔ Bear Blog | Hugo ʕ•ᴥ•ʔ Bear Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://jwdallas.com/">
-                  Jonathan Dallas
-                </a>
-              </li>
-              <li>
-                <a href="https://aaadaaam.com/">
-                  Adam Stoddard - generalist designer &amp; creative technologist
-                </a>
-              </li>
-              <li>
-                <a href="https://sitalo.org/">
-                  Vlad Sitalo
-                </a>
-              </li>
-              <li>
-                <a href="https://mxb.dev/">
-                  Max Böck
-                </a>
-              </li>
-              <li>
-                <a href="https://ajenkins.me/">
-                  AJ&#x27;s Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://taylor.town/">
-                  taylor.town
-                </a>
-              </li>
-              <li>
-                <a href="https://blogs.hn/">
-                  blogs.hn
-                </a>
-              </li>
-              <li>
-                <a href="https://josepheoff.github.io/">
-                  JRE’s Project Blog | A place to talk about my projects
-                </a>
-              </li>
-              <li>
-                <a href="https://wiki.xxiivv.com/site/home.html">
-                  XXIIVV — home
-                </a>
-              </li>
-              <li>
-                <a href="https://twolfson.com/">
-                  Todd Wolfson - Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://gregdan3.dev/">
-                  gregsite - Welcome!
-                </a>
-              </li>
-              <li>
-                <a href="http://tom7.org/">
-                  Tom Murphy 7&#x27;s Invincible Web Page
-                </a>
-              </li>
-              <li>
-                <a href="https://meyerweb.com/">
-                  meyerweb.com
-                </a>
-              </li>
-              <li>
-                <a href="https://rachsmith.com/">
-                  Home | Rach Smith&#x27;s digital garden
-                </a>
-              </li>
-              <li>
-                <a href="https://neilgaryallen.dev/">
-                  ngadev // Neil Gary Allen - Web Developer
-                </a>
-              </li>
-              <li>
-                <a href="https://www.arp242.net/">
-                  arp242.net
-                </a>
-              </li>
-              <li>
-                <a href="https://iliana.fyi/">
-                  iliana.fyi
-                </a>
-              </li>
-              <li>
-                <a href="https://chriskirknielsen.com/">
-                  Home | chriskirknielsen
-                </a>
-              </li>
-              <li>
-                <a href="https://rosswintle.uk/">
-                  Ross Wintle - Freelance technology, code and consultancy - Ross Wintle
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.poggs.com/">
-                  Peter Hicks&#x27; Blog – The personal blog of Peter Hicks
-                </a>
-              </li>
-              <li>
-                <a href="https://www.brainonfire.net/">
-                  Tim McCormack | Brain on Fire
-                </a>
-              </li>
-              <li>
-                <a href="https://nolanlawson.com/">
-                  Read the Tea Leaves | Software and other dark arts, by Nolan Lawson
-                </a>
-              </li>
-              <li>
-                <a href="https://css-irl.info/">
-                  CSS { In Real Life }
-                </a>
-              </li>
-              <li>
-                <a href="https://simonhearne.com/">
-                  Simon Hearne
-                </a>
-              </li>
-              <li>
-                <a href="https://chrismcleod.dev/">
-                  I Build Things — Chris McLeod
-                </a>
-              </li>
-              <li>
-                <a href="https://theunderground.blog/">
-                  theunderground.blog
-                </a>
-              </li>
-              <li>
-                <a href="https://dev-cafe.github.io/">
-                  DevCafe
-                </a>
-              </li>
-              <li>
-                <a href="https://jgomezdans.github.io/">
-                  EO &amp; DA Ramblings
-                </a>
-              </li>
-              <li>
-                <a href="https://www.marginalia.nu/">
-                  www.marginalia.nu @ marginalia.nu
-                </a>
-              </li>
-              <li>
-                <a href="https://eta.st/">
-                  eta.st
-                </a>
-              </li>
-              <li>
-                <a href="https://lobi.to/">
-                  Harley Watson
-                </a>
-              </li>
-              <li>
-                <a href="https://mango.pdf.zone/">
-                  the mango zone
-                </a>
-              </li>
-              <li>
-                <a href="https://ekulrf.github.io/lukes-letters/">
-                  Luke&#x27;s Letters
-                </a>
-              </li>
-              <li>
-                <a href="https://www.raymondcamden.com/">
-                  Raymond Camden
-                </a>
-              </li>
-              <li>
-                <a href="https://jysh.net/">
-                  Hi, I&#x27;m Jayesh Bhoot
-                </a>
-              </li>
-              <li>
-                <a href="http://frame-notes.blogspot.com/">
-                  Frame Notes
-                </a>
-              </li>
-              <li>
-                <a href="https://alexcabal.com/">
-                  Alex Cabal
-                </a>
-              </li>
-              <li>
-                <a href="https://stuffedwomb.at/index">
-                  Stuffed Wombat
-                </a>
-              </li>
-              <li>
-                <a href="http://akkartik.name/about">
-                  Kartik Agaram
-                </a>
-              </li>
-              <li>
-                <a href="https://zastrow.co/">
-                  Philip Zastrow
-                </a>
-              </li>
-              <li>
-                <a href="https://andycarter.dev/">
-                  Andy Carter – Sheffield based software engineer
-                </a>
-              </li>
-              <li>
-                <a href="https://caolan.uk/">
-                  Caolan McMahon
-                </a>
-              </li>
-              <li>
-                <a href="https://www.anildash.com/">
-                  Anil Dash
-                </a>
-              </li>
-              <li>
-                <a href="https://www.algorist.co.uk/">
-                  Algorist
-                </a>
-              </li>
-              <li>
-                <a href="https://badcfe.org/">
-                  Badcfe.org - too small to not fail
-                </a>
-              </li>
-              <li>
-                <a href="http://kaimac.org/">
-                  kaimac.org
-                </a>
-              </li>
-              <li>
-                <a href="https://home.octetfont.com/blog/">
-                  https://home.octetfont.com/blog/
-                </a>
-              </li>
-              <li>
-                <a href="https://hughbarnard.org/">
-                  Hugh Barnard – Computing for Social Change
-                </a>
-              </li>
-              <li>
-                <a href="https://arne.me/">
-                  Arne Bahlo
-                </a>
-              </li>
-              <li>
-                <a href="https://proto.garden/">
-                  proto
-                </a>
-              </li>
-              <li>
-                <a href="https://blainsmith.com/">
-                  Blain Smith
-                </a>
-              </li>
-              <li>
-                <a href="https://denisdefreyne.com/">
-                  Denis Defreyne
-                </a>
-              </li>
-              <li>
-                <a href="https://frills.dev/">
-                  Home - Frills
-                </a>
-              </li>
-              <li>
-                <a href="https://paulglagla.com/en/">
-                  Les contributions de Paul Glagla | Paul Glagla&#x27;s contributions
-                </a>
-              </li>
-              <li>
-                <a href="https://tilde.green/~kestral/">
-                  Kestral @ Tildeverse
-                </a>
-              </li>
-              <li>
-                <a href="https://ntietz.com/">
-                  hello! | nicole@web
-                </a>
-              </li>
-              <li>
-                <a href="https://ellie.wtf/">
-                  Ellie huxtable
-                </a>
-              </li>
-              <li>
-                <a href="https://novalis.org/">
-                  David &quot;Novalis&quot; Turner
-                </a>
-              </li>
-              <li>
-                <a href="https://jimmyhmiller.github.io/">
-                  Jimmy miller
-                </a>
-              </li>
-              <li>
-                <a href="https://www.leftfold.tech/">
-                  Home - Left Fold
-                </a>
-              </li>
-              <li>
-                <a href="https://renkotsuban.com/">
-                  Midnight Reading: Renkon&#x27;s Personal Site
-                </a>
-              </li>
-              <li>
-                <a href="https://birming.com/">
-                  Robert Birming
-                </a>
-              </li>
-              <li>
-                <a href="https://ohhelloana.blog/">
-                  Oh Hello Ana - Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://meiert.com/en/">
-                  Jens Oliver Meiert · Frontend Engineering Leader and Tech Author/Publisher
-                </a>
-              </li>
-              <li>
-                <a href="https://alfy.blog/">
-                  Blog . Ahmad Alfy
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.mgdproductions.com/">
-                  MGD Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://muffinlabs.com/">
-                  muffinlabs.com -- the website of Colin Mitchell
-                </a>
-              </li>
-              <li>
-                <a href="https://palomakop.tv/">
-                  Paloma Kop
-                </a>
-              </li>
-              <li>
-                <a href="https://thefrailestthing.com/">
-                  L.M. Sacasas | Technology, Culture, and Ethics
-                </a>
-              </li>
-              <li>
-                <a href="https://www.foxocube.xyz/">
-                  Foxocube&#x27;s Blog – A blog written by Foxocube…
-                </a>
-              </li>
-              <li>
-                <a href="http://tilde.town/~dozens/">
-                  dozens
-                </a>
-              </li>
-              <li>
-                <a href="https://quanttype.net/">
-                  quanttype
-                </a>
-              </li>
-              <li>
-                <a href="https://levlaz.org/">
-                  Lev Lazinskiy
-                </a>
-              </li>
-              <li>
-                <a href="https://alexwennerberg.com/">
-                  alex wennerberg
-                </a>
-              </li>
-              <li>
-                <a href="https://tommi.space/">
-                  Dive in tommi.space
-                </a>
-              </li>
-              <li>
-                <a href="https://www.dannyvankooten.com/">
-                  Danny van Kooten
-                </a>
-              </li>
-              <li>
-                <a href="http://www.0atman.com/">
-                  blog
-                </a>
-              </li>
-              <li>
-                <a href="https://eieio.games/">
-                  eieio.games
-                </a>
-              </li>
-              <li>
-                <a href="https://olu.online/">
-                  Olu Online
-                </a>
-              </li>
-              <li>
-                <a href="https://rtpg.co/">
-                  Raphael
-                </a>
-              </li>
-              <li>
-                <a href="https://www.unterminated.com/">
-                  Unterminated
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.plover.com/">
-                  The Universe of Discourse
-                </a>
-              </li>
-              <li>
-                <a href="https://robinrendle.com/">
-                  Robin Rendle
-                </a>
-              </li>
-              <li>
-                <a href="https://harrywood.co.uk/">
-                  Harry Wood homepage
-                </a>
-              </li>
-              <li>
-                <a href="https://danmcquillan.org/">
-                  danmcquillan.org
-                </a>
-              </li>
-              <li>
-                <a href="https://reedybear.bearblog.dev/">
-                  ReedyBear&#x27;s Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://satyarth.me/">
-                  satyarth.me
-                </a>
-              </li>
-              <li>
-                <a href="https://thetfordranger.wordpress.com/">
-                  Diary of a Volunteer Sustrans Ranger | Sustrans &#x27;Breckland and Waveney Valley&#x27; Volunteer Group
-                </a>
-              </li>
-              <li>
-                <a href="https://rijn.pl/">
-                  Lukasz Baldyga
-                </a>
-              </li>
-              <li>
-                <a href="https://dri.es/">
-                  On digital experiences, Open Source, Open Web, Drupal, and our digital future | Dries Buytaert
-                </a>
-              </li>
-              <li>
-                <a href="https://mags.omg.lol/">
-                  Mags&#x27; Homepage!
-                </a>
-              </li>
-              <li>
-                <a href="https://nuxill.neocities.org/">
-                  Nuxill&#x27;s Corner
-                </a>
-              </li>
-              <li>
-                <a href="https://tinysubversions.com/">
-                  Tiny Subversions | Darius Kazemi
-                </a>
-              </li>
-              <li>
-                <a href="https://die-ratte.de/">
-                  Miracle Scave
-                </a>
-              </li>
-              <li>
-                <a href="https://daniel.haxx.se/">
-                  Daniel Stenberg
-                </a>
-              </li>
-              <li>
-                <a href="https://timsh.org/">
-                  tim.sh
-                </a>
-              </li>
-              <li>
-                <a href="https://foreverliketh.is/">
-                  Home Page 🪴 ～ foreverliketh.is
-                </a>
-              </li>
-              <li>
-                <a href="https://www.bfoliver.com/">
-                  Ben Oliver
-                </a>
-              </li>
-              <li>
-                <a href="https://alex-kelly.blog/">
-                  Alex Paul Kelly - AI: The Catalyst of the 4th Industrial transformation
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.howrandom.net/">
-                  blog.howrandom.net | Home
-                </a>
-              </li>
-              <li>
-                <a href="https://jpmens.net/">
-                  Jan-Piet Mens
-                </a>
-              </li>
-              <li>
-                <a href="https://simplifier.neocities.org/">
-                  Simplifier
-                </a>
-              </li>
-              <li>
-                <a href="https://joeyehand.com/">
-                  Portfolio - Joey&#x27;s Hoard of Stuff
-                </a>
-              </li>
-              <li>
-                <a href="https://ribo.zone/">
-                  ribo.zone
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.khinsen.net/">
-                  Konrad Hinsen&#x27;s blog
-                </a>
-              </li>
-              <li>
-                <a href="https://moxie.org/">
-                  Moxie Marlinspike &gt;&gt; About
-                </a>
-              </li>
-              <li>
-                <a href="https://jamesg.blog/">
-                  James&#x27; Coffee Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://jennyodell.com/">
-                  • jenny odell •
-                </a>
-              </li>
-              <li>
-                <a href="https://www.craigabbott.co.uk/">
-                  Home - craigabbott.co.uk
-                </a>
-              </li>
-              <li>
-                <a href="https://www.jwz.org/">
-                  jwz.org
-                </a>
-              </li>
-              <li>
-                <a href="https://www.windchime.uk/">
-                  windchime.uk
-                </a>
-              </li>
-              <li>
-                <a href="https://aras-p.info/">
-                  Aras&#x27; website
-                </a>
-              </li>
-              <li>
-                <a href="https://rejectconvenience.com/">
-                  Reject Convenience
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nicchan.me/">
-                  Nic Chan
-                </a>
-              </li>
-              <li>
-                <a href="https://www.feadin.eu/en/">
-                  Feadin.eu
-                </a>
-              </li>
-              <li>
-                <a href="https://spod.cx/">
-                  spod.cx
-                </a>
-              </li>
-              <li>
-                <a href="https://aphyr.com/">
-                  Aphyr - Posts
-                </a>
-              </li>
-              <li>
-                <a href="https://alexschroeder.ch/view/index">
-                  Alex Schroeder’s Diary
-                </a>
-              </li>
-              <li>
-                <a href="https://paulbellamy.com/">
-                  paulbellamy.com - Recent Posts
-                </a>
-              </li>
-              <li>
-                <a href="https://crescentro.se/">
-                  crescentrose
-                </a>
-              </li>
-              <li>
-                <a href="https://aresluna.org/">
-                  Aresluna
-                </a>
-              </li>
-              <li>
-                <a href="https://www.monolune.com/">
-                  Monolune
-                </a>
-              </li>
-              <li>
-                <a href="https://lagomor.ph/">
-                  Lagomorph | Home
-                </a>
-              </li>
-              <li>
-                <a href="https://leepeuker.dev/">
-                  Lee Peuker - Homepage
-                </a>
-              </li>
-              <li>
-                <a href="https://gwern.net/index">
-                  Essays · Gwern.net
-                </a>
-              </li>
-              <li>
-                <a href="https://humanfinny.neocities.org/">
-                  the human finny
-                </a>
-              </li>
-              <li>
-                <a href="https://aaronsplace.co.uk/">
-                  Dr Aaron S. Jackson
-                </a>
-              </li>
-              <li>
-                <a href="https://maurycyz.com/">
-                  Maurycy&#x27;s blog
-                </a>
-              </li>
-              <li>
-                <a href="https://jimmyhmiller.com/">
-                  Jimmy Miller
-                </a>
-              </li>
-              <li>
-                <a href="https://chsmc.org/">
-                  Chase McCoy
-                </a>
-              </li>
-              <li>
-                <a href="https://kevinmarks.com/">
-                  Kevin Marks
-                </a>
-              </li>
-              <li>
-                <a href="https://manuel-strehl.de/">
-                  Manuel Strehl
-                </a>
-              </li>
-              <li>
-                <a href="https://devonzuegel.com/">
-                  devonzuegel.com
-                </a>
-              </li>
-              <li>
-                <a href="https://ethanmarcotte.com/">
-                  Welcome to Ethan Marcotte’s website — Ethan Marcotte
-                </a>
-              </li>
-              <li>
-                <a href="https://patrickbrosset.com/">
-                  Patrick
-                </a>
-              </li>
-              <li>
-                <a href="https://allejo.io/">
-                  Home | allejo.io
-                </a>
-              </li>
-              <li>
-                <a href="https://greg.technology/">
-                  GReg TeChnoLogY
-                </a>
-              </li>
-              <li>
-                <a href="https://www.robinwhittleton.com/">
-                  robinwhittleton.com - Robin Whittleton
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="personal websites (without blog)">personal websites (without blog)</h2>
-          <ul>
-              <li>
-                <a href="https://alex-adler.github.io/">
-                  Alex Adler
-                </a>
-              </li>
-              <li>
-                <a href="http://clofont.free.fr/">
-                  Des polices de caracteres a Gogo !!!
-                </a>
-              </li>
-              <li>
-                <a href="https://daniel-flanagan.com/">
-                  Daniel Flanagan
-                </a>
-              </li>
-              <li>
-                <a href="https://gortan.org/">
-                  Philipp Gortan&#x27;s Homepage
-                </a>
-              </li>
-              <li>
-                <a href="http://markvigeant.directory/">
-                  The Mark Vigeant Web Ring
-                </a>
-              </li>
-              <li>
-                <a href="https://tonibuckby.com/">
-                  Toni Buckby
-                </a>
-              </li>
-              <li>
-                <a href="https://cobyzaby.neocities.org/">
-                  The Web Site of Cobyzaby
-                </a>
-              </li>
-              <li>
-                <a href="https://paulchaplin.com/">
-                  Paul Chaplin: Frontend/fullstack web development
-                </a>
-              </li>
-              <li>
-                <a href="https://maria.town/">
-                  ✧･maria･✧
-                </a>
-              </li>
-              <li>
-                <a href="https://ayaspace.co.uk/">
-                  Aya Stead - Personal Porfolio
-                </a>
-              </li>
-              <li>
-                <a href="https://erich-friedman.github.io/">
-                  Erich Friedman
-                </a>
-              </li>
-              <li>
-                <a href="https://arcades.agency/index.html">
-                  index: aethopica
-                </a>
-              </li>
-              <li>
-                <a href="https://tarng.com/">
-                  Julius Tarng — Independent Software Creative
-                </a>
-              </li>
-              <li>
-                <a href="https://alex.dytry.ch/">
-                  Alex Dytrych
-                </a>
-              </li>
-              <li>
-                <a href="https://sweetfish.site/">
-                  sweetfish.site
-                </a>
-              </li>
-              <li>
-                <a href="https://jeffdude.github.io/">
-                  Jeff Milling&#x27;s Website
-                </a>
-              </li>
-              <li>
-                <a href="https://v21.io/">
-                  v21
-                </a>
-              </li>
-              <li>
-                <a href="https://seif.world/">
-                  Seif 🌍 World
-                </a>
-              </li>
-              <li>
-                <a href="https://robray.dev/">
-                  Richard Oliver Bray – Christian, web developer, game developer, content creator, open source contributor
-                </a>
-              </li>
-              <li>
-                <a href="https://soha.lt/">
-                  sohalt.net
-                </a>
-              </li>
-              <li>
-                <a href="https://tiswww.case.edu/php/chet/">
-                  Chet Ramey&#x27;s Home Page
-                </a>
-              </li>
-              <li>
-                <a href="https://www.mousereeve.com/">
-                  Mouse Reeve
-                </a>
-              </li>
-              <li>
-                <a href="https://dicemaster5.github.io/website/">
-                  Sam Auber
-                </a>
-              </li>
-              <li>
-                <a href="http://stuffedwomb.at/">
-                  Stuffed Wombat
-                </a>
-              </li>
-              <li>
-                <a href="https://kenru.net/index.html">
-                  Ken Rudolph&#x27;s Home Page
-                </a>
-              </li>
-              <li>
-                <a href="https://petrapixel.neocities.org/">
-                  petrapixel
-                </a>
-              </li>
-              <li>
-                <a href="https://shingi345.angelfire.com/homepagepersonalsite.htm">
-                  Tyler Slamkowski
-                </a>
-              </li>
-              <li>
-                <a href="https://carlwk.typepad.com/">
-                  Carl W. Knopf Site: Carl W. Knopf Jr. Website
-                </a>
-              </li>
-              <li>
-                <a href="https://docmeek.com/">
-                  Doc Meek
-                </a>
-              </li>
-              <li>
-                <a href="https://n0madz.omg.lol/">
-                  n0madz profile
-                </a>
-              </li>
-              <li>
-                <a href="https://brisray.com/">
-                  Some miscellany about Bristol, my fathers time in the Royal Navy, Optical Illusions, Postcards, Terre Haute, Indiana and other things I&#x27;m interested in
-                </a>
-              </li>
-              <li>
-                <a href="https://ihor4x4.com/">
-                  Icehouseoffroad - Home Page
-                </a>
-              </li>
-              <li>
-                <a href="https://wiki.xxiivv.com/site/devine_lu_linvega.html">
-                  XXIIVV — devine lu linvega
-                </a>
-              </li>
-              <li>
-                <a href="https://ayliean.com/">
-                  Hi I&#x27;m Ayliean + I love maths
-                </a>
-              </li>
-              <li>
-                <a href="https://nat.bike/">
-                  Nat Zimmermann
-                </a>
-              </li>
-              <li>
-                <a href="http://transfur.science/f191/">
-                  Pera&#x27;s Homepage!
-                </a>
-              </li>
-              <li>
-                <a href="https://aghdom.eu/">
-                  aghdom
-                </a>
-              </li>
-              <li>
-                <a href="http://universalities.com/">
-                  Home | Universalities
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nnenov.eu/">
-                  Nikola Nenov Motion Graphics
-                </a>
-              </li>
-              <li>
-                <a href="https://evaisa.dev/">
-                  Evaisa
-                </a>
-              </li>
-              <li>
-                <a href="https://le.alphamethyl.barr0w.net/~elysia/">
-                  elysia&#x27;s Website
-                </a>
-              </li>
-              <li>
-                <a href="https://henry.codes/">
-                  Henry From Online
-                </a>
-              </li>
-              <li>
-                <a href="https://jonty.co.uk/">
-                  Hello, I am Jonty
-                </a>
-              </li>
-              <li>
-                <a href="https://osm.mathmos.net/">
-                  Robert Whittaker&#x27;s OpenStreetMap Stuff
-                </a>
-              </li>
-              <li>
-                <a href="https://robert.mathmos.net/">
-                  Robert Whittaker
-                </a>
-              </li>
-              <li>
-                <a href="https://www.matthias-heil.co.uk/new_webpage/index.html">
-                  Matthias Heil&#x27;s homepage
-                </a>
-              </li>
-              <li>
-                <a href="https://laserbat.pw/">
-                  lzr.pw
-                </a>
-              </li>
-              <li>
-                <a href="https://goblin-heart.net/sadgrl/">
-                  sadgrl.online
-                </a>
-              </li>
-              <li>
-                <a href="https://possiblyaxolotl.com/">
-                  PossiblyAxolotl
-                </a>
-              </li>
-              <li>
-                <a href="https://typedef.io/">
-                  Adam Kuczyński
-                </a>
-              </li>
-              <li>
-                <a href="https://madeleinebonsma.com/">
-                  Madeleine Bonsma-Fisher
-                </a>
-              </li>
-              <li>
-                <a href="https://vole.wtf/blah/">
-                  who what why when where whelk whippet
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="interesting websites">interesting websites</h2>
-          <ul>
-              <li>
-                <a href="https://openbenches.org/">
-                  OpenBenches Welcome!
-                </a>
-              </li>
-              <li>
-                <a href="https://coolspacethings.neocities.org/">
-                  Cool Space Things
-                </a>
-              </li>
-              <li>
-                <a href="http://lilypond.org/">
-                  LilyPond – Music notation for everyone
-                </a>
-              </li>
-              <li>
-                <a href="http://cat-v.org/">
-                  Cat-v.org Random Contrarian Insurgent Organization
-                </a>
-              </li>
-              <li>
-                <a href="https://www.goodreads.com/book/random">
-                  Random book
-                </a>
-              </li>
-              <li>
-                <a href="https://diggersanddreamers.org.uk/">
-                  Diggers and Dreamers – Intentional Community in Britain
-                </a>
-              </li>
-              <li>
-                <a href="https://stattogories.com/imdb/ratings-movies.html">
-                  IMDb Ratings: Movies Higher Lower Game | Stattogories
-                </a>
-              </li>
-              <li>
-                <a href="https://nobody.live/">
-                  Nobody.live | Lonely streams and streamers with zero viewers
-                </a>
-              </li>
-              <li>
-                <a href="https://ukfree.tv/channels/live">
-                  Watch TV live now on the web | free and easy
-                </a>
-              </li>
-              <li>
-                <a href="https://hanabi.cards/">
-                  Hanabi · Play Hanabi online with friends!
-                </a>
-              </li>
-              <li>
-                <a href="https://www.atlasobscura.com/">
-                  Atlas Obscura - Curious and Wondrous Travel Destinations
-                </a>
-              </li>
-              <li>
-                <a href="https://www.python-graph-gallery.com/">
-                  Python Graph Gallery
-                </a>
-              </li>
-              <li>
-                <a href="https://steamcompanion.com/compare">
-                  SteamCompanion
-                </a>
-              </li>
-              <li>
-                <a href="https://1j01.github.io/pipes/">
-                  3D Pipes Screensaver
-                </a>
-              </li>
-              <li>
-                <a href="https://informationisbeautiful.net/visualizations/based-on-a-true-true-story/">
-                  Based on a *True* True Story? — Information is Beautiful
-                </a>
-              </li>
-              <li>
-                <a href="http://phrontistery.info/index.html">
-                  The Phrontistery: Obscure Words and Vocabulary Resources
-                </a>
-              </li>
-              <li>
-                <a href="https://agoodmovietowatch.com/">
-                  What To Watch On Streaming - A Good Movie To Watch
-                </a>
-              </li>
-              <li>
-                <a href="https://stacygreene.com/projects/lipstick">
-                  Lipstick - Stacy Greene
-                </a>
-              </li>
-              <li>
-                <a href="https://chriskirknielsen.com/projects/runestone-futhark/">
-                  Runestone Futhark | chriskirknielsen
-                </a>
-              </li>
-              <li>
-                <a href="http://www.infraphil.info/">
-                  Infraphil Viseum
-                </a>
-              </li>
-              <li>
-                <a href="https://signalbox.org/">
-                  The Signal Box – EVERYTHING ABOUT BRITISH RAILWAY SIGNALLING
-                </a>
-              </li>
-              <li>
-                <a href="https://learnxinyminutes.com/">
-                  Learn X in Y Minutes: Scenic Programming Language Tours
-                </a>
-              </li>
-              <li>
-                <a href="https://topaz.github.io/paste/">
-                  paste
-                </a>
-              </li>
-              <li>
-                <a href="https://www.htmhell.dev/">
-                  Markup from hell - HTMHell
-                </a>
-              </li>
-              <li>
-                <a href="https://search.marginalia.nu/">
-                  Marginalia Search
-                </a>
-              </li>
-              <li>
-                <a href="https://eta.st/tickets/">
-                  RSP6 decoder
-                </a>
-              </li>
-              <li>
-                <a href="http://changaco.oy.lc/unicode-progress-bars/">
-                  Unicode progress bars
-                </a>
-              </li>
-              <li>
-                <a href="https://potato.cheap/">
-                  The Cheap Web
-                </a>
-              </li>
-              <li>
-                <a href="https://whencanireusethiscalendar.com/">
-                  When Can I Reuse This Calendar?
-                </a>
-              </li>
-              <li>
-                <a href="https://css-tricks.com/animating-with-clip-path/">
-                  Animating with Clip-Path | CSS-Tricks - CSS-Tricks
-                </a>
-              </li>
-              <li>
-                <a href="https://love2d.org/">
-                  LÖVE - Free 2D Game Engine
-                </a>
-              </li>
-              <li>
-                <a href="https://www.websitecarbon.com/">
-                  Website Carbon Calculator v3 | What&#x27;s your site&#x27;s carbon footprint?
-                </a>
-              </li>
-              <li>
-                <a href="https://wiby.me/">
-                  Wiby - Search Engine for the Classic Web
-                </a>
-              </li>
-              <li>
-                <a href="https://www.horg.com/">
-                  the HOLOTYPIC OCCLUPANID RESEARCH GROUP
-                </a>
-              </li>
-              <li>
-                <a href="https://tinytoolk.it/">
-                  Tiny Toolkits
-                </a>
-              </li>
-              <li>
-                <a href="https://buttonwall.neocities.org/">
-                  Button Wall
-                </a>
-              </li>
-              <li>
-                <a href="https://streamurl.link/">
-                  Radio stream URL search engine
-                </a>
-              </li>
-              <li>
-                <a href="https://switching.software/">
-                  switching.software | Ethical, easy-to-use and privacy-conscious alternatives to well-known software
-                </a>
-              </li>
-              <li>
-                <a href="https://marigold.town/">
-                  Marigold Town: a web hosting provider with a small-town vibe
-                </a>
-              </li>
-              <li>
-                <a href="http://harlanellison.com/home.htm">
-                  Harlan Ellison Webderland: Home Page
-                </a>
-              </li>
-              <li>
-                <a href="https://scribe.rip/">
-                  Scribe
-                </a>
-              </li>
-              <li>
-                <a href="https://blinkies.cafe/">
-                  blinkie maker | generate blinkie gifs with custom text!
-                </a>
-              </li>
-              <li>
-                <a href="https://htmlforpeople.com/">
-                  HTML for People
-                </a>
-              </li>
-              <li>
-                <a href="https://urinal.net/">
-                  Urinal Dot Net
-                </a>
-              </li>
-              <li>
-                <a href="http://www.organstops.org/">
-                  Encyclopedia of Organ Stops
-                </a>
-              </li>
-              <li>
-                <a href="https://www.votesforschools.com/">
-                  VotesforSchools - Personal Development, SMSC &amp; PSHE
-                </a>
-              </li>
-              <li>
-                <a href="https://nearlylegal.co.uk/">
-                  Housing law reports and analysis - Nearly Legal: Housing Law News and Comment
-                </a>
-              </li>
-              <li>
-                <a href="https://solar.lowtechmagazine.com/">
-                  LOW←TECH MAGAZINE
-                </a>
-              </li>
-              <li>
-                <a href="https://reknitrevolution.org/">
-                  Reknit Revolution – reworking our wardrobes, stitch by stitch
-                </a>
-              </li>
-              <li>
-                <a href="https://trans-europe-planner.eu/">
-                  Trans-Europe-Planner
-                </a>
-              </li>
-              <li>
-                <a href="http://dis.engineering/">
-                  Disengineering Society
-                </a>
-              </li>
-              <li>
-                <a href="https://r.3v.fi/discord-timestamps/">
-                  3v.fi - Discord Timestamp Generator
-                </a>
-              </li>
-              <li>
-                <a href="https://www.sounds-resource.com/">
-                  The Sounds Resource
-                </a>
-              </li>
-              <li>
-                <a href="https://ebookfoundation.github.io/free-programming-books/">
-                  List of Free Learning Resources In Many Languages | free-programming-books
-                </a>
-              </li>
-              <li>
-                <a href="https://communityrepairnetwork.org.uk/">
-                  Home - Community Repair Network
-                </a>
-              </li>
-              <li>
-                <a href="https://www.chronotrains.com/en?city=London%2CGB">
-                  Chronotrains - Europe Train Map
-                </a>
-              </li>
-              <li>
-                <a href="https://pigeonsarentreal.co.uk/">
-                  Pigeons Aren&#x27;t Real » The Truth about Government Surveillance Drones
-                </a>
-              </li>
-              <li>
-                <a href="https://markmanson.net/best-books">
-                  Best Books Archive - Mark Manson
-                </a>
-              </li>
-              <li>
-                <a href="https://rejectconvenience.com/privacy-visualizer/">
-                  Privacy Visualizer
-                </a>
-              </li>
-              <li>
-                <a href="https://yunohost.org/">
-                  YunoHost: garden your own piece of the Internet!
-                </a>
-              </li>
-              <li>
-                <a href="https://bruegel.analog.is/">
-                  Netherlandish Proverbs – Pieter Bruegel the Elder – An Analog Project
-                </a>
-              </li>
-              <li>
-                <a href="https://1kb.club/">
-                  1kB
-                </a>
-              </li>
-              <li>
-                <a href="https://pmpress.org.uk/">
-                  PM Press UK – Radical Publishers: Print Ain&#x27;t Dead
-                </a>
-              </li>
-              <li>
-                <a href="https://www.robinsloan.com/lab/key-art/">
-                  Two thoughts about key art
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="Articles (random)">Articles (random)</h2>
-          <ul>
-              <li>
-                <a href="https://www.vanityfair.com/news/2008/01/pitcairn200801">
-                  Trouble in Paradise | Vanity Fair
-                </a>
-              </li>
-              <li>
-                <a href="https://medium.com/@cscalfani/why-experts-make-bad-teachers-ccaed2df029b">
-                  Why Experts Make Bad Teachers. We’d all agree that to teach a subject… | by Charles Scalfani | Medium
-                </a>
-              </li>
-              <li>
-                <a href="https://eusci.org.uk/2020/06/22/an-alien-in-our-sea-a-look-at-the-intelligence-of-an-octopus/">
-                  An Alien in Our Sea: A look at the intelligence of an octopus - University of Edinburgh&#x27;s Science Magazine
-                </a>
-              </li>
-              <li>
-                <a href="https://en.m.wikipedia.org/wiki/Highest_falls_survived_without_a_parachute">
-                  Highest falls survived without a parachute - Wikipedia
-                </a>
-              </li>
-              <li>
-                <a href="https://www.base-mag.com/explore/last-exit-from-the-secret-sea-caving-exploration-veryovnika">
-                  Last Exit From The Secret Sea — BASE Magazine
-                </a>
-              </li>
-              <li>
-                <a href="https://en.m.wikipedia.org/wiki/Kursk_submarine_disaster">
-                  Kursk submarine disaster - Wikipedia
-                </a>
-              </li>
-              <li>
-                <a href="https://momentummag.com/upright-bikes-sit-up-and-enjoy-the-ride/">
-                  Upright Bikes - Sit Up and Enjoy the Ride | Momentum Mag
-                </a>
-              </li>
-              <li>
-                <a href="https://www.vice.com/en/article/8q8qwk/the-concorde-and-the-longest-solar-eclipse">
-                  When Astronomers Chased a Total Eclipse in a Concorde
-                </a>
-              </li>
-              <li>
-                <a href="https://knowhere.co.uk/">
-                  The Knowhere Guide
-                </a>
-              </li>
-              <li>
-                <a href="https://ladylatitudes.ca/2021/02/16/deciphering-the-man-behind-ontarios-bean-puzzle-tombstone/">
-                  Deciphering The Man Behind Ontario’s Bean Puzzle Tombstone – LADY LATITUDES
-                </a>
-              </li>
-              <li>
-                <a href="https://rtwferrer.wordpress.com/2010/08/19/oyacachi-aka-the-coldest-place-on-the-equator-ever/">
-                  Oyacachi – aka the Coldest Place on the Equator, Ever | Big Trip
-                </a>
-              </li>
-              <li>
-                <a href="https://www.snopes.com/fact-check/male-birth-control-study/">
-                  Men Abandoned Male Birth Control Breakthrough Because of Side Effects? | Snopes.com
-                </a>
-              </li>
-              <li>
-                <a href="https://toldandretold1.medium.com/the-great-blading-bubble-how-toxic-masculinity-inflated-and-burst-aggressive-inline-4313e4930714">
-                  The Great Blading Bubble: How Toxic Masculinity Inflated and Burst Aggressive Inline | by Toldandretold | Medium
-                </a>
-              </li>
-              <li>
-                <a href="https://www.huffingtonpost.co.uk/entry/internet-baby-boomers-misinformation-social-media_n_5f998039c5b6a4a2dc813d3d">
-                  What Is The Internet Doing To Boomers’ Brains? | HuffPost UK Politics
-                </a>
-              </li>
-              <li>
-                <a href="https://www.bbc.co.uk/sounds/play/w3cszz68">
-                  The Documentary - Moondog: Sound of New York - BBC Sounds
-                </a>
-              </li>
-              <li>
-                <a href="https://www.macleans.ca/culture/the-weird-and-true-story-of-moondog/">
-                  The weird and true story of Moondog
-                </a>
-              </li>
-              <li>
-                <a href="https://waitbutwhy.com/2016/01/horizontal-history.html">
-                  Horizontal History — Wait But Why
-                </a>
-              </li>
-              <li>
-                <a href="https://arstechnica.com/gaming/2019/01/alexandria-ocasio-cortez-video-games-and-the-new-online-town-square/">
-                  Alexandria Ocasio-Cortez, video games, and the new online town square | Ars Technica
-                </a>
-              </li>
-              <li>
-                <a href="https://www.elle.com/life-love/a35021224/martin-shkreli-christie-smythe-pharma-bro-journalist/">
-                  The Journalist and the Pharma Bro
-                </a>
-              </li>
-              <li>
-                <a href="https://psmag.com/social-justice/women-arent-welcome-internet-72170">
-                  Why Women Aren&#x27;t Welcome on the Internet - Pacific Standard
-                </a>
-              </li>
-              <li>
-                <a href="https://theculturetrip.com/europe/united-kingdom/england/articles/are-these-impressive-facts-about-birmingham-actually-true/">
-                  Are These Impressive Facts About Birmingham Actually True?
-                </a>
-              </li>
-              <li>
-                <a href="https://markessien.com/posts/drama_of_transcription/">
-                  The drama in trying to convert election PDFs to Spreadsheets - Mark Essien
-                </a>
-              </li>
-              <li>
-                <a href="https://blog.steren.fr/2020/my-stack-will-outlive-yours/">
-                  My stack will outlive yours
-                </a>
-              </li>
-              <li>
-                <a href="https://www.tomforth.co.uk/northernlands/">
-                  North England vs. The Netherlands.
-                </a>
-              </li>
-              <li>
-                <a href="https://www.bbc.co.uk/sounds/play/b0b48wq9">
-                  Moondog: Sound of New York - BBC Sounds
-                </a>
-              </li>
-              <li>
-                <a href="https://unherd.com/2020/09/the-plot-against-mercia/#:~:text=The%201956%20West%20Midlands%20Plan,focused%20on%20the%20motor%20industry.">
-                  The plot against Mercia - UnHerd
-                </a>
-              </li>
-              <li>
-                <a href="https://dynomight.net/nukes/?utm_source=substack&amp;utm_medium=email">
-                  So you want to invent a nuclear weapon
-                </a>
-              </li>
-              <li>
-                <a href="https://ultrarunninghistory.com/roller-skating/">
-                  82: Roller Skating Ultra Distances – 1885 Six Days | Ultrarunning History
-                </a>
-              </li>
-              <li>
-                <a href="http://www.glias.org.uk/index.htm">
-                  Greater London Industrial Archaeology Society
-                </a>
-              </li>
-              <li>
-                <a href="https://waxy.org/2014/12/playing-with-my-son/">
-                  Playing With My Son - Waxy.org
-                </a>
-              </li>
-              <li>
-                <a href="https://brr.fyi/posts/south-pole-signage">
-                  South Pole Signage
-                </a>
-              </li>
-              <li>
-                <a href="https://tomforth.co.uk/wenevertried/">
-                  We&#x27;ve never even tried
-                </a>
-              </li>
-              <li>
-                <a href="https://blinry.org/free-hugs/">
-                  What happened when we offered Free Hugs to people
-                </a>
-              </li>
-              <li>
-                <a href="https://dynomight.substack.com/p/tunnel-man">
-                  What&#x27;s so great about tunnel man?
-                </a>
-              </li>
-              <li>
-                <a href="https://www.experimental-history.com/p/excuse-me-but-why-are-you-eating">
-                  Excuse me but why are you eating so many frogs
-                </a>
-              </li>
-              <li>
-                <a href="https://mxb.dev/blog/seven-reasons-why-i-dont-write/">
-                  7 Reasons why I don&#x27;t write | Max Böck
-                </a>
-              </li>
-              <li>
-                <a href="https://css-tricks.com/words-avoid-educational-writing/">
-                  Words To Avoid in Educational Writing | CSS-Tricks - CSS-Tricks
-                </a>
-              </li>
-              <li>
-                <a href="https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram">
-                  When you browse Instagram and find former Australian Prime Minister Tony Abbott&#x27;s passport number
-                </a>
-              </li>
-              <li>
-                <a href="https://robin-cg.medium.com/a-totally-objective-ranking-of-every-uk-local-authority-logo-b76e8f7efd5a">
-                  A Totally Objective Ranking of Every UK Local Authority Logo | by Robin Wilde | Medium
-                </a>
-              </li>
-              <li>
-                <a href="https://www.todepond.com/wikiblogarden/social-media/para/activity/">
-                  Todepond dot com
-                </a>
-              </li>
-              <li>
-                <a href="https://notes.rolandcrosby.com/posts/unexpectedly-eponymous/">
-                  Things Unexpectedly Named After People · Notes
-                </a>
-              </li>
-              <li>
-                <a href="https://www.experimental-history.com/p/startling-differences-between-humans">
-                  Startling differences between humans and jukeboxes
-                </a>
-              </li>
-              <li>
-                <a href="https://www.wired.com/story/deaths-of-effective-altruism/">
-                  The Deaths of Effective Altruism | WIRED
-                </a>
-              </li>
-              <li>
-                <a href="https://hughbarnard.org/wp-content/uploads/2023/07/goodbye-engagement.pdf">
-                  goodbye-engagement.pdf
-                </a>
-              </li>
-              <li>
-                <a href="https://pluralistic.net/2024/04/18/in-extremis-veritas/">
-                  Pluralistic: Podcasting “Capitalists Hate Capitalism” (18 Apr 2024) – Pluralistic: Daily links from Cory Doctorow
-                </a>
-              </li>
-              <li>
-                <a href="https://www.polypompholyx.com/2017/01/modularorigami/">
-                  Modular origami – Polypompholyx
-                </a>
-              </li>
-              <li>
-                <a href="https://locusmag.com/2022/09/cory-doctorow-moneylike/">
-                  Cory Doctorow: Moneylike – Locus Online
-                </a>
-              </li>
-              <li>
-                <a href="https://www.sheffieldtribune.co.uk/p/a-london-start-up-tried-to-solve">
-                  A London start-up tried to solve Sheffield&#x27;s housing crisis. So far, they&#x27;ve made it worse
-                </a>
-              </li>
-              <li>
-                <a href="https://www.computerweekly.com/opinion/Labours-AI-Action-Plan-a-gift-to-the-far-right">
-                  Labour&#x27;s AI Action Plan - a gift to the far right | Computer Weekly
-                </a>
-              </li>
-              <li>
-                <a href="https://going-medieval.com/2023/05/16/on-cats/">
-                  On cats – Going Medieval
-                </a>
-              </li>
-              <li>
-                <a href="https://briefs.video/videos/why-is-everything-binary/">
-                  Why is everything binary? (Webbed Briefs)
-                </a>
-              </li>
-              <li>
-                <a href="https://davidgraeber.org/articles/on-the-phenomenon-of-bullshit-jobs-a-work-rant/">
-                  On the Phenomenon of Bullshit Jobs: A Work Rant - David Graeber
-                </a>
-              </li>
-              <li>
-                <a href="https://haterade.substack.com/p/i-tasted-hondas-spicy-rodent-repelling">
-                  I Tasted Honda&#x27;s Spicy Rodent-Repelling Tape - by Liz Cook
-                </a>
-              </li>
-              <li>
-                <a href="https://www.scopeofwork.net/silica-gel/">
-                  How Silica Gel Took Over the World
-                </a>
-              </li>
-              <li>
-                <a href="https://www.todepond.com/sky/let-me-piss/">
-                  Todepond dot com
-                </a>
-              </li>
-              <li>
-                <a href="https://thedabbler.patatas.ca/pages/ai-is-dehumanization-technology.html">
-                  AI is Dehumanization Technology
-                </a>
-              </li>
-              <li>
-                <a href="https://defector.com/seven-days-at-the-bin-store">
-                  Seven Days At The Bin Store | Defector
-                </a>
-              </li>
-              <li>
-                <a href="https://www.experimental-history.com/p/face-it-youre-a-crazy-person">
-                  Face it: you&#x27;re a crazy person - by Adam Mastroianni
-                </a>
-              </li>
-              <li>
-                <a href="https://dynomight.net/colors/">
-                  New colors without shooting lasers into your eyes
-                </a>
-              </li>
-              <li>
-                <a href="https://gfsc.community/consensus-decision-making-sucks/">
-                  Consensus decision making sucks
-                </a>
-              </li>
-              <li>
-                <a href="https://maya.land/responses/2025/08/04/four-seeds-in-a-row.html">
-                  four seeds in a row | maya.land
-                </a>
-              </li>
-              <li>
-                <a href="https://www.girlonthenet.com/blog/age-verification-whats-the-harm/">
-                  Age verification: what&#x27;s the harm? | Girl on the Net explains
-                </a>
-              </li>
-              <li>
-                <a href="https://gwern.net/drug-heuristic">
-                  The Algernon Argument · Gwern.net
-                </a>
-              </li>
-              <li>
-                <a href="https://www.joanwestenberg.com/p/remember-kurt-vonnegut-was-47">
-                  Remember: Kurt Vonnegut was 47
-                </a>
-              </li>
-              <li>
-                <a href="https://www.theguardian.com/news/2025/sep/30/tonga-pacific-island-internet-underwater-cables-volcanic-eruption">
-                  Extremely offline: what happened when a Pacific island was cut off from the internet | Tonga | The Guardian
-                </a>
-              </li>
-              <li>
-                <a href="https://mattlakeman.org/2020/07/10/how-much-would-you-need-to-be-paid-to-live-on-a-deserted-island-for-1-5-years-and-do-nothing-but-kill-seals/">
-                  How Much Would You Need to be Paid to Live on a Deserted Island for 1.5 Years and Do Nothing but Kill Seals? – Matt Lakeman
-                </a>
-              </li>
-              <li>
-                <a href="https://dynomight.net/plans/">
-                  Plans you&#x27;re not supposed to talk about
-                </a>
-              </li>
-              <li>
-                <a href="https://drdevonprice.substack.com/p/a-typology-of-insecurities-in-non?triedRedirect=true">
-                  A Typology of Insecurities in Non-monogamy - Devon Price
-                </a>
-              </li>
-              <li>
-                <a href="https://nowthenmagazine.com/articles/who-remembers-attention-spans-doom-scrolling-social-media">
-                  Who Remembers Attention Spans? | Now Then Sheffield
-                </a>
-              </li>
-              <li>
-                <a href="https://ludic.mataroa.blog/blog/i-am-out-of-data-hell/">
-                  I Am Out Of Data Hell — Ludicity
-                </a>
-              </li>
-              <li>
-                <a href="https://www.experimental-history.com/p/the-decline-of-deviance">
-                  The Decline of Deviance - by Adam Mastroianni
-                </a>
-              </li>
-              <li>
-                <a href="https://ccli.substack.com/p/the-biggest-mystery-in-neuroscience?utm_source=post-banner&amp;utm_medium=web&amp;utm_campaign=posts-open-in-app&amp;triedRedirect=true">
-                  The biggest mystery in neuroscience, according to me. Worm brain simulation
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="Articles (programming)">Articles (programming)</h2>
-          <ul>
-              <li>
-                <a href="https://two-wrongs.com/myth-of-the-day-functional-programmers-dont-use-loops">
-                  Myth of the Day: Functional Programmers Don’t Use Loops
-                </a>
-              </li>
-              <li>
-                <a href="https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536">
-                  So You Want to be a Functional Programmer (Part 1) | by Charles Scalfani | Medium
-                </a>
-              </li>
-              <li>
-                <a href="https://medium.com/@cscalfani/why-programmers-need-limits-3d96e1a0a6db">
-                  Why Programmers Need Limits. Limits make for better Art, Design and… | by Charles Scalfani | Medium
-                </a>
-              </li>
-              <li>
-                <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">
-                  Paul Ford: What Is Code? | Bloomberg
-                </a>
-              </li>
-              <li>
-                <a href="https://ironeko.com/posts/f-ck-it-use-react-for-your-personal-site-if-you-want-to">
-                  F*ck it: use React for your personal site if you want to - Ironeko
-                </a>
-              </li>
-              <li>
-                <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#grabbag">
-                  Paul Ford: What Is Code? | Bloomberg
-                </a>
-              </li>
-              <li>
-                <a href="https://jvns.ca/blog/2022/01/24/hosting-my-static-sites-with-nginx/">
-                  Hosting my static sites with nginx
-                </a>
-              </li>
-              <li>
-                <a href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/">
-                  Tailwind CSS origins
-                </a>
-              </li>
-              <li>
-                <a href="https://tomhazledine.com/eleventy-static-site-generator/">
-                  Static site generators: Hugo vs Jekyll vs Gatsby vs 11ty
-                </a>
-              </li>
-              <li>
-                <a href="https://iamjoona.com/blog/seo-tags-in-eleventy/">
-                  Implementing SEO and Open Graph tags in Eleventy (11ty)
-                </a>
-              </li>
-              <li>
-                <a href="https://v21.io/blog/how-to-find-things-online">
-                  A talk: How To Find Things Online | v21
-                </a>
-              </li>
-              <li>
-                <a href="https://www.ietf.org/rfc/rfc3514.txt">
-                  https://www.ietf.org/rfc/rfc3514.txt
-                </a>
-              </li>
-              <li>
-                <a href="https://andrewjakubowicz.me/posts/making-of-a-blog-post/">
-                  Interactive blog posts with no build step using Markdown and Lit | Andrew Jakubowicz
-                </a>
-              </li>
-              <li>
-                <a href="https://dukope.com/devlogs/papers-please/lcdplease/">
-                  Making &quot;LCD, Please&quot; | Development Logs by Lucas Pope
-                </a>
-              </li>
-              <li>
-                <a href="https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html">
-                  Command-line Tools can be 235x Faster than your Hadoop Cluster - Adam Drake
-                </a>
-              </li>
-              <li>
-                <a href="https://drewdevault.com/2020/03/18/Reckless-limitless-scope">
-                  The reckless, infinite scope of web browsers
-                </a>
-              </li>
-              <li>
-                <a href="https://ajenkins.me/post/analytics/">
-                  Why I don&#x27;t have analytics on my website
-                </a>
-              </li>
-              <li>
-                <a href="https://dynomight.substack.com/p/midwit-home">
-                  The midwit home - DYNOMIGHT INTERNET NEWSLETTER
-                </a>
-              </li>
-              <li>
-                <a href="https://rosswintle.uk/2021/12/hang-on-php-is-a-static-site-generator/">
-                  Hang on, PHP IS a static site generator! - Ross Wintle
-                </a>
-              </li>
-              <li>
-                <a href="https://rosswintle.uk/2022/08/why-i-love-and-how-i-make-simple-static-minimal-tech-websites/">
-                  Why I love (and how I make) simple, static, minimal-tech websites - Ross Wintle
-                </a>
-              </li>
-              <li>
-                <a href="https://eta.st/2023/01/31/rail-tickets.html">
-                  Reversing UK mobile rail tickets
-                </a>
-              </li>
-              <li>
-                <a href="https://bvisness.me/luax/">
-                  I made JSX for Lua (because I hate static sites) | Ben Visness
-                </a>
-              </li>
-              <li>
-                <a href="https://akkartik.name/freewheeling/">
-                  Using computers more freely and safely
-                </a>
-              </li>
-              <li>
-                <a href="https://abagames.github.io/joys-of-small-game-development-en/fun_to_make_small_games.html">
-                  Making small games, which is fun in itself · Joys of Small Game Development
-                </a>
-              </li>
-              <li>
-                <a href="https://stuffedwomb.at/the_small_game">
-                  Stuffed Wombat - The Small Game
-                </a>
-              </li>
-              <li>
-                <a href="http://www.stilldrinking.org/programming-sucks">
-                  Programming Sucks
-                </a>
-              </li>
-              <li>
-                <a href="https://alexwlchan.net/2024/big-pdf/">
-                  Making a PDF that’s larger than Germany – alexwlchan
-                </a>
-              </li>
-              <li>
-                <a href="https://lmnt.me/blog/make-a-damn-website.html">
-                  Make a Damn Website
-                </a>
-              </li>
-              <li>
-                <a href="https://daverupert.com/2024/02/robo-barf/">
-                  A dozen thoughts about AI | daverupert.com
-                </a>
-              </li>
-              <li>
-                <a href="https://joshcollinsworth.com/blog/copilot">
-                  I worry our Copilot is leaving some passengers behind - Josh Collinsworth blog
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nan.fyi/svg-paths">
-                  A Deep Dive Into SVG Path Commands
-                </a>
-              </li>
-              <li>
-                <a href="https://jamesg.blog/2024/02/19/personal-website-ideas/">
-                  100 things you can do on your personal website | James&#x27; Coffee Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://heydonworks.com/article/what-is-a-single-page-application/">
-                  What Is A Single-page Application?: HeydonWorks
-                </a>
-              </li>
-              <li>
-                <a href="https://css-tricks.com/use-target_blank/">
-                  When to use target=&quot;_blank&quot; | CSS-Tricks - CSS-Tricks
-                </a>
-              </li>
-              <li>
-                <a href="https://www.softwaremaxims.com/blog/not-a-supplier">
-                  I am not a supplier | Musings about software
-                </a>
-              </li>
-              <li>
-                <a href="https://single-file.netlify.app/">
-                  The Single File Philosophy
-                </a>
-              </li>
-              <li>
-                <a href="https://artemis.sh/2024/06/19/do-you-really-want-to-write.html">
-                  So, do you actually want to write?
-                </a>
-              </li>
-              <li>
-                <a href="https://jimmyhmiller.github.io/raised">
-                  Being Raised by the Internet
-                </a>
-              </li>
-              <li>
-                <a href="https://www.robinsloan.com/notes/home-cooked-app/">
-                  An app can be a home-cooked meal
-                </a>
-              </li>
-              <li>
-                <a href="https://pluralistic.net/2024/10/16/keep-it-really-simple-stupid/">
-                  Pluralistic: You should be using an RSS reader (16 Oct 2024) – Pluralistic: Daily links from Cory Doctorow
-                </a>
-              </li>
-              <li>
-                <a href="https://localghost.dev/blog/building-a-website-like-it-s-1999-in-2022/">
-                  Building a website like it&#x27;s 1999... in 2022 - localghost
-                </a>
-              </li>
-              <li>
-                <a href="https://pleroma.social/blog/2021/01/13/the-big-pleroma-and-fediverse-faq/">
-                  The Big Pleroma and Fediverse FAQ Part 1 - Beginner Questions
-                </a>
-              </li>
-              <li>
-                <a href="https://www.wrecka.ge/against-the-dark-forest/">
-                  against the dark forest
-                </a>
-              </li>
-              <li>
-                <a href="https://cfenollosa.com/blog/after-self-hosting-my-email-for-twenty-three-years-i-have-thrown-in-the-towel-the-oligopoly-has-won.html">
-                  Carlos Fenollosa - Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://media.ccc.de/v/37c3-12142-breaking_drm_in_polish_trains#t=113">
-                  Breaking &quot;DRM&quot; in Polish trains - media.ccc.de
-                </a>
-              </li>
-              <li>
-                <a href="https://www.smashingmagazine.com/2024/12/introduction-css-scroll-driven-animations/">
-                  An Introduction To CSS Scroll-Driven Animations: Scroll And View Progress Timelines — Smashing Magazine
-                </a>
-              </li>
-              <li>
-                <a href="https://rtpg.co/2025/01/10/designing-for-forward-progress/#">
-                  Designing Code For Forward Progress
-                </a>
-              </li>
-              <li>
-                <a href="https://lmnt.me/blog/how-to-make-a-damn-website.html">
-                  How to Make a Damn Website
-                </a>
-              </li>
-              <li>
-                <a href="https://www.htmlforpeople.com/">
-                  HTML for People
-                </a>
-              </li>
-              <li>
-                <a href="https://slashpages.net/">
-                  slash pages
-                </a>
-              </li>
-              <li>
-                <a href="https://audmcname.com/comics/rss-is-not-dead-yet/">
-                  RSS is (not) dead (yet) (NED #3) – audra mcnamee
-                </a>
-              </li>
-              <li>
-                <a href="https://justforfunnoreally.dev/">
-                  Just for Fun. No, Really.
-                </a>
-              </li>
-              <li>
-                <a href="https://thebullshitmachines.com/">
-                  INTRODUCTION
-                </a>
-              </li>
-              <li>
-                <a href="https://localghost.dev/blog/this-page-is-under-construction/">
-                  This page is under construction - localghost
-                </a>
-              </li>
-              <li>
-                <a href="https://danmcquillan.org/labours_ai_action_plan.html">
-                  Labour&#x27;s AI Action Plan - a gift to the far right
-                </a>
-              </li>
-              <li>
-                <a href="https://v.cx/2025/04/mastodon-exit-interview">
-                  Mastodon Exit Interview | Rob’s Posts
-                </a>
-              </li>
-              <li>
-                <a href="https://www.lesswrong.com/posts/D7PumeYTDPfBTp3i7/the-waluigi-effect-mega-post">
-                  The Waluigi Effect (mega-post) — LessWrong
-                </a>
-              </li>
-              <li>
-                <a href="https://www.openrightsgroup.org/blog/data-bill-first-they-came-for-trans-people/">
-                  Data Bill: First They Came for Trans People | Open Rights Group
-                </a>
-              </li>
-              <li>
-                <a href="https://runyourown.social/">
-                  How to run a small social network site for your friends
-                </a>
-              </li>
-              <li>
-                <a href="https://www.thedissident.news/international-civil-societys-tech-stack-is-in-extreme-danger/">
-                  International Civil Society&#x27;s Tech Stack is in Extreme Danger
-                </a>
-              </li>
-              <li>
-                <a href="https://www.cbc.ca/podcasting/includes/nakedemperor.xml">
-                  https://www.cbc.ca/podcasting/includes/nakedemperor.xml
-                </a>
-              </li>
-              <li>
-                <a href="https://www.danmcquillan.org/ai_disabilty_q_and_a.html">
-                  Q&amp;A: AI and Disability
-                </a>
-              </li>
-              <li>
-                <a href="https://danmcquillan.org/cpct_seminar.html">
-                  The role of the University is to resist AI
-                </a>
-              </li>
-              <li>
-                <a href="https://eev.ee/blog/2025/07/03/the-rise-of-whatever/">
-                  The rise of Whatever / fuzzy notepad
-                </a>
-              </li>
-              <li>
-                <a href="https://www.theguardian.com/society/article/2024/jul/08/nhs-cancer-care-basics-over-tech-ai-magic-bullets">
-                  NHS urged to prioritise cancer care basics over tech and AI ‘magic bullets’ | Cancer | The Guardian
-                </a>
-              </li>
-              <li>
-                <a href="https://cpf.sh/blog/2025/07/06/we-are-all-creatives-genai-threatens-us-all">
-                  We are all creatives. GenAI threatens us all
-                </a>
-              </li>
-              <li>
-                <a href="https://nearlylegal.co.uk/2025/07/artificial-stupidity-and-real-hazards/">
-                  Artificial Stupidity and real hazards - Nearly Legal: Housing Law News and Comment
-                </a>
-              </li>
-              <li>
-                <a href="https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html">
-                  I Am An AI Hater | moser’s frame shop
-                </a>
-              </li>
-              <li>
-                <a href="https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/">
-                  How To Argue With An AI Booster
-                </a>
-              </li>
-              <li>
-                <a href="https://www.theverge.com/cs/features/717322/wikipedia-attacks-neutrality-history-jimmy-wales">
-                  How Wikipedia survives while the rest of the internet breaks | The Verge
-                </a>
-              </li>
-              <li>
-                <a href="https://www.laquadrature.net/en/2025/09/04/in-france-the-eternal-return-of-facial-recognition/">
-                  In France, the eternal return of facial recognition – La Quadrature du Net
-                </a>
-              </li>
-              <li>
-                <a href="https://www.theguardian.com/technology/2025/sep/13/uk-workers-wary-of-ai-despite-starmers-push-to-increase-uptake-survey-finds">
-                  UK workers wary of AI despite Starmer’s push to increase uptake, survey finds | Artificial intelligence (AI) | The Guardian
-                </a>
-              </li>
-              <li>
-                <a href="https://www.computerworld.com/article/4059383/openai-admits-ai-hallucinations-are-mathematically-inevitable-not-just-engineering-flaws.html">
-                  OpenAI admits AI hallucinations are mathematically inevitable, not just engineering flaws – Computerworld
-                </a>
-              </li>
-              <li>
-                <a href="https://theoatmeal.com/comics/ai_art">
-                  A cartoonist&#x27;s review of AI art - The Oatmeal
-                </a>
-              </li>
-              <li>
-                <a href="https://taylor.town/ai-minus-vagina">
-                  AI Minus Vagina
-                </a>
-              </li>
-              <li>
-                <a href="https://www.worksinprogress.news/p/why-ai-isnt-replacing-radiologists">
-                  AI isn&#x27;t replacing radiologists
-                </a>
-              </li>
-              <li>
-                <a href="https://ploum.net/2025-11-26-snake-oil-writing.html">
-                  Don’t Do Snake Oil Writing
-                </a>
-              </li>
-              <li>
-                <a href="https://www.danmcquillan.org/resisting_genai_highered_cjuu.html">
-                  Resisting GenAI &amp; Big Tech in Higher Education
-                </a>
-              </li>
-              <li>
-                <a href="https://ludic.mataroa.blog/blog/the-complex-problem-of-lying-for-jobs/">
-                  The Complex Problem Of Lying For Jobs — Ludicity
-                </a>
-              </li>
-              <li>
-                <a href="https://yorkshirebylines.co.uk/news/home-affairs/governments-last-chance-to-keep-control-of-digital/">
-                  Government’s last chance to keep control of digital
-                </a>
-              </li>
-              <li>
-                <a href="https://pluralistic.net/2025/12/05/pop-that-bubble/">
-                  Pluralistic: The Reverse-Centaur’s Guide to Criticizing AI (05 Dec 2025) – Pluralistic: Daily links from Cory Doctorow
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="video playlists/channels">video playlists/channels</h2>
-          <ul>
-              <li>
-                <a href="https://www.youtube.com/playlist?list=PLtaR0lZhSyAPLuoSbMA29s3Ry8ZUvKff3">
-                  The Secret Life of Machines Remastered - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@PopCultureDetective/videos">
-                  Pop Culture Detective - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@Exurb1a/videos">
-                  exurb1a - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@CaptainDisillusion/videos">
-                  Captain Disillusion - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@SteveMould">
-                  Steve Mould - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@NotJustBikes">
-                  Not Just Bikes - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@DrGeoffLindsey/videos">
-                  Dr Geoff Lindsey - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@Andrewism/videos">
-                  Andrewism - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@janusawi8794/videos">
-                  jan Usawi - YouTube
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@tom7/videos">
-                  suckerpinch - YouTube
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="wordles">wordles</h2>
-          <ul>
-              <li>
-                <a href="https://www.powerlanguage.co.uk/wordle/">
-                  Wordle - A daily word game
-                </a>
-              </li>
-              <li>
-                <a href="https://qntm.org/files/absurdle/absurdle.html">
-                  Absurdle @ Things Of Interest
-                </a>
-              </li>
-              <li>
-                <a href="https://zaratustra.itch.io/dordle">
-                  dordle by zaratustra
-                </a>
-              </li>
-              <li>
-                <a href="https://www.lewdlegame.com/">
-                  Lewdle - A lewd daily word game
-                </a>
-              </li>
-              <li>
-                <a href="https://converged.yt/primel/">
-                  Primel
-                </a>
-              </li>
-              <li>
-                <a href="https://sweardle.com/">
-                  Sweardle - the 4 letter word guessing game
-                </a>
-              </li>
-              <li>
-                <a href="https://queerdle.com/">
-                  QUEERDLE
-                </a>
-              </li>
-              <li>
-                <a href="https://www.taylordle.com/">
-                  Taylordle
-                </a>
-              </li>
-              <li>
-                <a href="https://bts-wordle.vercel.app/">
-                  BTS Wordle
-                </a>
-              </li>
-              <li>
-                <a href="https://www.wordleunlimited.com/">
-                  Wordle Unlimited - Play Wordle with Unlimited Words
-                </a>
-              </li>
-              <li>
-                <a href="https://wtfseo.com/searchdle/">
-                  Searchdle: An SEO version of Wordle
-                </a>
-              </li>
-              <li>
-                <a href="https://www.jewdle.app/">
-                  Jewdle – a daily Jewish word game
-                </a>
-              </li>
-              <li>
-                <a href="https://www.starwordle.com/">
-                  Star Wordle
-                </a>
-              </li>
-              <li>
-                <a href="https://worldle.teuteuf.fr/">
-                  Worldle
-                </a>
-              </li>
-              <li>
-                <a href="https://edjefferson.com/letterle/">
-                  Letterle
-                </a>
-              </li>
-              <li>
-                <a href="https://nerdlegame.com/">
-                  Nerdle - the daily numbers game
-                </a>
-              </li>
-              <li>
-                <a href="https://globle-game.com/">
-                  Globle
-                </a>
-              </li>
-              <li>
-                <a href="https://jackli.gg/chessle/">
-                  Chessle
-                </a>
-              </li>
-              <li>
-                <a href="https://ucdavis-life.github.io/">
-                  UC Dwordle
-                </a>
-              </li>
-              <li>
-                <a href="https://www.quordle.com/#/">
-                  Quordle
-                </a>
-              </li>
-              <li>
-                <a href="https://octordle.com/?mode=daily">
-                  Octordle
-                </a>
-              </li>
-              <li>
-                <a href="http://www.sedecordle.com/?mode=daily">
-                  sedecordle
-                </a>
-              </li>
-              <li>
-                <a href="https://semantle.novalis.org/">
-                  Semantle
-                </a>
-              </li>
-              <li>
-                <a href="http://durdle.me/">
-                  Durdle
-                </a>
-              </li>
-              <li>
-                <a href="https://squirdle.fireblend.com/">
-                  squirdle
-                </a>
-              </li>
-              <li>
-                <a href="http://www.heardlepedia.com/">
-                  Heardle - Like Wordle, but for Music
-                </a>
-              </li>
-              <li>
-                <a href="https://www.scholardle.com/">
-                  Scholardle
-                </a>
-              </li>
-              <li>
-                <a href="https://lazyguyy.github.io/survivle/">
-                  Survivle
-                </a>
-              </li>
-              <li>
-                <a href="https://code-a-software.net/brandle/">
-                  Brandle
-                </a>
-              </li>
-              <li>
-                <a href="https://squabble.me/">
-                  Squabble
-                </a>
-              </li>
-              <li>
-                <a href="https://qwordle.bhat.ca/">
-                  Qwordle
-                </a>
-              </li>
-              <li>
-                <a href="https://fubargames.se/squardle/">
-                  Squardle - Wordle squared?
-                </a>
-              </li>
-              <li>
-                <a href="https://adverswordle.doteye.online/">
-                  Adverswordle
-                </a>
-              </li>
-              <li>
-                <a href="https://emotle.com/">
-                  Emotle | Emotle
-                </a>
-              </li>
-              <li>
-                <a href="https://framed.wtf/">
-                  Framed - The daily movie guessing game
-                </a>
-              </li>
-              <li>
-                <a href="https://appraisir.com/Daily/">
-                  Daily Home | Appraisir
-                </a>
-              </li>
-              <li>
-                <a href="https://wheredle.xyz/">
-                  Wheredle 🌎
-                </a>
-              </li>
-              <li>
-                <a href="https://duotrigordle.com/">
-                  Duotrigordle
-                </a>
-              </li>
-              <li>
-                <a href="https://www.redactle.com/">
-                  Redactle - A daily puzzle game
-                </a>
-              </li>
-              <li>
-                <a href="https://eurosong.app/">
-                  ESChallenge (Eurovision Heardle)
-                </a>
-              </li>
-              <li>
-                <a href="https://murdle.com/">
-                  MURDLE! Solve a mystery every day!
-                </a>
-              </li>
-              <li>
-                <a href="https://pteredactle.com/#Q159190">
-                  Pteredactle - Puzzle Game
-                </a>
-              </li>
-              <li>
-                <a href="https://ducc.pythonanywhere.com/flaggle/">
-                  Flaggle 🏁
-                </a>
-              </li>
-              <li>
-                <a href="http://lirdle.com/">
-                  Lirdle: One Lie Per Line
-                </a>
-              </li>
-              <li>
-                <a href="https://wafflegame.net/">
-                  Waffle - daily word game
-                </a>
-              </li>
-              <li>
-                <a href="https://hexordle.com/">
-                  Hexordle
-                </a>
-              </li>
-              <li>
-                <a href="https://oec.world/en/tradle/">
-                  OEC Tradle
-                </a>
-              </li>
-              <li>
-                <a href="https://word.geoscienceworld.org/">
-                  GeoScienceWord
-                </a>
-              </li>
-              <li>
-                <a href="https://jumblie.com/">
-                  Jumblie | A word search game
-                </a>
-              </li>
-              <li>
-                <a href="https://smegle.ganymede.tv/">
-                  Smegle | A Red Dwarf screenshot guessing game
-                </a>
-              </li>
-              <li>
-                <a href="https://wordlepress.com/">
-                  WordlePress - a Wordle-style guessing game for WordPress developers
-                </a>
-              </li>
-              <li>
-                <a href="https://wafflegame.net/daily">
-                  Waffle
-                </a>
-              </li>
-              <li>
-                <a href="https://www.merriam-webster.com/games/quordle/#/">
-                  Quordle
-                </a>
-              </li>
-              <li>
-                <a href="https://www.britannica.com/games/octordle/daily">
-                  Octordle
-                </a>
-              </li>
-              <li>
-                <a href="https://guessthe.game/">
-                  Guess The Game
-                </a>
-              </li>
-              <li>
-                <a href="https://guessthebook.app/">
-                  Guess The Book - Your daily book guessing puzzle!
-                </a>
-              </li>
-              <li>
-                <a href="https://bandle.app/">
-                  Bandle - Guess the song played by the band
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="mobile games">mobile games</h2>
-          <ul>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.inkle.eightydays">
-                  80 Days – Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.com.tann.dice">
-                  Slice &amp; Dice – Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.sleepingbeastgames.spaceteam">
-                  Spaceteam – Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=air.com.midjiwan.polytopia">
-                  The Battle of Polytopia – Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=io.anuke.mindustry">
-                  Mindustry – Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/search?q=into+the+breach&amp;c=apps">
-                  into the breach – Android Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/search?q=chwazi&amp;c=apps">
-                  chwazi – Android Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.devolver.reigns">
-                  Reigns – Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.miclos.google.games.outthere">
-                  Out There: Ω Edition – Apps on Google Play
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.brucelet.spacetrader">
-                  Space Trader – Apps on Google Play
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div id="bookmarks">
-          <h2 id="multiplayer browser games">multiplayer browser games</h2>
-          <ul>
-              <li>
-                <a href="https://hanab.cards/">
-                  Hanabi
-                </a>
-              </li>
-              <li>
-                <a href="https://redactle.net/">
-                  Redactle | Wikipedia based Puzzle Game
-                </a>
-              </li>
-              <li>
-                <a href="https://semantle.com/">
-                  Semantle
-                </a>
-              </li>
-              <li>
-                <a href="https://www.cinenerdle2.app/battle">
-                  Cine2Nerdle
-                </a>
-              </li>
-              <li>
-                <a href="https://jklm.fun/">
-                  JKLM.FUN Party games for PC &amp; Smartphone. BombParty, Master of the Grid, PopSauce &amp; co.
-                </a>
-              </li>
-              <li>
-                <a href="https://buddyboardgames.com/yahtzee">
-                  Yahtzee online with friends
-                </a>
-              </li>
-          </ul>
-        </div>
-      <hr />
-      <span style="display: flex; justify-content: center">
-        Updated (when I remember it) via&nbsp;
-        <a href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">
-          <code>scripting</code>
-        </a>
-      </span>
-      <span style="display: flex; justify-content: center">
-        Last updated:&nbsp;
-        <time datetime="2025-12-15T12:18:13.706680Z" "timeSince(Date.parse(2025-12-15T12:18:13.706680Z)) + ' ago'">
-          <span id="relative-time"></span><span id="absolute-time">(2025-12-15T12:18:13.706680Z)</span>
-        </time>
-      </span>
-    </main>
+    </div>
+    <div id="bookmarks">
+      <h2 id="other bookmarks lists">other bookmarks lists</h2>
+      <ul>
+        <li>
+          <a href="https://www.marginalia.nu/links/bookmarks/">
+            Bookmarks @ marginalia.nu
+          </a>
+        </li>
+        <li>
+          <a href="https://rknight.me/links/">
+            Links • Robb Knight
+          </a>
+        </li>
+        <li>
+          <a href="https://nonnullish.pages.dev/links/">
+            links
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="webrings">webrings</h2>
+      <ul>
+        <li>
+          <a href="https://webring.alifeee.co.uk/">
+            alifeee&#x27;s webring!
+          </a>
+        </li>
+        <li>
+          <a href="https://sike.pona.la/">
+            sike pona
+          </a>
+        </li>
+        <li>
+          <a href="https://garlic.garden/onionring/">
+            🌿 garlic 🧄 garden 🌿
+          </a>
+        </li>
+        <li>
+          <a href="http://www.naturalworlds.org/beetlering/beetle_sites.htm">
+            The Beetle Ring - List of Member Sites
+          </a>
+        </li>
+        <li>
+          <a href="https://neossg.neocities.org/">
+            NeoSSG: A webring for Neocities sites made with static site generators
+          </a>
+        </li>
+        <li>
+          <a href="https://weirdwidewebring.net/">
+            Weird Wide Webring
+          </a>
+        </li>
+        <li>
+          <a href="https://nuthead.neocities.org/ring/">
+            null webring
+          </a>
+        </li>
+        <li>
+          <a href="https://the-blob-system.neocities.org/mante_webring/webring">
+            kulupu ko&#x27;s Web site
+          </a>
+        </li>
+        <li>
+          <a href="https://furryring.neocities.org/">
+            furryring: the furry webring
+          </a>
+        </li>
+        <li>
+          <a href="https://hotlinewebring.club/">
+            Hotline Webring
+          </a>
+        </li>
+        <li>
+          <a href="https://webring.bucketfish.me/">
+            bucket webring!
+          </a>
+        </li>
+        <li>
+          <a href="https://webring.xxiivv.com/#arcade">
+            Webring
+          </a>
+        </li>
+        <li>
+          <a href="https://webring.xxiivv.com/#random">
+            Webring
+          </a>
+        </li>
+        <li>
+          <a href="https://webring.stavros.io/">
+            Tech makers
+          </a>
+        </li>
+        <li>
+          <a href="https://xn--sr8hvo.ws/directory">
+            Directory | An IndieWeb Webring
+          </a>
+        </li>
+        <li>
+          <a href="https://brisray.com/utils/webrings.htm">
+            Webrings
+          </a>
+        </li>
+        <li>
+          <a href="https://webring.xxiivv.com/">
+            Webring
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="personal websites (with blog)">personal websites (with blog)</h2>
+      <ul>
+        <li>
+          <a href="https://ryanmulligan.dev/">
+            Ryan Mulligan
+          </a>
+        </li>
+        <li>
+          <a href="https://tomhazledine.com/">
+            Tom Hazledine
+          </a>
+        </li>
+        <li>
+          <a href="https://chuniversiteit.nl/">
+            Chun Fei Lung’s personal website | Chuniversiteit
+          </a>
+        </li>
+        <li>
+          <a href="http://datacolada.org/">
+            Data Colada - Thinking about evidence and vice versa
+          </a>
+        </li>
+        <li>
+          <a href="https://robinprice.net/">
+            Robin Price
+          </a>
+        </li>
+        <li>
+          <a href="https://blinry.org/">
+            blinry&#x27;s homepage
+          </a>
+        </li>
+        <li>
+          <a href="https://jakearchibald.com/">
+            Blog - JakeArchibald.com
+          </a>
+        </li>
+        <li>
+          <a href="https://mindofahitchhiker.com/">
+            Mind of a Hitchhiker
+          </a>
+        </li>
+        <li>
+          <a href="https://www.robmiles.com/">
+            robmiles.com
+          </a>
+        </li>
+        <li>
+          <a href="https://adamdrake.com/">
+            Adam Drake
+          </a>
+        </li>
+        <li>
+          <a href="https://tholman.com/">
+            Tims Curious Creations
+          </a>
+        </li>
+        <li>
+          <a href="https://lathonez.com/">
+            Lathonez&#x27; Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://nasauber.de/">
+            Open Source und Weblog von Tobias Leupold | nasauber.de
+          </a>
+        </li>
+        <li>
+          <a href="http://jhcloos.com/">
+            James Cloos
+          </a>
+        </li>
+        <li>
+          <a href="https://unop.uk/">
+            unop
+          </a>
+        </li>
+        <li>
+          <a href="https://russ.garrett.co.uk/">
+            Russ Garrett
+          </a>
+        </li>
+        <li>
+          <a href="https://nutcroft.com/">
+            nutcroft
+          </a>
+        </li>
+        <li>
+          <a href="https://laymonage.com/">
+            laymonage
+          </a>
+        </li>
+        <li>
+          <a href="https://roycoding.com/">
+            Roy Keyes
+          </a>
+        </li>
+        <li>
+          <a href="https://peter-noble.github.io/">
+            Peter Noble | Personal portfolio. Code, film, theatre etc…
+          </a>
+        </li>
+        <li>
+          <a href="https://webjeda.com/">
+            Webjeda
+          </a>
+        </li>
+        <li>
+          <a href="https://geoffboeing.com/">
+            Geoff Boeing – Urban planning and spatial analysis professor at USC
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jvt.me/">
+            Jamie Tanna | Software Engineer
+          </a>
+        </li>
+        <li>
+          <a href="https://drewdevault.com/">
+            Drew DeVault&#x27;s blog
+          </a>
+        </li>
+        <li>
+          <a href="https://www.asialakay.net/">
+            Asia Lakay
+          </a>
+        </li>
+        <li>
+          <a href="https://pierre.palatin.fr/">
+            Pierre Palatin&#x27;s corner - Random posts about some stuff I&#x27;ve been doing.
+          </a>
+        </li>
+        <li>
+          <a href="https://plocki.org/archive.html">
+            plocki.org - Linux und so...
+          </a>
+        </li>
+        <li>
+          <a href="https://tanishqkancharla.dev/">
+            Tanishq K.: TK&#x27;s website
+          </a>
+        </li>
+        <li>
+          <a href="https://hillelwayne.com/">
+            Hillel Wayne
+          </a>
+        </li>
+        <li>
+          <a href="https://outofambit.format.com/">
+            evelyn masso - evelyn masso
+          </a>
+        </li>
+        <li>
+          <a href="https://vitalik.ca/">
+            Vitalik Buterin&#x27;s website
+          </a>
+        </li>
+        <li>
+          <a href="https://www.davidkemp.uk.com/">
+            David Kemp
+          </a>
+        </li>
+        <li>
+          <a href="https://ash7.io/">
+            Hugo ʕ•ᴥ•ʔ Bear Blog | Hugo ʕ•ᴥ•ʔ Bear Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://jwdallas.com/">
+            Jonathan Dallas
+          </a>
+        </li>
+        <li>
+          <a href="https://aaadaaam.com/">
+            Adam Stoddard - generalist designer &amp; creative technologist
+          </a>
+        </li>
+        <li>
+          <a href="https://sitalo.org/">
+            Vlad Sitalo
+          </a>
+        </li>
+        <li>
+          <a href="https://mxb.dev/">
+            Max Böck
+          </a>
+        </li>
+        <li>
+          <a href="https://ajenkins.me/">
+            AJ&#x27;s Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://taylor.town/">
+            taylor.town
+          </a>
+        </li>
+        <li>
+          <a href="https://blogs.hn/">
+            blogs.hn
+          </a>
+        </li>
+        <li>
+          <a href="https://josepheoff.github.io/">
+            JRE’s Project Blog | A place to talk about my projects
+          </a>
+        </li>
+        <li>
+          <a href="https://wiki.xxiivv.com/site/home.html">
+            XXIIVV — home
+          </a>
+        </li>
+        <li>
+          <a href="https://twolfson.com/">
+            Todd Wolfson - Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://gregdan3.dev/">
+            gregsite - Welcome!
+          </a>
+        </li>
+        <li>
+          <a href="http://tom7.org/">
+            Tom Murphy 7&#x27;s Invincible Web Page
+          </a>
+        </li>
+        <li>
+          <a href="https://meyerweb.com/">
+            meyerweb.com
+          </a>
+        </li>
+        <li>
+          <a href="https://rachsmith.com/">
+            Home | Rach Smith&#x27;s digital garden
+          </a>
+        </li>
+        <li>
+          <a href="https://neilgaryallen.dev/">
+            ngadev // Neil Gary Allen - Web Developer
+          </a>
+        </li>
+        <li>
+          <a href="https://www.arp242.net/">
+            arp242.net
+          </a>
+        </li>
+        <li>
+          <a href="https://iliana.fyi/">
+            iliana.fyi
+          </a>
+        </li>
+        <li>
+          <a href="https://chriskirknielsen.com/">
+            Home | chriskirknielsen
+          </a>
+        </li>
+        <li>
+          <a href="https://rosswintle.uk/">
+            Ross Wintle - Freelance technology, code and consultancy - Ross Wintle
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.poggs.com/">
+            Peter Hicks&#x27; Blog – The personal blog of Peter Hicks
+          </a>
+        </li>
+        <li>
+          <a href="https://www.brainonfire.net/">
+            Tim McCormack | Brain on Fire
+          </a>
+        </li>
+        <li>
+          <a href="https://nolanlawson.com/">
+            Read the Tea Leaves | Software and other dark arts, by Nolan Lawson
+          </a>
+        </li>
+        <li>
+          <a href="https://css-irl.info/">
+            CSS { In Real Life }
+          </a>
+        </li>
+        <li>
+          <a href="https://simonhearne.com/">
+            Simon Hearne
+          </a>
+        </li>
+        <li>
+          <a href="https://chrismcleod.dev/">
+            I Build Things — Chris McLeod
+          </a>
+        </li>
+        <li>
+          <a href="https://theunderground.blog/">
+            theunderground.blog
+          </a>
+        </li>
+        <li>
+          <a href="https://dev-cafe.github.io/">
+            DevCafe
+          </a>
+        </li>
+        <li>
+          <a href="https://jgomezdans.github.io/">
+            EO &amp; DA Ramblings
+          </a>
+        </li>
+        <li>
+          <a href="https://www.marginalia.nu/">
+            www.marginalia.nu @ marginalia.nu
+          </a>
+        </li>
+        <li>
+          <a href="https://eta.st/">
+            eta.st
+          </a>
+        </li>
+        <li>
+          <a href="https://lobi.to/">
+            Harley Watson
+          </a>
+        </li>
+        <li>
+          <a href="https://mango.pdf.zone/">
+            the mango zone
+          </a>
+        </li>
+        <li>
+          <a href="https://ekulrf.github.io/lukes-letters/">
+            Luke&#x27;s Letters
+          </a>
+        </li>
+        <li>
+          <a href="https://www.raymondcamden.com/">
+            Raymond Camden
+          </a>
+        </li>
+        <li>
+          <a href="https://jysh.net/">
+            Hi, I&#x27;m Jayesh Bhoot
+          </a>
+        </li>
+        <li>
+          <a href="http://frame-notes.blogspot.com/">
+            Frame Notes
+          </a>
+        </li>
+        <li>
+          <a href="https://alexcabal.com/">
+            Alex Cabal
+          </a>
+        </li>
+        <li>
+          <a href="https://stuffedwomb.at/index">
+            Stuffed Wombat
+          </a>
+        </li>
+        <li>
+          <a href="http://akkartik.name/about">
+            Kartik Agaram
+          </a>
+        </li>
+        <li>
+          <a href="https://zastrow.co/">
+            Philip Zastrow
+          </a>
+        </li>
+        <li>
+          <a href="https://andycarter.dev/">
+            Andy Carter – Sheffield based software engineer
+          </a>
+        </li>
+        <li>
+          <a href="https://caolan.uk/">
+            Caolan McMahon
+          </a>
+        </li>
+        <li>
+          <a href="https://www.anildash.com/">
+            Anil Dash
+          </a>
+        </li>
+        <li>
+          <a href="https://www.algorist.co.uk/">
+            Algorist
+          </a>
+        </li>
+        <li>
+          <a href="https://badcfe.org/">
+            Badcfe.org - too small to not fail
+          </a>
+        </li>
+        <li>
+          <a href="http://kaimac.org/">
+            kaimac.org
+          </a>
+        </li>
+        <li>
+          <a href="https://home.octetfont.com/blog/">
+            https://home.octetfont.com/blog/
+          </a>
+        </li>
+        <li>
+          <a href="https://hughbarnard.org/">
+            Hugh Barnard – Computing for Social Change
+          </a>
+        </li>
+        <li>
+          <a href="https://arne.me/">
+            Arne Bahlo
+          </a>
+        </li>
+        <li>
+          <a href="https://proto.garden/">
+            proto
+          </a>
+        </li>
+        <li>
+          <a href="https://blainsmith.com/">
+            Blain Smith
+          </a>
+        </li>
+        <li>
+          <a href="https://denisdefreyne.com/">
+            Denis Defreyne
+          </a>
+        </li>
+        <li>
+          <a href="https://frills.dev/">
+            Home - Frills
+          </a>
+        </li>
+        <li>
+          <a href="https://paulglagla.com/en/">
+            Les contributions de Paul Glagla | Paul Glagla&#x27;s contributions
+          </a>
+        </li>
+        <li>
+          <a href="https://tilde.green/~kestral/">
+            Kestral @ Tildeverse
+          </a>
+        </li>
+        <li>
+          <a href="https://ntietz.com/">
+            hello! | nicole@web
+          </a>
+        </li>
+        <li>
+          <a href="https://ellie.wtf/">
+            Ellie huxtable
+          </a>
+        </li>
+        <li>
+          <a href="https://novalis.org/">
+            David &quot;Novalis&quot; Turner
+          </a>
+        </li>
+        <li>
+          <a href="https://jimmyhmiller.github.io/">
+            Jimmy miller
+          </a>
+        </li>
+        <li>
+          <a href="https://www.leftfold.tech/">
+            Home - Left Fold
+          </a>
+        </li>
+        <li>
+          <a href="https://renkotsuban.com/">
+            Midnight Reading: Renkon&#x27;s Personal Site
+          </a>
+        </li>
+        <li>
+          <a href="https://birming.com/">
+            Robert Birming
+          </a>
+        </li>
+        <li>
+          <a href="https://ohhelloana.blog/">
+            Oh Hello Ana - Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://meiert.com/en/">
+            Jens Oliver Meiert · Frontend Engineering Leader and Tech Author/Publisher
+          </a>
+        </li>
+        <li>
+          <a href="https://alfy.blog/">
+            Blog . Ahmad Alfy
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.mgdproductions.com/">
+            MGD Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://muffinlabs.com/">
+            muffinlabs.com -- the website of Colin Mitchell
+          </a>
+        </li>
+        <li>
+          <a href="https://palomakop.tv/">
+            Paloma Kop
+          </a>
+        </li>
+        <li>
+          <a href="https://thefrailestthing.com/">
+            L.M. Sacasas | Technology, Culture, and Ethics
+          </a>
+        </li>
+        <li>
+          <a href="https://www.foxocube.xyz/">
+            Foxocube&#x27;s Blog – A blog written by Foxocube…
+          </a>
+        </li>
+        <li>
+          <a href="http://tilde.town/~dozens/">
+            dozens
+          </a>
+        </li>
+        <li>
+          <a href="https://quanttype.net/">
+            quanttype
+          </a>
+        </li>
+        <li>
+          <a href="https://levlaz.org/">
+            Lev Lazinskiy
+          </a>
+        </li>
+        <li>
+          <a href="https://alexwennerberg.com/">
+            alex wennerberg
+          </a>
+        </li>
+        <li>
+          <a href="https://tommi.space/">
+            Dive in tommi.space
+          </a>
+        </li>
+        <li>
+          <a href="https://www.dannyvankooten.com/">
+            Danny van Kooten
+          </a>
+        </li>
+        <li>
+          <a href="http://www.0atman.com/">
+            blog
+          </a>
+        </li>
+        <li>
+          <a href="https://eieio.games/">
+            eieio.games
+          </a>
+        </li>
+        <li>
+          <a href="https://olu.online/">
+            Olu Online
+          </a>
+        </li>
+        <li>
+          <a href="https://rtpg.co/">
+            Raphael
+          </a>
+        </li>
+        <li>
+          <a href="https://www.unterminated.com/">
+            Unterminated
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.plover.com/">
+            The Universe of Discourse
+          </a>
+        </li>
+        <li>
+          <a href="https://robinrendle.com/">
+            Robin Rendle
+          </a>
+        </li>
+        <li>
+          <a href="https://harrywood.co.uk/">
+            Harry Wood homepage
+          </a>
+        </li>
+        <li>
+          <a href="https://danmcquillan.org/">
+            danmcquillan.org
+          </a>
+        </li>
+        <li>
+          <a href="https://reedybear.bearblog.dev/">
+            ReedyBear&#x27;s Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://satyarth.me/">
+            satyarth.me
+          </a>
+        </li>
+        <li>
+          <a href="https://thetfordranger.wordpress.com/">
+            Diary of a Volunteer Sustrans Ranger | Sustrans &#x27;Breckland and Waveney Valley&#x27; Volunteer Group
+          </a>
+        </li>
+        <li>
+          <a href="https://rijn.pl/">
+            Lukasz Baldyga
+          </a>
+        </li>
+        <li>
+          <a href="https://dri.es/">
+            On digital experiences, Open Source, Open Web, Drupal, and our digital future | Dries Buytaert
+          </a>
+        </li>
+        <li>
+          <a href="https://mags.omg.lol/">
+            Mags&#x27; Homepage!
+          </a>
+        </li>
+        <li>
+          <a href="https://nuxill.neocities.org/">
+            Nuxill&#x27;s Corner
+          </a>
+        </li>
+        <li>
+          <a href="https://tinysubversions.com/">
+            Tiny Subversions | Darius Kazemi
+          </a>
+        </li>
+        <li>
+          <a href="https://die-ratte.de/">
+            Miracle Scave
+          </a>
+        </li>
+        <li>
+          <a href="https://daniel.haxx.se/">
+            Daniel Stenberg
+          </a>
+        </li>
+        <li>
+          <a href="https://timsh.org/">
+            tim.sh
+          </a>
+        </li>
+        <li>
+          <a href="https://foreverliketh.is/">
+            Home Page 🪴 ～ foreverliketh.is
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bfoliver.com/">
+            Ben Oliver
+          </a>
+        </li>
+        <li>
+          <a href="https://alex-kelly.blog/">
+            Alex Paul Kelly - AI: The Catalyst of the 4th Industrial transformation
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.howrandom.net/">
+            blog.howrandom.net | Home
+          </a>
+        </li>
+        <li>
+          <a href="https://jpmens.net/">
+            Jan-Piet Mens
+          </a>
+        </li>
+        <li>
+          <a href="https://simplifier.neocities.org/">
+            Simplifier
+          </a>
+        </li>
+        <li>
+          <a href="https://joeyehand.com/">
+            Portfolio - Joey&#x27;s Hoard of Stuff
+          </a>
+        </li>
+        <li>
+          <a href="https://ribo.zone/">
+            ribo.zone
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.khinsen.net/">
+            Konrad Hinsen&#x27;s blog
+          </a>
+        </li>
+        <li>
+          <a href="https://moxie.org/">
+            Moxie Marlinspike &gt;&gt; About
+          </a>
+        </li>
+        <li>
+          <a href="https://jamesg.blog/">
+            James&#x27; Coffee Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://jennyodell.com/">
+            • jenny odell •
+          </a>
+        </li>
+        <li>
+          <a href="https://www.craigabbott.co.uk/">
+            Home - craigabbott.co.uk
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jwz.org/">
+            jwz.org
+          </a>
+        </li>
+        <li>
+          <a href="https://www.windchime.uk/">
+            windchime.uk
+          </a>
+        </li>
+        <li>
+          <a href="https://aras-p.info/">
+            Aras&#x27; website
+          </a>
+        </li>
+        <li>
+          <a href="https://rejectconvenience.com/">
+            Reject Convenience
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nicchan.me/">
+            Nic Chan
+          </a>
+        </li>
+        <li>
+          <a href="https://www.feadin.eu/en/">
+            Feadin.eu
+          </a>
+        </li>
+        <li>
+          <a href="https://spod.cx/">
+            spod.cx
+          </a>
+        </li>
+        <li>
+          <a href="https://aphyr.com/">
+            Aphyr - Posts
+          </a>
+        </li>
+        <li>
+          <a href="https://alexschroeder.ch/view/index">
+            Alex Schroeder’s Diary
+          </a>
+        </li>
+        <li>
+          <a href="https://paulbellamy.com/">
+            paulbellamy.com - Recent Posts
+          </a>
+        </li>
+        <li>
+          <a href="https://crescentro.se/">
+            crescentrose
+          </a>
+        </li>
+        <li>
+          <a href="https://aresluna.org/">
+            Aresluna
+          </a>
+        </li>
+        <li>
+          <a href="https://www.monolune.com/">
+            Monolune
+          </a>
+        </li>
+        <li>
+          <a href="https://lagomor.ph/">
+            Lagomorph | Home
+          </a>
+        </li>
+        <li>
+          <a href="https://leepeuker.dev/">
+            Lee Peuker - Homepage
+          </a>
+        </li>
+        <li>
+          <a href="https://gwern.net/index">
+            Essays · Gwern.net
+          </a>
+        </li>
+        <li>
+          <a href="https://humanfinny.neocities.org/">
+            the human finny
+          </a>
+        </li>
+        <li>
+          <a href="https://aaronsplace.co.uk/">
+            Dr Aaron S. Jackson
+          </a>
+        </li>
+        <li>
+          <a href="https://maurycyz.com/">
+            Maurycy&#x27;s blog
+          </a>
+        </li>
+        <li>
+          <a href="https://jimmyhmiller.com/">
+            Jimmy Miller
+          </a>
+        </li>
+        <li>
+          <a href="https://chsmc.org/">
+            Chase McCoy
+          </a>
+        </li>
+        <li>
+          <a href="https://kevinmarks.com/">
+            Kevin Marks
+          </a>
+        </li>
+        <li>
+          <a href="https://manuel-strehl.de/">
+            Manuel Strehl
+          </a>
+        </li>
+        <li>
+          <a href="https://devonzuegel.com/">
+            devonzuegel.com
+          </a>
+        </li>
+        <li>
+          <a href="https://ethanmarcotte.com/">
+            Welcome to Ethan Marcotte’s website — Ethan Marcotte
+          </a>
+        </li>
+        <li>
+          <a href="https://patrickbrosset.com/">
+            Patrick
+          </a>
+        </li>
+        <li>
+          <a href="https://allejo.io/">
+            Home | allejo.io
+          </a>
+        </li>
+        <li>
+          <a href="https://greg.technology/">
+            GReg TeChnoLogY
+          </a>
+        </li>
+        <li>
+          <a href="https://www.robinwhittleton.com/">
+            robinwhittleton.com - Robin Whittleton
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="personal websites (without blog)">personal websites (without blog)</h2>
+      <ul>
+        <li>
+          <a href="https://alex-adler.github.io/">
+            Alex Adler
+          </a>
+        </li>
+        <li>
+          <a href="http://clofont.free.fr/">
+            Des polices de caracteres a Gogo !!!
+          </a>
+        </li>
+        <li>
+          <a href="https://daniel-flanagan.com/">
+            Daniel Flanagan
+          </a>
+        </li>
+        <li>
+          <a href="https://gortan.org/">
+            Philipp Gortan&#x27;s Homepage
+          </a>
+        </li>
+        <li>
+          <a href="http://markvigeant.directory/">
+            The Mark Vigeant Web Ring
+          </a>
+        </li>
+        <li>
+          <a href="https://tonibuckby.com/">
+            Toni Buckby
+          </a>
+        </li>
+        <li>
+          <a href="https://cobyzaby.neocities.org/">
+            The Web Site of Cobyzaby
+          </a>
+        </li>
+        <li>
+          <a href="https://paulchaplin.com/">
+            Paul Chaplin: Frontend/fullstack web development
+          </a>
+        </li>
+        <li>
+          <a href="https://maria.town/">
+            ✧･maria･✧
+          </a>
+        </li>
+        <li>
+          <a href="https://ayaspace.co.uk/">
+            Aya Stead - Personal Porfolio
+          </a>
+        </li>
+        <li>
+          <a href="https://erich-friedman.github.io/">
+            Erich Friedman
+          </a>
+        </li>
+        <li>
+          <a href="https://arcades.agency/index.html">
+            index: aethopica
+          </a>
+        </li>
+        <li>
+          <a href="https://tarng.com/">
+            Julius Tarng — Independent Software Creative
+          </a>
+        </li>
+        <li>
+          <a href="https://alex.dytry.ch/">
+            Alex Dytrych
+          </a>
+        </li>
+        <li>
+          <a href="https://sweetfish.site/">
+            sweetfish.site
+          </a>
+        </li>
+        <li>
+          <a href="https://jeffdude.github.io/">
+            Jeff Milling&#x27;s Website
+          </a>
+        </li>
+        <li>
+          <a href="https://v21.io/">
+            v21
+          </a>
+        </li>
+        <li>
+          <a href="https://seif.world/">
+            Seif 🌍 World
+          </a>
+        </li>
+        <li>
+          <a href="https://robray.dev/">
+            Richard Oliver Bray – Christian, web developer, game developer, content creator, open source contributor
+          </a>
+        </li>
+        <li>
+          <a href="https://soha.lt/">
+            sohalt.net
+          </a>
+        </li>
+        <li>
+          <a href="https://tiswww.case.edu/php/chet/">
+            Chet Ramey&#x27;s Home Page
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mousereeve.com/">
+            Mouse Reeve
+          </a>
+        </li>
+        <li>
+          <a href="https://dicemaster5.github.io/website/">
+            Sam Auber
+          </a>
+        </li>
+        <li>
+          <a href="http://stuffedwomb.at/">
+            Stuffed Wombat
+          </a>
+        </li>
+        <li>
+          <a href="https://kenru.net/index.html">
+            Ken Rudolph&#x27;s Home Page
+          </a>
+        </li>
+        <li>
+          <a href="https://petrapixel.neocities.org/">
+            petrapixel
+          </a>
+        </li>
+        <li>
+          <a href="https://shingi345.angelfire.com/homepagepersonalsite.htm">
+            Tyler Slamkowski
+          </a>
+        </li>
+        <li>
+          <a href="https://carlwk.typepad.com/">
+            Carl W. Knopf Site: Carl W. Knopf Jr. Website
+          </a>
+        </li>
+        <li>
+          <a href="https://docmeek.com/">
+            Doc Meek
+          </a>
+        </li>
+        <li>
+          <a href="https://n0madz.omg.lol/">
+            n0madz profile
+          </a>
+        </li>
+        <li>
+          <a href="https://brisray.com/">
+            Some miscellany about Bristol, my fathers time in the Royal Navy, Optical Illusions, Postcards, Terre Haute, Indiana and other things I&#x27;m interested in
+          </a>
+        </li>
+        <li>
+          <a href="https://ihor4x4.com/">
+            Icehouseoffroad - Home Page
+          </a>
+        </li>
+        <li>
+          <a href="https://wiki.xxiivv.com/site/devine_lu_linvega.html">
+            XXIIVV — devine lu linvega
+          </a>
+        </li>
+        <li>
+          <a href="https://ayliean.com/">
+            Hi I&#x27;m Ayliean + I love maths
+          </a>
+        </li>
+        <li>
+          <a href="https://nat.bike/">
+            Nat Zimmermann
+          </a>
+        </li>
+        <li>
+          <a href="http://transfur.science/f191/">
+            Pera&#x27;s Homepage!
+          </a>
+        </li>
+        <li>
+          <a href="https://aghdom.eu/">
+            aghdom
+          </a>
+        </li>
+        <li>
+          <a href="http://universalities.com/">
+            Home | Universalities
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nnenov.eu/">
+            Nikola Nenov Motion Graphics
+          </a>
+        </li>
+        <li>
+          <a href="https://evaisa.dev/">
+            Evaisa
+          </a>
+        </li>
+        <li>
+          <a href="https://le.alphamethyl.barr0w.net/~elysia/">
+            elysia&#x27;s Website
+          </a>
+        </li>
+        <li>
+          <a href="https://henry.codes/">
+            Henry From Online
+          </a>
+        </li>
+        <li>
+          <a href="https://jonty.co.uk/">
+            Hello, I am Jonty
+          </a>
+        </li>
+        <li>
+          <a href="https://osm.mathmos.net/">
+            Robert Whittaker&#x27;s OpenStreetMap Stuff
+          </a>
+        </li>
+        <li>
+          <a href="https://robert.mathmos.net/">
+            Robert Whittaker
+          </a>
+        </li>
+        <li>
+          <a href="https://www.matthias-heil.co.uk/new_webpage/index.html">
+            Matthias Heil&#x27;s homepage
+          </a>
+        </li>
+        <li>
+          <a href="https://laserbat.pw/">
+            lzr.pw
+          </a>
+        </li>
+        <li>
+          <a href="https://goblin-heart.net/sadgrl/">
+            sadgrl.online
+          </a>
+        </li>
+        <li>
+          <a href="https://possiblyaxolotl.com/">
+            PossiblyAxolotl
+          </a>
+        </li>
+        <li>
+          <a href="https://typedef.io/">
+            Adam Kuczyński
+          </a>
+        </li>
+        <li>
+          <a href="https://madeleinebonsma.com/">
+            Madeleine Bonsma-Fisher
+          </a>
+        </li>
+        <li>
+          <a href="https://vole.wtf/blah/">
+            who what why when where whelk whippet
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="interesting websites">interesting websites</h2>
+      <ul>
+        <li>
+          <a href="https://openbenches.org/">
+            OpenBenches Welcome!
+          </a>
+        </li>
+        <li>
+          <a href="https://coolspacethings.neocities.org/">
+            Cool Space Things
+          </a>
+        </li>
+        <li>
+          <a href="http://lilypond.org/">
+            LilyPond – Music notation for everyone
+          </a>
+        </li>
+        <li>
+          <a href="http://cat-v.org/">
+            Cat-v.org Random Contrarian Insurgent Organization
+          </a>
+        </li>
+        <li>
+          <a href="https://www.goodreads.com/book/random">
+            Random book
+          </a>
+        </li>
+        <li>
+          <a href="https://diggersanddreamers.org.uk/">
+            Diggers and Dreamers – Intentional Community in Britain
+          </a>
+        </li>
+        <li>
+          <a href="https://stattogories.com/imdb/ratings-movies.html">
+            IMDb Ratings: Movies Higher Lower Game | Stattogories
+          </a>
+        </li>
+        <li>
+          <a href="https://nobody.live/">
+            Nobody.live | Lonely streams and streamers with zero viewers
+          </a>
+        </li>
+        <li>
+          <a href="https://ukfree.tv/channels/live">
+            Watch TV live now on the web | free and easy
+          </a>
+        </li>
+        <li>
+          <a href="https://hanabi.cards/">
+            Hanabi · Play Hanabi online with friends!
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlasobscura.com/">
+            Atlas Obscura - Curious and Wondrous Travel Destinations
+          </a>
+        </li>
+        <li>
+          <a href="https://www.python-graph-gallery.com/">
+            Python Graph Gallery
+          </a>
+        </li>
+        <li>
+          <a href="https://steamcompanion.com/compare">
+            SteamCompanion
+          </a>
+        </li>
+        <li>
+          <a href="https://1j01.github.io/pipes/">
+            3D Pipes Screensaver
+          </a>
+        </li>
+        <li>
+          <a href="https://informationisbeautiful.net/visualizations/based-on-a-true-true-story/">
+            Based on a *True* True Story? — Information is Beautiful
+          </a>
+        </li>
+        <li>
+          <a href="http://phrontistery.info/index.html">
+            The Phrontistery: Obscure Words and Vocabulary Resources
+          </a>
+        </li>
+        <li>
+          <a href="https://agoodmovietowatch.com/">
+            What To Watch On Streaming - A Good Movie To Watch
+          </a>
+        </li>
+        <li>
+          <a href="https://stacygreene.com/projects/lipstick">
+            Lipstick - Stacy Greene
+          </a>
+        </li>
+        <li>
+          <a href="https://chriskirknielsen.com/projects/runestone-futhark/">
+            Runestone Futhark | chriskirknielsen
+          </a>
+        </li>
+        <li>
+          <a href="http://www.infraphil.info/">
+            Infraphil Viseum
+          </a>
+        </li>
+        <li>
+          <a href="https://signalbox.org/">
+            The Signal Box – EVERYTHING ABOUT BRITISH RAILWAY SIGNALLING
+          </a>
+        </li>
+        <li>
+          <a href="https://learnxinyminutes.com/">
+            Learn X in Y Minutes: Scenic Programming Language Tours
+          </a>
+        </li>
+        <li>
+          <a href="https://topaz.github.io/paste/">
+            paste
+          </a>
+        </li>
+        <li>
+          <a href="https://www.htmhell.dev/">
+            Markup from hell - HTMHell
+          </a>
+        </li>
+        <li>
+          <a href="https://search.marginalia.nu/">
+            Marginalia Search
+          </a>
+        </li>
+        <li>
+          <a href="https://eta.st/tickets/">
+            RSP6 decoder
+          </a>
+        </li>
+        <li>
+          <a href="http://changaco.oy.lc/unicode-progress-bars/">
+            Unicode progress bars
+          </a>
+        </li>
+        <li>
+          <a href="https://potato.cheap/">
+            The Cheap Web
+          </a>
+        </li>
+        <li>
+          <a href="https://whencanireusethiscalendar.com/">
+            When Can I Reuse This Calendar?
+          </a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/animating-with-clip-path/">
+            Animating with Clip-Path | CSS-Tricks - CSS-Tricks
+          </a>
+        </li>
+        <li>
+          <a href="https://love2d.org/">
+            LÖVE - Free 2D Game Engine
+          </a>
+        </li>
+        <li>
+          <a href="https://www.websitecarbon.com/">
+            Website Carbon Calculator v3 | What&#x27;s your site&#x27;s carbon footprint?
+          </a>
+        </li>
+        <li>
+          <a href="https://wiby.me/">
+            Wiby - Search Engine for the Classic Web
+          </a>
+        </li>
+        <li>
+          <a href="https://www.horg.com/">
+            the HOLOTYPIC OCCLUPANID RESEARCH GROUP
+          </a>
+        </li>
+        <li>
+          <a href="https://tinytoolk.it/">
+            Tiny Toolkits
+          </a>
+        </li>
+        <li>
+          <a href="https://buttonwall.neocities.org/">
+            Button Wall
+          </a>
+        </li>
+        <li>
+          <a href="https://streamurl.link/">
+            Radio stream URL search engine
+          </a>
+        </li>
+        <li>
+          <a href="https://switching.software/">
+            switching.software | Ethical, easy-to-use and privacy-conscious alternatives to well-known software
+          </a>
+        </li>
+        <li>
+          <a href="https://marigold.town/">
+            Marigold Town: a web hosting provider with a small-town vibe
+          </a>
+        </li>
+        <li>
+          <a href="http://harlanellison.com/home.htm">
+            Harlan Ellison Webderland: Home Page
+          </a>
+        </li>
+        <li>
+          <a href="https://scribe.rip/">
+            Scribe
+          </a>
+        </li>
+        <li>
+          <a href="https://blinkies.cafe/">
+            blinkie maker | generate blinkie gifs with custom text!
+          </a>
+        </li>
+        <li>
+          <a href="https://htmlforpeople.com/">
+            HTML for People
+          </a>
+        </li>
+        <li>
+          <a href="https://urinal.net/">
+            Urinal Dot Net
+          </a>
+        </li>
+        <li>
+          <a href="http://www.organstops.org/">
+            Encyclopedia of Organ Stops
+          </a>
+        </li>
+        <li>
+          <a href="https://www.votesforschools.com/">
+            VotesforSchools - Personal Development, SMSC &amp; PSHE
+          </a>
+        </li>
+        <li>
+          <a href="https://nearlylegal.co.uk/">
+            Housing law reports and analysis - Nearly Legal: Housing Law News and Comment
+          </a>
+        </li>
+        <li>
+          <a href="https://solar.lowtechmagazine.com/">
+            LOW←TECH MAGAZINE
+          </a>
+        </li>
+        <li>
+          <a href="https://reknitrevolution.org/">
+            Reknit Revolution – reworking our wardrobes, stitch by stitch
+          </a>
+        </li>
+        <li>
+          <a href="https://trans-europe-planner.eu/">
+            Trans-Europe-Planner
+          </a>
+        </li>
+        <li>
+          <a href="http://dis.engineering/">
+            Disengineering Society
+          </a>
+        </li>
+        <li>
+          <a href="https://r.3v.fi/discord-timestamps/">
+            3v.fi - Discord Timestamp Generator
+          </a>
+        </li>
+        <li>
+          <a href="https://www.sounds-resource.com/">
+            The Sounds Resource
+          </a>
+        </li>
+        <li>
+          <a href="https://ebookfoundation.github.io/free-programming-books/">
+            List of Free Learning Resources In Many Languages | free-programming-books
+          </a>
+        </li>
+        <li>
+          <a href="https://communityrepairnetwork.org.uk/">
+            Home - Community Repair Network
+          </a>
+        </li>
+        <li>
+          <a href="https://www.chronotrains.com/en?city=London%2CGB">
+            Chronotrains - Europe Train Map
+          </a>
+        </li>
+        <li>
+          <a href="https://pigeonsarentreal.co.uk/">
+            Pigeons Aren&#x27;t Real » The Truth about Government Surveillance Drones
+          </a>
+        </li>
+        <li>
+          <a href="https://markmanson.net/best-books">
+            Best Books Archive - Mark Manson
+          </a>
+        </li>
+        <li>
+          <a href="https://rejectconvenience.com/privacy-visualizer/">
+            Privacy Visualizer
+          </a>
+        </li>
+        <li>
+          <a href="https://yunohost.org/">
+            YunoHost: garden your own piece of the Internet!
+          </a>
+        </li>
+        <li>
+          <a href="https://bruegel.analog.is/">
+            Netherlandish Proverbs – Pieter Bruegel the Elder – An Analog Project
+          </a>
+        </li>
+        <li>
+          <a href="https://1kb.club/">
+            1kB
+          </a>
+        </li>
+        <li>
+          <a href="https://pmpress.org.uk/">
+            PM Press UK – Radical Publishers: Print Ain&#x27;t Dead
+          </a>
+        </li>
+        <li>
+          <a href="https://www.robinsloan.com/lab/key-art/">
+            Two thoughts about key art
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="Articles (random)">Articles (random)</h2>
+      <ul>
+        <li>
+          <a href="https://www.vanityfair.com/news/2008/01/pitcairn200801">
+            Trouble in Paradise | Vanity Fair
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@cscalfani/why-experts-make-bad-teachers-ccaed2df029b">
+            Why Experts Make Bad Teachers. We’d all agree that to teach a subject… | by Charles Scalfani | Medium
+          </a>
+        </li>
+        <li>
+          <a href="https://eusci.org.uk/2020/06/22/an-alien-in-our-sea-a-look-at-the-intelligence-of-an-octopus/">
+            An Alien in Our Sea: A look at the intelligence of an octopus - University of Edinburgh&#x27;s Science Magazine
+          </a>
+        </li>
+        <li>
+          <a href="https://en.m.wikipedia.org/wiki/Highest_falls_survived_without_a_parachute">
+            Highest falls survived without a parachute - Wikipedia
+          </a>
+        </li>
+        <li>
+          <a href="https://www.base-mag.com/explore/last-exit-from-the-secret-sea-caving-exploration-veryovnika">
+            Last Exit From The Secret Sea — BASE Magazine
+          </a>
+        </li>
+        <li>
+          <a href="https://en.m.wikipedia.org/wiki/Kursk_submarine_disaster">
+            Kursk submarine disaster - Wikipedia
+          </a>
+        </li>
+        <li>
+          <a href="https://momentummag.com/upright-bikes-sit-up-and-enjoy-the-ride/">
+            Upright Bikes - Sit Up and Enjoy the Ride | Momentum Mag
+          </a>
+        </li>
+        <li>
+          <a href="https://www.vice.com/en/article/8q8qwk/the-concorde-and-the-longest-solar-eclipse">
+            When Astronomers Chased a Total Eclipse in a Concorde
+          </a>
+        </li>
+        <li>
+          <a href="https://knowhere.co.uk/">
+            The Knowhere Guide
+          </a>
+        </li>
+        <li>
+          <a href="https://ladylatitudes.ca/2021/02/16/deciphering-the-man-behind-ontarios-bean-puzzle-tombstone/">
+            Deciphering The Man Behind Ontario’s Bean Puzzle Tombstone – LADY LATITUDES
+          </a>
+        </li>
+        <li>
+          <a href="https://rtwferrer.wordpress.com/2010/08/19/oyacachi-aka-the-coldest-place-on-the-equator-ever/">
+            Oyacachi – aka the Coldest Place on the Equator, Ever | Big Trip
+          </a>
+        </li>
+        <li>
+          <a href="https://www.snopes.com/fact-check/male-birth-control-study/">
+            Men Abandoned Male Birth Control Breakthrough Because of Side Effects? | Snopes.com
+          </a>
+        </li>
+        <li>
+          <a href="https://toldandretold1.medium.com/the-great-blading-bubble-how-toxic-masculinity-inflated-and-burst-aggressive-inline-4313e4930714">
+            The Great Blading Bubble: How Toxic Masculinity Inflated and Burst Aggressive Inline | by Toldandretold | Medium
+          </a>
+        </li>
+        <li>
+          <a href="https://www.huffingtonpost.co.uk/entry/internet-baby-boomers-misinformation-social-media_n_5f998039c5b6a4a2dc813d3d">
+            What Is The Internet Doing To Boomers’ Brains? | HuffPost UK Politics
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bbc.co.uk/sounds/play/w3cszz68">
+            The Documentary - Moondog: Sound of New York - BBC Sounds
+          </a>
+        </li>
+        <li>
+          <a href="https://www.macleans.ca/culture/the-weird-and-true-story-of-moondog/">
+            The weird and true story of Moondog
+          </a>
+        </li>
+        <li>
+          <a href="https://waitbutwhy.com/2016/01/horizontal-history.html">
+            Horizontal History — Wait But Why
+          </a>
+        </li>
+        <li>
+          <a href="https://arstechnica.com/gaming/2019/01/alexandria-ocasio-cortez-video-games-and-the-new-online-town-square/">
+            Alexandria Ocasio-Cortez, video games, and the new online town square | Ars Technica
+          </a>
+        </li>
+        <li>
+          <a href="https://www.elle.com/life-love/a35021224/martin-shkreli-christie-smythe-pharma-bro-journalist/">
+            The Journalist and the Pharma Bro
+          </a>
+        </li>
+        <li>
+          <a href="https://psmag.com/social-justice/women-arent-welcome-internet-72170">
+            Why Women Aren&#x27;t Welcome on the Internet - Pacific Standard
+          </a>
+        </li>
+        <li>
+          <a href="https://theculturetrip.com/europe/united-kingdom/england/articles/are-these-impressive-facts-about-birmingham-actually-true/">
+            Are These Impressive Facts About Birmingham Actually True?
+          </a>
+        </li>
+        <li>
+          <a href="https://markessien.com/posts/drama_of_transcription/">
+            The drama in trying to convert election PDFs to Spreadsheets - Mark Essien
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.steren.fr/2020/my-stack-will-outlive-yours/">
+            My stack will outlive yours
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tomforth.co.uk/northernlands/">
+            North England vs. The Netherlands.
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bbc.co.uk/sounds/play/b0b48wq9">
+            Moondog: Sound of New York - BBC Sounds
+          </a>
+        </li>
+        <li>
+          <a href="https://unherd.com/2020/09/the-plot-against-mercia/#:~:text=The%201956%20West%20Midlands%20Plan,focused%20on%20the%20motor%20industry.">
+            The plot against Mercia - UnHerd
+          </a>
+        </li>
+        <li>
+          <a href="https://dynomight.net/nukes/?utm_source=substack&amp;utm_medium=email">
+            So you want to invent a nuclear weapon
+          </a>
+        </li>
+        <li>
+          <a href="https://ultrarunninghistory.com/roller-skating/">
+            82: Roller Skating Ultra Distances – 1885 Six Days | Ultrarunning History
+          </a>
+        </li>
+        <li>
+          <a href="http://www.glias.org.uk/index.htm">
+            Greater London Industrial Archaeology Society
+          </a>
+        </li>
+        <li>
+          <a href="https://waxy.org/2014/12/playing-with-my-son/">
+            Playing With My Son - Waxy.org
+          </a>
+        </li>
+        <li>
+          <a href="https://brr.fyi/posts/south-pole-signage">
+            South Pole Signage
+          </a>
+        </li>
+        <li>
+          <a href="https://tomforth.co.uk/wenevertried/">
+            We&#x27;ve never even tried
+          </a>
+        </li>
+        <li>
+          <a href="https://blinry.org/free-hugs/">
+            What happened when we offered Free Hugs to people
+          </a>
+        </li>
+        <li>
+          <a href="https://dynomight.substack.com/p/tunnel-man">
+            What&#x27;s so great about tunnel man?
+          </a>
+        </li>
+        <li>
+          <a href="https://www.experimental-history.com/p/excuse-me-but-why-are-you-eating">
+            Excuse me but why are you eating so many frogs
+          </a>
+        </li>
+        <li>
+          <a href="https://mxb.dev/blog/seven-reasons-why-i-dont-write/">
+            7 Reasons why I don&#x27;t write | Max Böck
+          </a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/words-avoid-educational-writing/">
+            Words To Avoid in Educational Writing | CSS-Tricks - CSS-Tricks
+          </a>
+        </li>
+        <li>
+          <a href="https://mango.pdf.zone/finding-former-australian-prime-minister-tony-abbotts-passport-number-on-instagram">
+            When you browse Instagram and find former Australian Prime Minister Tony Abbott&#x27;s passport number
+          </a>
+        </li>
+        <li>
+          <a href="https://robin-cg.medium.com/a-totally-objective-ranking-of-every-uk-local-authority-logo-b76e8f7efd5a">
+            A Totally Objective Ranking of Every UK Local Authority Logo | by Robin Wilde | Medium
+          </a>
+        </li>
+        <li>
+          <a href="https://www.todepond.com/wikiblogarden/social-media/para/activity/">
+            Todepond dot com
+          </a>
+        </li>
+        <li>
+          <a href="https://notes.rolandcrosby.com/posts/unexpectedly-eponymous/">
+            Things Unexpectedly Named After People · Notes
+          </a>
+        </li>
+        <li>
+          <a href="https://www.experimental-history.com/p/startling-differences-between-humans">
+            Startling differences between humans and jukeboxes
+          </a>
+        </li>
+        <li>
+          <a href="https://www.wired.com/story/deaths-of-effective-altruism/">
+            The Deaths of Effective Altruism | WIRED
+          </a>
+        </li>
+        <li>
+          <a href="https://hughbarnard.org/wp-content/uploads/2023/07/goodbye-engagement.pdf">
+            goodbye-engagement.pdf
+          </a>
+        </li>
+        <li>
+          <a href="https://pluralistic.net/2024/04/18/in-extremis-veritas/">
+            Pluralistic: Podcasting “Capitalists Hate Capitalism” (18 Apr 2024) – Pluralistic: Daily links from Cory Doctorow
+          </a>
+        </li>
+        <li>
+          <a href="https://www.polypompholyx.com/2017/01/modularorigami/">
+            Modular origami – Polypompholyx
+          </a>
+        </li>
+        <li>
+          <a href="https://locusmag.com/2022/09/cory-doctorow-moneylike/">
+            Cory Doctorow: Moneylike – Locus Online
+          </a>
+        </li>
+        <li>
+          <a href="https://www.sheffieldtribune.co.uk/p/a-london-start-up-tried-to-solve">
+            A London start-up tried to solve Sheffield&#x27;s housing crisis. So far, they&#x27;ve made it worse
+          </a>
+        </li>
+        <li>
+          <a href="https://www.computerweekly.com/opinion/Labours-AI-Action-Plan-a-gift-to-the-far-right">
+            Labour&#x27;s AI Action Plan - a gift to the far right | Computer Weekly
+          </a>
+        </li>
+        <li>
+          <a href="https://going-medieval.com/2023/05/16/on-cats/">
+            On cats – Going Medieval
+          </a>
+        </li>
+        <li>
+          <a href="https://briefs.video/videos/why-is-everything-binary/">
+            Why is everything binary? (Webbed Briefs)
+          </a>
+        </li>
+        <li>
+          <a href="https://davidgraeber.org/articles/on-the-phenomenon-of-bullshit-jobs-a-work-rant/">
+            On the Phenomenon of Bullshit Jobs: A Work Rant - David Graeber
+          </a>
+        </li>
+        <li>
+          <a href="https://haterade.substack.com/p/i-tasted-hondas-spicy-rodent-repelling">
+            I Tasted Honda&#x27;s Spicy Rodent-Repelling Tape - by Liz Cook
+          </a>
+        </li>
+        <li>
+          <a href="https://www.scopeofwork.net/silica-gel/">
+            How Silica Gel Took Over the World
+          </a>
+        </li>
+        <li>
+          <a href="https://www.todepond.com/sky/let-me-piss/">
+            Todepond dot com
+          </a>
+        </li>
+        <li>
+          <a href="https://thedabbler.patatas.ca/pages/ai-is-dehumanization-technology.html">
+            AI is Dehumanization Technology
+          </a>
+        </li>
+        <li>
+          <a href="https://defector.com/seven-days-at-the-bin-store">
+            Seven Days At The Bin Store | Defector
+          </a>
+        </li>
+        <li>
+          <a href="https://www.experimental-history.com/p/face-it-youre-a-crazy-person">
+            Face it: you&#x27;re a crazy person - by Adam Mastroianni
+          </a>
+        </li>
+        <li>
+          <a href="https://dynomight.net/colors/">
+            New colors without shooting lasers into your eyes
+          </a>
+        </li>
+        <li>
+          <a href="https://gfsc.community/consensus-decision-making-sucks/">
+            Consensus decision making sucks
+          </a>
+        </li>
+        <li>
+          <a href="https://maya.land/responses/2025/08/04/four-seeds-in-a-row.html">
+            four seeds in a row | maya.land
+          </a>
+        </li>
+        <li>
+          <a href="https://www.girlonthenet.com/blog/age-verification-whats-the-harm/">
+            Age verification: what&#x27;s the harm? | Girl on the Net explains
+          </a>
+        </li>
+        <li>
+          <a href="https://gwern.net/drug-heuristic">
+            The Algernon Argument · Gwern.net
+          </a>
+        </li>
+        <li>
+          <a href="https://www.joanwestenberg.com/p/remember-kurt-vonnegut-was-47">
+            Remember: Kurt Vonnegut was 47
+          </a>
+        </li>
+        <li>
+          <a href="https://www.theguardian.com/news/2025/sep/30/tonga-pacific-island-internet-underwater-cables-volcanic-eruption">
+            Extremely offline: what happened when a Pacific island was cut off from the internet | Tonga | The Guardian
+          </a>
+        </li>
+        <li>
+          <a href="https://mattlakeman.org/2020/07/10/how-much-would-you-need-to-be-paid-to-live-on-a-deserted-island-for-1-5-years-and-do-nothing-but-kill-seals/">
+            How Much Would You Need to be Paid to Live on a Deserted Island for 1.5 Years and Do Nothing but Kill Seals? – Matt Lakeman
+          </a>
+        </li>
+        <li>
+          <a href="https://dynomight.net/plans/">
+            Plans you&#x27;re not supposed to talk about
+          </a>
+        </li>
+        <li>
+          <a href="https://drdevonprice.substack.com/p/a-typology-of-insecurities-in-non?triedRedirect=true">
+            A Typology of Insecurities in Non-monogamy - Devon Price
+          </a>
+        </li>
+        <li>
+          <a href="https://nowthenmagazine.com/articles/who-remembers-attention-spans-doom-scrolling-social-media">
+            Who Remembers Attention Spans? | Now Then Sheffield
+          </a>
+        </li>
+        <li>
+          <a href="https://ludic.mataroa.blog/blog/i-am-out-of-data-hell/">
+            I Am Out Of Data Hell — Ludicity
+          </a>
+        </li>
+        <li>
+          <a href="https://www.experimental-history.com/p/the-decline-of-deviance">
+            The Decline of Deviance - by Adam Mastroianni
+          </a>
+        </li>
+        <li>
+          <a href="https://ccli.substack.com/p/the-biggest-mystery-in-neuroscience?utm_source=post-banner&amp;utm_medium=web&amp;utm_campaign=posts-open-in-app&amp;triedRedirect=true">
+            The biggest mystery in neuroscience, according to me. Worm brain simulation
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="Articles (programming)">Articles (programming)</h2>
+      <ul>
+        <li>
+          <a href="https://two-wrongs.com/myth-of-the-day-functional-programmers-dont-use-loops">
+            Myth of the Day: Functional Programmers Don’t Use Loops
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536">
+            So You Want to be a Functional Programmer (Part 1) | by Charles Scalfani | Medium
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@cscalfani/why-programmers-need-limits-3d96e1a0a6db">
+            Why Programmers Need Limits. Limits make for better Art, Design and… | by Charles Scalfani | Medium
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">
+            Paul Ford: What Is Code? | Bloomberg
+          </a>
+        </li>
+        <li>
+          <a href="https://ironeko.com/posts/f-ck-it-use-react-for-your-personal-site-if-you-want-to">
+            F*ck it: use React for your personal site if you want to - Ironeko
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#grabbag">
+            Paul Ford: What Is Code? | Bloomberg
+          </a>
+        </li>
+        <li>
+          <a href="https://jvns.ca/blog/2022/01/24/hosting-my-static-sites-with-nginx/">
+            Hosting my static sites with nginx
+          </a>
+        </li>
+        <li>
+          <a href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/">
+            Tailwind CSS origins
+          </a>
+        </li>
+        <li>
+          <a href="https://tomhazledine.com/eleventy-static-site-generator/">
+            Static site generators: Hugo vs Jekyll vs Gatsby vs 11ty
+          </a>
+        </li>
+        <li>
+          <a href="https://iamjoona.com/blog/seo-tags-in-eleventy/">
+            Implementing SEO and Open Graph tags in Eleventy (11ty)
+          </a>
+        </li>
+        <li>
+          <a href="https://v21.io/blog/how-to-find-things-online">
+            A talk: How To Find Things Online | v21
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ietf.org/rfc/rfc3514.txt">
+            https://www.ietf.org/rfc/rfc3514.txt
+          </a>
+        </li>
+        <li>
+          <a href="https://andrewjakubowicz.me/posts/making-of-a-blog-post/">
+            Interactive blog posts with no build step using Markdown and Lit | Andrew Jakubowicz
+          </a>
+        </li>
+        <li>
+          <a href="https://dukope.com/devlogs/papers-please/lcdplease/">
+            Making &quot;LCD, Please&quot; | Development Logs by Lucas Pope
+          </a>
+        </li>
+        <li>
+          <a href="https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html">
+            Command-line Tools can be 235x Faster than your Hadoop Cluster - Adam Drake
+          </a>
+        </li>
+        <li>
+          <a href="https://drewdevault.com/2020/03/18/Reckless-limitless-scope">
+            The reckless, infinite scope of web browsers
+          </a>
+        </li>
+        <li>
+          <a href="https://ajenkins.me/post/analytics/">
+            Why I don&#x27;t have analytics on my website
+          </a>
+        </li>
+        <li>
+          <a href="https://dynomight.substack.com/p/midwit-home">
+            The midwit home - DYNOMIGHT INTERNET NEWSLETTER
+          </a>
+        </li>
+        <li>
+          <a href="https://rosswintle.uk/2021/12/hang-on-php-is-a-static-site-generator/">
+            Hang on, PHP IS a static site generator! - Ross Wintle
+          </a>
+        </li>
+        <li>
+          <a href="https://rosswintle.uk/2022/08/why-i-love-and-how-i-make-simple-static-minimal-tech-websites/">
+            Why I love (and how I make) simple, static, minimal-tech websites - Ross Wintle
+          </a>
+        </li>
+        <li>
+          <a href="https://eta.st/2023/01/31/rail-tickets.html">
+            Reversing UK mobile rail tickets
+          </a>
+        </li>
+        <li>
+          <a href="https://bvisness.me/luax/">
+            I made JSX for Lua (because I hate static sites) | Ben Visness
+          </a>
+        </li>
+        <li>
+          <a href="https://akkartik.name/freewheeling/">
+            Using computers more freely and safely
+          </a>
+        </li>
+        <li>
+          <a href="https://abagames.github.io/joys-of-small-game-development-en/fun_to_make_small_games.html">
+            Making small games, which is fun in itself · Joys of Small Game Development
+          </a>
+        </li>
+        <li>
+          <a href="https://stuffedwomb.at/the_small_game">
+            Stuffed Wombat - The Small Game
+          </a>
+        </li>
+        <li>
+          <a href="http://www.stilldrinking.org/programming-sucks">
+            Programming Sucks
+          </a>
+        </li>
+        <li>
+          <a href="https://alexwlchan.net/2024/big-pdf/">
+            Making a PDF that’s larger than Germany – alexwlchan
+          </a>
+        </li>
+        <li>
+          <a href="https://lmnt.me/blog/make-a-damn-website.html">
+            Make a Damn Website
+          </a>
+        </li>
+        <li>
+          <a href="https://daverupert.com/2024/02/robo-barf/">
+            A dozen thoughts about AI | daverupert.com
+          </a>
+        </li>
+        <li>
+          <a href="https://joshcollinsworth.com/blog/copilot">
+            I worry our Copilot is leaving some passengers behind - Josh Collinsworth blog
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nan.fyi/svg-paths">
+            A Deep Dive Into SVG Path Commands
+          </a>
+        </li>
+        <li>
+          <a href="https://jamesg.blog/2024/02/19/personal-website-ideas/">
+            100 things you can do on your personal website | James&#x27; Coffee Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://heydonworks.com/article/what-is-a-single-page-application/">
+            What Is A Single-page Application?: HeydonWorks
+          </a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/use-target_blank/">
+            When to use target=&quot;_blank&quot; | CSS-Tricks - CSS-Tricks
+          </a>
+        </li>
+        <li>
+          <a href="https://www.softwaremaxims.com/blog/not-a-supplier">
+            I am not a supplier | Musings about software
+          </a>
+        </li>
+        <li>
+          <a href="https://single-file.netlify.app/">
+            The Single File Philosophy
+          </a>
+        </li>
+        <li>
+          <a href="https://artemis.sh/2024/06/19/do-you-really-want-to-write.html">
+            So, do you actually want to write?
+          </a>
+        </li>
+        <li>
+          <a href="https://jimmyhmiller.github.io/raised">
+            Being Raised by the Internet
+          </a>
+        </li>
+        <li>
+          <a href="https://www.robinsloan.com/notes/home-cooked-app/">
+            An app can be a home-cooked meal
+          </a>
+        </li>
+        <li>
+          <a href="https://pluralistic.net/2024/10/16/keep-it-really-simple-stupid/">
+            Pluralistic: You should be using an RSS reader (16 Oct 2024) – Pluralistic: Daily links from Cory Doctorow
+          </a>
+        </li>
+        <li>
+          <a href="https://localghost.dev/blog/building-a-website-like-it-s-1999-in-2022/">
+            Building a website like it&#x27;s 1999... in 2022 - localghost
+          </a>
+        </li>
+        <li>
+          <a href="https://pleroma.social/blog/2021/01/13/the-big-pleroma-and-fediverse-faq/">
+            The Big Pleroma and Fediverse FAQ Part 1 - Beginner Questions
+          </a>
+        </li>
+        <li>
+          <a href="https://www.wrecka.ge/against-the-dark-forest/">
+            against the dark forest
+          </a>
+        </li>
+        <li>
+          <a href="https://cfenollosa.com/blog/after-self-hosting-my-email-for-twenty-three-years-i-have-thrown-in-the-towel-the-oligopoly-has-won.html">
+            Carlos Fenollosa - Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://media.ccc.de/v/37c3-12142-breaking_drm_in_polish_trains#t=113">
+            Breaking &quot;DRM&quot; in Polish trains - media.ccc.de
+          </a>
+        </li>
+        <li>
+          <a href="https://www.smashingmagazine.com/2024/12/introduction-css-scroll-driven-animations/">
+            An Introduction To CSS Scroll-Driven Animations: Scroll And View Progress Timelines — Smashing Magazine
+          </a>
+        </li>
+        <li>
+          <a href="https://rtpg.co/2025/01/10/designing-for-forward-progress/#">
+            Designing Code For Forward Progress
+          </a>
+        </li>
+        <li>
+          <a href="https://lmnt.me/blog/how-to-make-a-damn-website.html">
+            How to Make a Damn Website
+          </a>
+        </li>
+        <li>
+          <a href="https://www.htmlforpeople.com/">
+            HTML for People
+          </a>
+        </li>
+        <li>
+          <a href="https://slashpages.net/">
+            slash pages
+          </a>
+        </li>
+        <li>
+          <a href="https://audmcname.com/comics/rss-is-not-dead-yet/">
+            RSS is (not) dead (yet) (NED #3) – audra mcnamee
+          </a>
+        </li>
+        <li>
+          <a href="https://justforfunnoreally.dev/">
+            Just for Fun. No, Really.
+          </a>
+        </li>
+        <li>
+          <a href="https://thebullshitmachines.com/">
+            INTRODUCTION
+          </a>
+        </li>
+        <li>
+          <a href="https://localghost.dev/blog/this-page-is-under-construction/">
+            This page is under construction - localghost
+          </a>
+        </li>
+        <li>
+          <a href="https://danmcquillan.org/labours_ai_action_plan.html">
+            Labour&#x27;s AI Action Plan - a gift to the far right
+          </a>
+        </li>
+        <li>
+          <a href="https://v.cx/2025/04/mastodon-exit-interview">
+            Mastodon Exit Interview | Rob’s Posts
+          </a>
+        </li>
+        <li>
+          <a href="https://www.lesswrong.com/posts/D7PumeYTDPfBTp3i7/the-waluigi-effect-mega-post">
+            The Waluigi Effect (mega-post) — LessWrong
+          </a>
+        </li>
+        <li>
+          <a href="https://www.openrightsgroup.org/blog/data-bill-first-they-came-for-trans-people/">
+            Data Bill: First They Came for Trans People | Open Rights Group
+          </a>
+        </li>
+        <li>
+          <a href="https://runyourown.social/">
+            How to run a small social network site for your friends
+          </a>
+        </li>
+        <li>
+          <a href="https://www.thedissident.news/international-civil-societys-tech-stack-is-in-extreme-danger/">
+            International Civil Society&#x27;s Tech Stack is in Extreme Danger
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cbc.ca/podcasting/includes/nakedemperor.xml">
+            https://www.cbc.ca/podcasting/includes/nakedemperor.xml
+          </a>
+        </li>
+        <li>
+          <a href="https://www.danmcquillan.org/ai_disabilty_q_and_a.html">
+            Q&amp;A: AI and Disability
+          </a>
+        </li>
+        <li>
+          <a href="https://danmcquillan.org/cpct_seminar.html">
+            The role of the University is to resist AI
+          </a>
+        </li>
+        <li>
+          <a href="https://eev.ee/blog/2025/07/03/the-rise-of-whatever/">
+            The rise of Whatever / fuzzy notepad
+          </a>
+        </li>
+        <li>
+          <a href="https://www.theguardian.com/society/article/2024/jul/08/nhs-cancer-care-basics-over-tech-ai-magic-bullets">
+            NHS urged to prioritise cancer care basics over tech and AI ‘magic bullets’ | Cancer | The Guardian
+          </a>
+        </li>
+        <li>
+          <a href="https://cpf.sh/blog/2025/07/06/we-are-all-creatives-genai-threatens-us-all">
+            We are all creatives. GenAI threatens us all
+          </a>
+        </li>
+        <li>
+          <a href="https://nearlylegal.co.uk/2025/07/artificial-stupidity-and-real-hazards/">
+            Artificial Stupidity and real hazards - Nearly Legal: Housing Law News and Comment
+          </a>
+        </li>
+        <li>
+          <a href="https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html">
+            I Am An AI Hater | moser’s frame shop
+          </a>
+        </li>
+        <li>
+          <a href="https://www.wheresyoured.at/how-to-argue-with-an-ai-booster/">
+            How To Argue With An AI Booster
+          </a>
+        </li>
+        <li>
+          <a href="https://www.theverge.com/cs/features/717322/wikipedia-attacks-neutrality-history-jimmy-wales">
+            How Wikipedia survives while the rest of the internet breaks | The Verge
+          </a>
+        </li>
+        <li>
+          <a href="https://www.laquadrature.net/en/2025/09/04/in-france-the-eternal-return-of-facial-recognition/">
+            In France, the eternal return of facial recognition – La Quadrature du Net
+          </a>
+        </li>
+        <li>
+          <a href="https://www.theguardian.com/technology/2025/sep/13/uk-workers-wary-of-ai-despite-starmers-push-to-increase-uptake-survey-finds">
+            UK workers wary of AI despite Starmer’s push to increase uptake, survey finds | Artificial intelligence (AI) | The Guardian
+          </a>
+        </li>
+        <li>
+          <a href="https://www.computerworld.com/article/4059383/openai-admits-ai-hallucinations-are-mathematically-inevitable-not-just-engineering-flaws.html">
+            OpenAI admits AI hallucinations are mathematically inevitable, not just engineering flaws – Computerworld
+          </a>
+        </li>
+        <li>
+          <a href="https://theoatmeal.com/comics/ai_art">
+            A cartoonist&#x27;s review of AI art - The Oatmeal
+          </a>
+        </li>
+        <li>
+          <a href="https://taylor.town/ai-minus-vagina">
+            AI Minus Vagina
+          </a>
+        </li>
+        <li>
+          <a href="https://www.worksinprogress.news/p/why-ai-isnt-replacing-radiologists">
+            AI isn&#x27;t replacing radiologists
+          </a>
+        </li>
+        <li>
+          <a href="https://ploum.net/2025-11-26-snake-oil-writing.html">
+            Don’t Do Snake Oil Writing
+          </a>
+        </li>
+        <li>
+          <a href="https://www.danmcquillan.org/resisting_genai_highered_cjuu.html">
+            Resisting GenAI &amp; Big Tech in Higher Education
+          </a>
+        </li>
+        <li>
+          <a href="https://ludic.mataroa.blog/blog/the-complex-problem-of-lying-for-jobs/">
+            The Complex Problem Of Lying For Jobs — Ludicity
+          </a>
+        </li>
+        <li>
+          <a href="https://yorkshirebylines.co.uk/news/home-affairs/governments-last-chance-to-keep-control-of-digital/">
+            Government’s last chance to keep control of digital
+          </a>
+        </li>
+        <li>
+          <a href="https://pluralistic.net/2025/12/05/pop-that-bubble/">
+            Pluralistic: The Reverse-Centaur’s Guide to Criticizing AI (05 Dec 2025) – Pluralistic: Daily links from Cory Doctorow
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="video playlists/channels">video playlists/channels</h2>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PLtaR0lZhSyAPLuoSbMA29s3Ry8ZUvKff3">
+            The Secret Life of Machines Remastered - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@PopCultureDetective/videos">
+            Pop Culture Detective - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@Exurb1a/videos">
+            exurb1a - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@CaptainDisillusion/videos">
+            Captain Disillusion - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@SteveMould">
+            Steve Mould - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@NotJustBikes">
+            Not Just Bikes - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@DrGeoffLindsey/videos">
+            Dr Geoff Lindsey - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@Andrewism/videos">
+            Andrewism - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@janusawi8794/videos">
+            jan Usawi - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@tom7/videos">
+            suckerpinch - YouTube
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="wordles">wordles</h2>
+      <ul>
+        <li>
+          <a href="https://www.powerlanguage.co.uk/wordle/">
+            Wordle - A daily word game
+          </a>
+        </li>
+        <li>
+          <a href="https://qntm.org/files/absurdle/absurdle.html">
+            Absurdle @ Things Of Interest
+          </a>
+        </li>
+        <li>
+          <a href="https://zaratustra.itch.io/dordle">
+            dordle by zaratustra
+          </a>
+        </li>
+        <li>
+          <a href="https://www.lewdlegame.com/">
+            Lewdle - A lewd daily word game
+          </a>
+        </li>
+        <li>
+          <a href="https://converged.yt/primel/">
+            Primel
+          </a>
+        </li>
+        <li>
+          <a href="https://sweardle.com/">
+            Sweardle - the 4 letter word guessing game
+          </a>
+        </li>
+        <li>
+          <a href="https://queerdle.com/">
+            QUEERDLE
+          </a>
+        </li>
+        <li>
+          <a href="https://www.taylordle.com/">
+            Taylordle
+          </a>
+        </li>
+        <li>
+          <a href="https://bts-wordle.vercel.app/">
+            BTS Wordle
+          </a>
+        </li>
+        <li>
+          <a href="https://www.wordleunlimited.com/">
+            Wordle Unlimited - Play Wordle with Unlimited Words
+          </a>
+        </li>
+        <li>
+          <a href="https://wtfseo.com/searchdle/">
+            Searchdle: An SEO version of Wordle
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jewdle.app/">
+            Jewdle – a daily Jewish word game
+          </a>
+        </li>
+        <li>
+          <a href="https://www.starwordle.com/">
+            Star Wordle
+          </a>
+        </li>
+        <li>
+          <a href="https://worldle.teuteuf.fr/">
+            Worldle
+          </a>
+        </li>
+        <li>
+          <a href="https://edjefferson.com/letterle/">
+            Letterle
+          </a>
+        </li>
+        <li>
+          <a href="https://nerdlegame.com/">
+            Nerdle - the daily numbers game
+          </a>
+        </li>
+        <li>
+          <a href="https://globle-game.com/">
+            Globle
+          </a>
+        </li>
+        <li>
+          <a href="https://jackli.gg/chessle/">
+            Chessle
+          </a>
+        </li>
+        <li>
+          <a href="https://ucdavis-life.github.io/">
+            UC Dwordle
+          </a>
+        </li>
+        <li>
+          <a href="https://www.quordle.com/#/">
+            Quordle
+          </a>
+        </li>
+        <li>
+          <a href="https://octordle.com/?mode=daily">
+            Octordle
+          </a>
+        </li>
+        <li>
+          <a href="http://www.sedecordle.com/?mode=daily">
+            sedecordle
+          </a>
+        </li>
+        <li>
+          <a href="https://semantle.novalis.org/">
+            Semantle
+          </a>
+        </li>
+        <li>
+          <a href="http://durdle.me/">
+            Durdle
+          </a>
+        </li>
+        <li>
+          <a href="https://squirdle.fireblend.com/">
+            squirdle
+          </a>
+        </li>
+        <li>
+          <a href="http://www.heardlepedia.com/">
+            Heardle - Like Wordle, but for Music
+          </a>
+        </li>
+        <li>
+          <a href="https://www.scholardle.com/">
+            Scholardle
+          </a>
+        </li>
+        <li>
+          <a href="https://lazyguyy.github.io/survivle/">
+            Survivle
+          </a>
+        </li>
+        <li>
+          <a href="https://code-a-software.net/brandle/">
+            Brandle
+          </a>
+        </li>
+        <li>
+          <a href="https://squabble.me/">
+            Squabble
+          </a>
+        </li>
+        <li>
+          <a href="https://qwordle.bhat.ca/">
+            Qwordle
+          </a>
+        </li>
+        <li>
+          <a href="https://fubargames.se/squardle/">
+            Squardle - Wordle squared?
+          </a>
+        </li>
+        <li>
+          <a href="https://adverswordle.doteye.online/">
+            Adverswordle
+          </a>
+        </li>
+        <li>
+          <a href="https://emotle.com/">
+            Emotle | Emotle
+          </a>
+        </li>
+        <li>
+          <a href="https://framed.wtf/">
+            Framed - The daily movie guessing game
+          </a>
+        </li>
+        <li>
+          <a href="https://appraisir.com/Daily/">
+            Daily Home | Appraisir
+          </a>
+        </li>
+        <li>
+          <a href="https://wheredle.xyz/">
+            Wheredle 🌎
+          </a>
+        </li>
+        <li>
+          <a href="https://duotrigordle.com/">
+            Duotrigordle
+          </a>
+        </li>
+        <li>
+          <a href="https://www.redactle.com/">
+            Redactle - A daily puzzle game
+          </a>
+        </li>
+        <li>
+          <a href="https://eurosong.app/">
+            ESChallenge (Eurovision Heardle)
+          </a>
+        </li>
+        <li>
+          <a href="https://murdle.com/">
+            MURDLE! Solve a mystery every day!
+          </a>
+        </li>
+        <li>
+          <a href="https://pteredactle.com/#Q159190">
+            Pteredactle - Puzzle Game
+          </a>
+        </li>
+        <li>
+          <a href="https://ducc.pythonanywhere.com/flaggle/">
+            Flaggle 🏁
+          </a>
+        </li>
+        <li>
+          <a href="http://lirdle.com/">
+            Lirdle: One Lie Per Line
+          </a>
+        </li>
+        <li>
+          <a href="https://wafflegame.net/">
+            Waffle - daily word game
+          </a>
+        </li>
+        <li>
+          <a href="https://hexordle.com/">
+            Hexordle
+          </a>
+        </li>
+        <li>
+          <a href="https://oec.world/en/tradle/">
+            OEC Tradle
+          </a>
+        </li>
+        <li>
+          <a href="https://word.geoscienceworld.org/">
+            GeoScienceWord
+          </a>
+        </li>
+        <li>
+          <a href="https://jumblie.com/">
+            Jumblie | A word search game
+          </a>
+        </li>
+        <li>
+          <a href="https://smegle.ganymede.tv/">
+            Smegle | A Red Dwarf screenshot guessing game
+          </a>
+        </li>
+        <li>
+          <a href="https://wordlepress.com/">
+            WordlePress - a Wordle-style guessing game for WordPress developers
+          </a>
+        </li>
+        <li>
+          <a href="https://wafflegame.net/daily">
+            Waffle
+          </a>
+        </li>
+        <li>
+          <a href="https://www.merriam-webster.com/games/quordle/#/">
+            Quordle
+          </a>
+        </li>
+        <li>
+          <a href="https://www.britannica.com/games/octordle/daily">
+            Octordle
+          </a>
+        </li>
+        <li>
+          <a href="https://guessthe.game/">
+            Guess The Game
+          </a>
+        </li>
+        <li>
+          <a href="https://guessthebook.app/">
+            Guess The Book - Your daily book guessing puzzle!
+          </a>
+        </li>
+        <li>
+          <a href="https://bandle.app/">
+            Bandle - Guess the song played by the band
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="mobile games">mobile games</h2>
+      <ul>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.inkle.eightydays">
+            80 Days – Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.com.tann.dice">
+            Slice &amp; Dice – Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.sleepingbeastgames.spaceteam">
+            Spaceteam – Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=air.com.midjiwan.polytopia">
+            The Battle of Polytopia – Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=io.anuke.mindustry">
+            Mindustry – Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/search?q=into+the+breach&amp;c=apps">
+            into the breach – Android Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/search?q=chwazi&amp;c=apps">
+            chwazi – Android Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.devolver.reigns">
+            Reigns – Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.miclos.google.games.outthere">
+            Out There: Ω Edition – Apps on Google Play
+          </a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.brucelet.spacetrader">
+            Space Trader – Apps on Google Play
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="bookmarks">
+      <h2 id="multiplayer browser games">multiplayer browser games</h2>
+      <ul>
+        <li>
+          <a href="https://hanab.cards/">
+            Hanabi
+          </a>
+        </li>
+        <li>
+          <a href="https://redactle.net/">
+            Redactle | Wikipedia based Puzzle Game
+          </a>
+        </li>
+        <li>
+          <a href="https://semantle.com/">
+            Semantle
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cinenerdle2.app/battle">
+            Cine2Nerdle
+          </a>
+        </li>
+        <li>
+          <a href="https://jklm.fun/">
+            JKLM.FUN Party games for PC &amp; Smartphone. BombParty, Master of the Grid, PopSauce &amp; co.
+          </a>
+        </li>
+        <li>
+          <a href="https://buddyboardgames.com/yahtzee">
+            Yahtzee online with friends
+          </a>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <span style="display: flex; justify-content: center">
+      Updated (when I remember it) via&nbsp;
+      <a href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">
+        <code>scripting</code>
+      </a>
+    </span>
+    <span style="display: flex; justify-content: center">
+      Last updated:&nbsp;
+      <time datetime="2025-12-15T12:18:13.706680Z" "timeSince(Date.parse(2025-12-15T12:18:13.706680Z)) + ' ago'">
+        <span id="relative-time"></span><span id="absolute-time">(2025-12-15T12:18:13.706680Z)</span>
+      </time>
+    </span>
+  </main>
 
-    <footer>
-      <a class="backlink" href="/">Back to main page</a>
-    </footer>
-  </body>
-  <style>
-    #bookmarks {
-      margin-bottom: 2rem;
-    }
-    #bookmarks > h2 {
-      position: sticky;
-      top: 0;
-      background-color: var(--background);
-      padding: 0.5rem;
-      text-align: center;
-      border-bottom: 1px solid var(--text);
-    }
-  </style>
+  <footer>
+    <a class="backlink" href="/">Back to main page</a>
+  </footer>
+</body>
+<style>
+  #bookmarks {
+    margin-bottom: 2rem;
+  }
+
+  #bookmarks>h2 {
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--text);
+  }
+</style>
+
 </html>

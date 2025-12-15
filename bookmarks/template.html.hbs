@@ -1,138 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>alifeee</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/stylesheet.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto"
-    />
+<head>
+  <title>alifeee</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- anchorjs - https://www.bryanbraun.com/anchorjs/ -->
-    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/stylesheet.css" />
 
-    <!-- relative time -->
-    <script>
-      function timeSince(date) {
-        var seconds = Math.floor((new Date() - date) / 1000);
+  <!-- anchorjs - https://www.bryanbraun.com/anchorjs/ -->
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
 
-        var interval = seconds / 31536000;
+  <!-- relative time -->
+  <script>
+    function timeSince(date) {
+      var seconds = Math.floor((new Date() - date) / 1000);
 
-        if (interval > 1) {
-          return Math.floor(interval) + " years";
-        }
-        interval = seconds / 2592000;
-        if (interval > 1) {
-          return Math.floor(interval) + " months";
-        }
-        interval = seconds / 86400;
-        if (interval > 1) {
-          return Math.floor(interval) + " days";
-        }
-        interval = seconds / 3600;
-        if (interval > 1) {
-          return Math.floor(interval) + " hours";
-        }
-        interval = seconds / 60;
-        if (interval > 1) {
-          return Math.floor(interval) + " minutes";
-        }
-        return Math.floor(seconds) + " seconds";
+      var interval = seconds / 31536000;
+
+      if (interval > 1) {
+        return Math.floor(interval) + " years";
       }
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        anchors.add();
+      interval = seconds / 2592000;
+      if (interval > 1) {
+        return Math.floor(interval) + " months";
+      }
+      interval = seconds / 86400;
+      if (interval > 1) {
+        return Math.floor(interval) + " days";
+      }
+      interval = seconds / 3600;
+      if (interval > 1) {
+        return Math.floor(interval) + " hours";
+      }
+      interval = seconds / 60;
+      if (interval > 1) {
+        return Math.floor(interval) + " minutes";
+      }
+      return Math.floor(seconds) + " seconds";
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      anchors.add();
 
-        var relativeTime = document.getElementById("relative-time");
-        var absoluteTime = document.getElementById("absolute-time");
-        var time = document.querySelector("time");
-        var datetime = time.getAttribute("datetime");
-        relativeTime.innerHTML = timeSince(Date.parse(datetime)) + " ago";
-        absoluteTime.innerHTML = "(" + datetime + ")";
-      });
-    </script>
-  </head>
-  <body>
-    <header>
-      <h1>
-        <a href="/">alifeee</a>
-      </h1>
-    </header>
+      var relativeTime = document.getElementById("relative-time");
+      var absoluteTime = document.getElementById("absolute-time");
+      var time = document.querySelector("time");
+      var datetime = time.getAttribute("datetime");
+      relativeTime.innerHTML = timeSince(Date.parse(datetime)) + " ago";
+      absoluteTime.innerHTML = "(" + datetime + ")";
+    });
+  </script>
+</head>
 
-    <main>
-      <h1>Bookmarks!</h1>
-      <p>
-        This is a collection of bookmark collections that I often want to share.
-      </p>
-      <p>
-        They are unsorted, unlabelled, and come directly from my Firefox bookmarks with a script: <a href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">https://github.com/alifeee/alifeee.net/tree/main/bookmarks</a>
-      </p>
-      <p>
-        For a nicer experience, see a curated list of labelled favourite things on <a href="/favourites/">/favourites/</a>.
-      </p>
-      <p>
-        Also see in json format as <a href="bookmarks.json">bookmarks.json</a> :)
-      </p>
-      <h2>Collections</h2>
-      <p>
-        Click one of these to scroll to the section.
-      </p>
+<body>
+  <header>
+    <h1>
+      <a href="/">alifeee</a>
+    </h1>
+  </header>
+
+  <main>
+    <h1>Bookmarks!</h1>
+    <p>
+      This is a collection of bookmark collections that I often want to share.
+    </p>
+    <p>
+      They are unsorted, unlabelled, and come directly from my Firefox bookmarks with a script: <a
+        href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">https://github.com/alifeee/alifeee.net/tree/main/bookmarks</a>
+    </p>
+    <p>
+      For a nicer experience, see a curated list of labelled favourite things on <a
+        href="/favourites/">/favourites/</a>.
+    </p>
+    <p>
+      Also see in json format as <a href="bookmarks.json">bookmarks.json</a> :)
+    </p>
+    <h2>Collections</h2>
+    <p>
+      Click one of these to scroll to the section.
+    </p>
+    <ul>
+      {{#each bookmarks}}
+      <li>
+        <a href="#{{@key}}">{{@key}}</a>
+      </li>
+      {{/each}}
+    </ul>
+    {{#each bookmarks}}
+    <div id="bookmarks">
+      <h2 id="{{@key}}">{{@key}}</h2>
       <ul>
-        {{#each bookmarks}}
-          <li>
-              <a href="#{{@key}}">{{@key}}</a>
-          </li>
+        {{#each this}}
+        <li>
+          <a href="{{url}}">
+            {{title}}
+          </a>
+        </li>
         {{/each}}
       </ul>
-      {{#each bookmarks}}
-        <div id="bookmarks">
-          <h2 id="{{@key}}">{{@key}}</h2>
-          <ul>
-            {{#each this}}
-              <li>
-                <a href="{{url}}">
-                  {{title}}
-                </a>
-              </li>
-            {{/each}}
-          </ul>
-        </div>
-      {{/each}}
-      <hr />
-      <span style="display: flex; justify-content: center">
-        Updated (when I remember it) via&nbsp;
-        <a href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">
-          <code>scripting</code>
-        </a>
-      </span>
-      <span style="display: flex; justify-content: center">
-        Last updated:&nbsp;
-        <time datetime="{{last_modified}}" "timeSince(Date.parse({{last_modified}})) + ' ago'">
-          <span id="relative-time"></span><span id="absolute-time">({{last_modified}})</span>
-        </time>
-      </span>
-    </main>
+    </div>
+    {{/each}}
+    <hr />
+    <span style="display: flex; justify-content: center">
+      Updated (when I remember it) via&nbsp;
+      <a href="https://github.com/alifeee/alifeee.net/tree/main/bookmarks">
+        <code>scripting</code>
+      </a>
+    </span>
+    <span style="display: flex; justify-content: center">
+      Last updated:&nbsp;
+      <time datetime="{{last_modified}}" "timeSince(Date.parse({{last_modified}})) + ' ago'">
+        <span id="relative-time"></span><span id="absolute-time">({{last_modified}})</span>
+      </time>
+    </span>
+  </main>
 
-    <footer>
-      <a class="backlink" href="/">Back to main page</a>
-    </footer>
-  </body>
-  <style>
-    #bookmarks {
-      margin-bottom: 2rem;
-    }
-    #bookmarks > h2 {
-      position: sticky;
-      top: 0;
-      background-color: var(--background);
-      padding: 0.5rem;
-      text-align: center;
-      border-bottom: 1px solid var(--text);
-    }
-  </style>
+  <footer>
+    <a class="backlink" href="/">Back to main page</a>
+  </footer>
+</body>
+<style>
+  #bookmarks {
+    margin-bottom: 2rem;
+  }
+
+  #bookmarks>h2 {
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--text);
+  }
+</style>
+
 </html>

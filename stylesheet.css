@@ -11,6 +11,16 @@
   --link-visited: #ccf;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("font_Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("font_JosefinSans-Regular.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
