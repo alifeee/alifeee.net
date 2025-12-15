@@ -4,12 +4,21 @@
 
 <title>alifeee's website changelog</title>
 <link href='https://alifeee.net/changelog.xml' rel='self' />
-<updated>2025-11-29T00:00:00+00:00</updated>
+<updated>2025-12-15T00:00:00+00:00</updated>
 <author>
   <name>alifeee</name>
 </author>
 <id>https://alifeee.net/</id>
 <icon>https://alifeee.net/profile-picture.png</icon>
+<entry>
+    <title>update 2025-12-15</title>
+    <link href="https://alifeee.net/#2025-12-15" />
+    <id>https://alifeee.net/#2025-12-15</id>
+    <updated>2025-12-15T00:00:00+00:00</updated>
+    <summary>
+move [bookmarks](/bookmarks/) code generation to my website (away from some [random GitHub repository](https://github.com/alifeee/firefox-bookmarks))
+  </summary>
+</entry>
 <entry>
     <title>update 2025-11-29</title>
     <link href="https://alifeee.net/#2025-11-29" />

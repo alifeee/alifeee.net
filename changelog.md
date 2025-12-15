@@ -109,3 +109,6 @@
 
 2025-11-29
 : change all references to `alifeee.co.uk` to `alifeee.net` (new domain ! wahoo !)
+
+2025-12-15
+: move [bookmarks](/bookmarks/) code generation to my website (away from some [random GitHub repository](https://github.com/alifeee/firefox-bookmarks))
