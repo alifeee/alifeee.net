@@ -23,7 +23,7 @@ if ! command -v jq >/dev/null 2>&1; then
     echo "jq could not be found" && exit 1
 fi
 if ! command -v toml2json >/dev/null 2>&1; then
-    echo "jq could not be found" && exit 1
+    echo "toml2json could not be found (pip install toml2json)" && exit 1
 fi
 
 # parse
