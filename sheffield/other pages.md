@@ -5,6 +5,7 @@
 - [Housing
   co-operatives](https://diggersanddreamers.org.uk/communities/the-north)
 - Now Then Magazine: <https://nowthenmagazine.com/>
+- [Sheffield Mask Bloc](https://linksta.cc/@sheffieldmaskbloc)
 
 ### Instagram
 
