@@ -4,12 +4,21 @@
 
 <title>alifeee's website changelog</title>
 <link href='https://alifeee.net/changelog.xml' rel='self' />
-<updated>2025-12-15T12:00:00+00:00</updated>
+<updated>2025-12-23T00:00:00+00:00</updated>
 <author>
   <name>alifeee</name>
 </author>
 <id>https://alifeee.net/</id>
 <icon>https://alifeee.net/profile-picture.png</icon>
+<entry>
+    <title>update 2025-12-23</title>
+    <link href="https://alifeee.net/#2025-12-23" />
+    <id>https://alifeee.net/#2025-12-23</id>
+    <updated>2025-12-23T00:00:00+00:00</updated>
+    <summary>
+add &lt;https://bewelcome.org/&gt; profile to my linktree :]
+  </summary>
+</entry>
 <entry>
     <title>update 2025-12-15 12:00</title>
     <link href="https://alifeee.net/#2025-12-15%2012:00" />

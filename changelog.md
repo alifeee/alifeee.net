@@ -115,3 +115,6 @@
 
 2025-12-15 12:00
 : remove Google fonts dependency! I serve my fonts direct to you now ;]
+
+2025-12-23
+: add <https://bewelcome.org/> profile to my linktree :]

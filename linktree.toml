@@ -112,3 +112,8 @@ url = "https://alifeee.itch.io/"
 name = "Downpour"
 icon = "downpour"
 url = "https://downpour.games/~alifeee"
+
+[[links]]
+name = "BeWelcome"
+icon = "bewelcome"
+url = "https://bewelcome.org/members/alifeee"
