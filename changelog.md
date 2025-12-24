@@ -118,3 +118,6 @@
 
 2025-12-23
 : add <https://bewelcome.org/> profile to my linktree :]
+
+2025-12-24
+: added [proximity chat games](/favourites/#proximity%20chat%20games) to my [favourites](/favourites/) page !
