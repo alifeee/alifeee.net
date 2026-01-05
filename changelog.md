@@ -121,3 +121,6 @@
 
 2025-12-24
 : added [proximity chat games](/favourites/#proximity%20chat%20games) to my [favourites](/favourites/) page !
+
+2026-01-05
+: added WHO BROKE THE INTERNET to my [favourite podcasts](./favourites/#podcasts) page
