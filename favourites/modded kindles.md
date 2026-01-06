@@ -25,3 +25,5 @@ libgenesis) because they would love it if you read it!
 And finally, if we were to read the [Guerilla Open Access Manifesto](https://en.wikipedia.org/wiki/Guerilla_Open_Access_Manifesto), we could come to believe that any book which provides information should be open-access, and we could in theory download any book from places like [Library Genesis](https://en.wikipedia.org/wiki/Library_Genesis) or [Anna's Archive](https://en.wikipedia.org/wiki/Anna%27s_Archive), which, if they were hypothetically blocked by government, could be accessed via a VPN!
 
 Touchless (K4) second hand kindles are about £20. You should get one.
+
+I've written two notes about this as well that you can find on <https://blog.alifeee.net/notes/tagged/kindle/> :]
