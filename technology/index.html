@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>alifeee - technology</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="technology alifeee has used or currently uses"
+    />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 1em;
+      }
+      a,
+      a:visited {
+        color: white;
+      }
+
+      header {
+        max-width: 40rem;
+      }
+
+      pre {
+        border: 5px solid lightblue;
+        width: max-content;
+        max-width: 95vw;
+        padding: 1rem;
+        font-family: "Courier New", Courier, monospace;
+        /* font-family: "Monaco", Courier, monospace; */
+      }
+      .terminal .user {
+        color: #00cd00;
+      }
+      .terminal .dir {
+        color: #5c5cff;
+      }
+      .terminal .cursor {
+        background-color: white;
+        display: inline-block;
+        width: 0.5rem;
+        height: 1lh;
+        margin-bottom: -0.15rem;
+        opacity: 1;
+        animation: blink 1.2s infinite;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        45% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        95% {
+          opacity: 0;
+        }
+      }
+
+      pre.fastfetch .result {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      footer {
+        margin-bottom: 5rem;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        var elements = document.querySelectorAll(".cursor");
+        var animationDuration = 800; // in milliseconds
+
+        // Set the animationDelay of each element to a random value
+        // between 0 and animationDuration:
+        for (var i = 0; i < elements.length; i++) {
+          var randomDuration = Math.floor(Math.random() * animationDuration);
+          elements[i].style.animationDelay = randomDuration + "ms";
+          console.log("set now");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">alifeee</a> - technology</h1>
+      <p>Technology that I currently or at one point have used.</p>
+      <p>
+        Mainly, it's just a list of the computers I have (with their
+        <a
+          href="https://blog.alifeee.net/notes/names-for-all-my-computing-devices/"
+          >uninventive names</a
+        >). I keep the 3 Pop OS computers synced-ish settings-wise manually by
+        backing up settings to a
+        <a href="https://github.com/alifeee/pop-os-backup">GitHub repo</a>
+      </p>
+      <ul>
+        <li><a href="#alifeeePC">alifeeePC</a></li>
+        <li><a href="#alifeeeLAPTOP">alifeeeLAPTOP</a></li>
+        <li><a href="#alifeeeGAMINGPC">alifeeeGAMINGPC</a></li>
+        <li>alifeeePHONE</li>
+        <li><a href="#alifeeeSERVER">alifeeeSERVER</a></li>
+        <li><a href="#raspberrypi">home raspberry pi</a></li>
+      </ul>
+      <p>Last edited: 2026-01-09.</p>
+    </header>
+
+    <main>
+      <h2>output</h2>
+      <p>I ran this command on a computer to get the HTML output below</p>
+      <pre class="terminal">
+<span class=user>alifeee@web</span>:<span class=dir>~</span>$ fastfetch --pipe false \
+  | sed -E "s,\x1B\[1G,\nAWKHERE\n,;s,\x1B\[19A,,;s,\x1B\[43C,," \
+  | ansifilter -Hf \
+  | awk -v hostname=$(cat /etc/hostname) 'BEGIN {
+    print "&lt;span class=user&gt;alifeee@" hostname "&lt;/span&gt;:&lt;span class=dir&gt;~&lt;/span&gt;$ fastfetch"
+    print "&lt;div class=result&gt;&lt;div class=logo&gt;"
+    } /AWKHERE/ {print "&lt;/div&gt;&lt;div class=info&gt;"; next
+    } {print} END {print "&lt;/div&gt;&lt;/div&gt;";
+      print "&lt;span class=user&gt;alifeee@" hostname "&lt;/span&gt;:&lt;span class=dir&gt;~&lt;/span&gt;$ &lt;span class=cursor&gt;&lt;/span&gt;"
+    }' | sc
+<span class=user>alifeee@web</span>:<span class=dir>~</span>$ <span class=cursor></span>
+</pre>
+      <h2 id="alifeeePC">alifeeePC</h2>
+      <pre class="terminal fastfetch">
+<span class=user>alifeee@alifeeePC</span>:<span class=dir>~</span>$ fastfetch
+<div class=result><div class=logo>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">             /////////////
+         /////////////////////
+      ///////</span><span style="font-weight:bold;color:#ffffff;">*767</span><span style="font-weight:bold;color:#00ffff;">////////////////
+    //////</span><span style="font-weight:bold;color:#ffffff;">7676767676*</span><span style="font-weight:bold;color:#00ffff;">//////////////
+   /////</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">//</span><span style="font-weight:bold;color:#ffffff;">7676767</span><span style="font-weight:bold;color:#00ffff;">//////////////
+  /////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">*76767</span><span style="font-weight:bold;color:#00ffff;">///////////////
+ ///////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">.///</span><span style="font-weight:bold;color:#ffffff;">7676*</span><span style="font-weight:bold;color:#00ffff;">///////
+/////////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">//</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">////////
+//////////</span><span style="font-weight:bold;color:#ffffff;">76767676767</span><span style="font-weight:bold;color:#00ffff;">////</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">/////////
+///////////</span><span style="font-weight:bold;color:#ffffff;">76767676</span><span style="font-weight:bold;color:#00ffff;">//////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">//////////
+////////////,</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">,///////</span><span style="font-weight:bold;color:#ffffff;">767</span><span style="font-weight:bold;color:#00ffff;">///////////
+/////////////*</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">///////</span><span style="font-weight:bold;color:#ffffff;">76</span><span style="font-weight:bold;color:#00ffff;">////////////
+///////////////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">////////////////////
+ ///////////////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">767</span><span style="font-weight:bold;color:#00ffff;">////////////
+  //////////////////////</span><span style="font-weight:bold;color:#ffffff;">&apos;</span><span style="font-weight:bold;color:#00ffff;">////////////
+   //////</span><span style="font-weight:bold;color:#ffffff;">.7676767676767676767,</span><span style="font-weight:bold;color:#00ffff;">//////
+    /////</span><span style="font-weight:bold;color:#ffffff;">767676767676767676767</span><span style="font-weight:bold;color:#00ffff;">/////
+      ///////////////////////////
+         /////////////////////
+             /////////////</span>
+</div><div class=info>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">alifeee</span>&#64;<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">alifeeePC</span>
+-----------------
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">OS</span>: Pop!_OS 22.04 LTS x86_64
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Kernel</span>: Linux 6.17.4-76061704-generic
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Uptime</span>: 5 hours, 32 mins
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Packages</span>: 2630 (dpkg), 11 (flatpak-user), 3 (snap)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Shell</span>: bash 5.1.16
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Display (BenQ GL2250H)</span>: 1920x1080 in 22&quot;, 60 Hz [External] *
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Display (BenQ GL2250H)</span>: 1920x1080 in 22&quot;, 60 Hz [External]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">DE</span>: GNOME 42.9
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">WM</span>: Mutter (X11)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">WM Theme</span>: Pop-dark
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Theme</span>: Pop-dark [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Icons</span>: Pop [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Font</span>: Fira Sans (10pt, SemiLight) [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Cursor</span>: oreo_purple (24px)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Terminal</span>: GNOME Terminal 3.44.0
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Terminal Font</span>: Fira Mono (12pt)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">CPU</span>: AMD Ryzen 5 1600 (12) &#64; 3.20 GHz
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">GPU</span>: AMD Radeon RX 580 Series [Discrete]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Memory</span>: 9.87 GiB / 15.57 GiB (<span style="color:#ffff00;">63%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Swap</span>: 28.00 KiB / 19.57 GiB (<span style="color:#00cd00;">0%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Disk (/)</span>: 140.06 GiB / 228.73 GiB (<span style="color:#ffff00;">61%</span>) - ext4
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Disk (/media/alifeee/Norbert)</span>: 67.53 GiB / 931.51 GiB (<span style="color:#00cd00;">7%</span>) - fuseblk
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Disk (/media/alifeee/infinihole)</span>: 30.94 GiB / 931.51 GiB (<span style="color:#00cd00;">3%</span>) - fuseblk
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Local IP (enp10s0)</span>: 192.168.0.18/24
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Locale</span>: en_GB.UTF-8
+
+<span style="background-color:#000000;">   </span><span style="background-color:#cd0000;">   </span><span style="background-color:#00cd00;">   </span><span style="background-color:#cdcd00;">   </span><span style="background-color:#0000ee;">   </span><span style="background-color:#cd00cd;">   </span><span style="background-color:#00cdcd;">   </span><span style="background-color:#e5e5e5;">   </span>
+<span style="background-color:#7f7f7f;">   </span><span style="background-color:#ff0000;">   </span><span style="background-color:#00ff00;">   </span><span style="background-color:#ffff00;">   </span><span style="background-color:#5c5cff;">   </span><span style="background-color:#ff00ff;">   </span><span style="background-color:#00ffff;">   </span><span style="background-color:#ffffff;">   </span>
+</div></div>
+<span class=user>alifeee@alifeeePC</span>:<span class=dir>~</span>$ <span class=cursor></span>
+</pre>
+
+      <h2 id="alifeeeLAPTOP">alifeeeLAPTOP</h2>
+      <pre class="terminal fastfetch">
+<span class=user>alifeee@alifeeeLAPTOP</span>:<span class=dir>~</span>$ fastfetch
+<div class=result><div class=logo>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">             /////////////
+         /////////////////////
+      ///////</span><span style="font-weight:bold;color:#ffffff;">*767</span><span style="font-weight:bold;color:#00ffff;">////////////////
+    //////</span><span style="font-weight:bold;color:#ffffff;">7676767676*</span><span style="font-weight:bold;color:#00ffff;">//////////////
+   /////</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">//</span><span style="font-weight:bold;color:#ffffff;">7676767</span><span style="font-weight:bold;color:#00ffff;">//////////////
+  /////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">*76767</span><span style="font-weight:bold;color:#00ffff;">///////////////
+ ///////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">.///</span><span style="font-weight:bold;color:#ffffff;">7676*</span><span style="font-weight:bold;color:#00ffff;">///////
+/////////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">//</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">////////
+//////////</span><span style="font-weight:bold;color:#ffffff;">76767676767</span><span style="font-weight:bold;color:#00ffff;">////</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">/////////
+///////////</span><span style="font-weight:bold;color:#ffffff;">76767676</span><span style="font-weight:bold;color:#00ffff;">//////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">//////////
+////////////,</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">,///////</span><span style="font-weight:bold;color:#ffffff;">767</span><span style="font-weight:bold;color:#00ffff;">///////////
+/////////////*</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">///////</span><span style="font-weight:bold;color:#ffffff;">76</span><span style="font-weight:bold;color:#00ffff;">////////////
+///////////////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">////////////////////
+ ///////////////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">767</span><span style="font-weight:bold;color:#00ffff;">////////////
+  //////////////////////</span><span style="font-weight:bold;color:#ffffff;">&apos;</span><span style="font-weight:bold;color:#00ffff;">////////////
+   //////</span><span style="font-weight:bold;color:#ffffff;">.7676767676767676767,</span><span style="font-weight:bold;color:#00ffff;">//////
+    /////</span><span style="font-weight:bold;color:#ffffff;">767676767676767676767</span><span style="font-weight:bold;color:#00ffff;">/////
+      ///////////////////////////
+         /////////////////////
+             /////////////</span>
+</div><div class=info>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">alifeee</span>&#64;<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">alifeeeLAPTOP</span>
+---------------------
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">OS</span>: Pop!_OS 22.04 LTS x86_64
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Host</span>: 81NB (Lenovo IdeaPad S340-14API)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Kernel</span>: Linux 6.17.4-76061704-generic
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Uptime</span>: 1 day, 6 hours, 18 mins
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Packages</span>: 2725 (dpkg), 14 (flatpak-user)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Shell</span>: bash 5.1.16
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Display (AUO203D)</span>: 1920x1080 in 14&quot;, 60 Hz
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">DE</span>: GNOME 42.9
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">WM</span>: Mutter (X11)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">WM Theme</span>: Pop-dark
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Theme</span>: Pop-dark [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Icons</span>: Pop [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Font</span>: Fira Sans (10pt, SemiLight) [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Cursor</span>: oreo_purple (24px)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Terminal</span>: GNOME Terminal 3.44.0
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Terminal Font</span>: Fira Mono (12pt)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">CPU</span>: AMD Ryzen 5 3500U (8) &#64; 2.10 GHz
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">GPU</span>: AMD Radeon Vega 8 Graphics [Integrated]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Memory</span>: 3.86 GiB / 5.72 GiB (<span style="color:#ffff00;">68%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Swap</span>: 759.94 MiB / 9.72 GiB (<span style="color:#00cd00;">8%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Disk (/)</span>: 107.40 GiB / 224.79 GiB (<span style="color:#00cd00;">48%</span>) - ext4
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Disk (/recovery)</span>: 2.46 GiB / 3.99 GiB (<span style="color:#ffff00;">62%</span>) - vfat
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Local IP (wlp2s0)</span>: 192.168.0.57/24
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Battery (0x4C 0x31 0x38 0x43 0x33 0x50 0x46 0x37)</span>: <span style="color:#00cd00;">72%</span> [Discharging]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Locale</span>: en_GB.UTF-8
+
+<span style="background-color:#000000;">   </span><span style="background-color:#cd0000;">   </span><span style="background-color:#00cd00;">   </span><span style="background-color:#cdcd00;">   </span><span style="background-color:#0000ee;">   </span><span style="background-color:#cd00cd;">   </span><span style="background-color:#00cdcd;">   </span><span style="background-color:#e5e5e5;">   </span>
+<span style="background-color:#7f7f7f;">   </span><span style="background-color:#ff0000;">   </span><span style="background-color:#00ff00;">   </span><span style="background-color:#ffff00;">   </span><span style="background-color:#5c5cff;">   </span><span style="background-color:#ff00ff;">   </span><span style="background-color:#00ffff;">   </span><span style="background-color:#ffffff;">   </span>
+</div></div>
+<span class=user>alifeee@alifeeeLAPTOP</span>:<span class=dir>~</span>$ <span class=cursor></span>
+</pre>
+
+      <h2 id="alifeeeGAMINGPC">alifeeeGAMINGPC</h2>
+      <pre class="terminal fastfetch">
+<span class=user>alifeee@alifeeeGAMINGPC</span>:<span class=dir>~</span>$ fastfetch
+<div class=result><div class=logo>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">             /////////////
+         /////////////////////
+      ///////</span><span style="font-weight:bold;color:#ffffff;">*767</span><span style="font-weight:bold;color:#00ffff;">////////////////
+    //////</span><span style="font-weight:bold;color:#ffffff;">7676767676*</span><span style="font-weight:bold;color:#00ffff;">//////////////
+   /////</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">//</span><span style="font-weight:bold;color:#ffffff;">7676767</span><span style="font-weight:bold;color:#00ffff;">//////////////
+  /////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">*76767</span><span style="font-weight:bold;color:#00ffff;">///////////////
+ ///////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">.///</span><span style="font-weight:bold;color:#ffffff;">7676*</span><span style="font-weight:bold;color:#00ffff;">///////
+/////////</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">//</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">767676</span><span style="font-weight:bold;color:#00ffff;">////////
+//////////</span><span style="font-weight:bold;color:#ffffff;">76767676767</span><span style="font-weight:bold;color:#00ffff;">////</span><span style="font-weight:bold;color:#ffffff;">76767</span><span style="font-weight:bold;color:#00ffff;">/////////
+///////////</span><span style="font-weight:bold;color:#ffffff;">76767676</span><span style="font-weight:bold;color:#00ffff;">//////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">//////////
+////////////,</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">,///////</span><span style="font-weight:bold;color:#ffffff;">767</span><span style="font-weight:bold;color:#00ffff;">///////////
+/////////////*</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">///////</span><span style="font-weight:bold;color:#ffffff;">76</span><span style="font-weight:bold;color:#00ffff;">////////////
+///////////////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">////////////////////
+ ///////////////</span><span style="font-weight:bold;color:#ffffff;">7676</span><span style="font-weight:bold;color:#00ffff;">///</span><span style="font-weight:bold;color:#ffffff;">767</span><span style="font-weight:bold;color:#00ffff;">////////////
+  //////////////////////</span><span style="font-weight:bold;color:#ffffff;">&apos;</span><span style="font-weight:bold;color:#00ffff;">////////////
+   //////</span><span style="font-weight:bold;color:#ffffff;">.7676767676767676767,</span><span style="font-weight:bold;color:#00ffff;">//////
+    /////</span><span style="font-weight:bold;color:#ffffff;">767676767676767676767</span><span style="font-weight:bold;color:#00ffff;">/////
+      ///////////////////////////
+         /////////////////////
+             /////////////</span>
+</div><div class=info>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">alifeee</span>&#64;<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">alifeeeGAMINGPC</span>
+-----------------------
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">OS</span>: Pop!_OS 22.04 LTS x86_64
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Kernel</span>: Linux 6.17.4-76061704-generic
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Uptime</span>: 5 hours, 33 mins
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Packages</span>: 2547 (dpkg), 9 (flatpak-user), 6 (snap)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Shell</span>: bash 5.1.16
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Display (HL198DPB)</span>: 1440x900 in 19&quot;, 60 Hz [External]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">DE</span>: GNOME 42.9
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">WM</span>: Mutter (X11)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">WM Theme</span>: Pop-dark
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Theme</span>: Pop-dark [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Icons</span>: Pop [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Font</span>: Fira Sans (10pt, SemiLight) [GTK2/3/4]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Cursor</span>: oreo_purple (24px)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Terminal</span>: GNOME Terminal 3.44.0
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Terminal Font</span>: Fira Mono (12pt)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">CPU</span>: Intel(R) Core(TM) i5-9400F (6) &#64; 4.10 GHz
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">GPU</span>: AMD Radeon RX 470 Graphics [Discrete]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Memory</span>: 6.69 GiB / 15.56 GiB (<span style="color:#00cd00;">43%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Swap</span>: 0 B / 19.56 GiB (<span style="color:#00cd00;">0%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Disk (/)</span>: 153.58 GiB / 219.30 GiB (<span style="color:#ffff00;">70%</span>) - ext4
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Disk (/recovery)</span>: 2.46 GiB / 3.99 GiB (<span style="color:#ffff00;">62%</span>) - vfat
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Local IP (tun0)</span>: 10.8.0.2/24
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ffff;">Locale</span>: en_GB.UTF-8
+
+<span style="background-color:#000000;">   </span><span style="background-color:#cd0000;">   </span><span style="background-color:#00cd00;">   </span><span style="background-color:#cdcd00;">   </span><span style="background-color:#0000ee;">   </span><span style="background-color:#cd00cd;">   </span><span style="background-color:#00cdcd;">   </span><span style="background-color:#e5e5e5;">   </span>
+<span style="background-color:#7f7f7f;">   </span><span style="background-color:#ff0000;">   </span><span style="background-color:#00ff00;">   </span><span style="background-color:#ffff00;">   </span><span style="background-color:#5c5cff;">   </span><span style="background-color:#ff00ff;">   </span><span style="background-color:#00ffff;">   </span><span style="background-color:#ffffff;">   </span>
+</div></div>
+<span class=user>alifeee@alifeeeGAMINGPC</span>:<span class=dir>~</span>$ <span class=cursor></span>
+</pre>
+
+      <h2 id="alifeeeSERVER">alifeeeSERVER</h2>
+      <pre class="terminal fastfetch">
+<span class=user>alifeee@chunkifeee</span>:<span class=dir>~</span>$ fastfetch
+<div class=result><div class=logo>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">                             ....
+              </span><span style="font-weight:bold;color:#ff0000;">.&apos;,:clooo:  </span><span style="font-weight:bold;color:#ff0000;">.:looooo:.
+           </span><span style="font-weight:bold;color:#ff0000;">.;looooooooc  </span><span style="font-weight:bold;color:#ff0000;">.oooooooooo&apos;
+        </span><span style="font-weight:bold;color:#ff0000;">.;looooool:,&apos;&apos;.  </span><span style="font-weight:bold;color:#ff0000;">:ooooooooooc
+       </span><span style="font-weight:bold;color:#ff0000;">;looool;.         </span><span style="font-weight:bold;color:#ff0000;">&apos;oooooooooo,
+      </span><span style="font-weight:bold;color:#ff0000;">;clool&apos;             </span><span style="font-weight:bold;color:#ff0000;">.cooooooc.  </span><span style="font-weight:bold;color:#ff0000;">,,
+         </span><span style="font-weight:bold;color:#ff0000;">...                </span><span style="font-weight:bold;color:#ff0000;">......  </span><span style="font-weight:bold;color:#ff0000;">.:oo,
+  </span><span style="font-weight:bold;color:#ff0000;">.;clol:,.                        </span><span style="font-weight:bold;color:#ff0000;">.loooo&apos;
+ </span><span style="font-weight:bold;color:#ff0000;">:ooooooooo,                        </span><span style="font-weight:bold;color:#ff0000;">&apos;ooool
+</span><span style="font-weight:bold;color:#ff0000;">&apos;ooooooooooo.                        </span><span style="font-weight:bold;color:#ff0000;">loooo.
+</span><span style="font-weight:bold;color:#ff0000;">&apos;ooooooooool                         </span><span style="font-weight:bold;color:#ff0000;">coooo.
+ </span><span style="font-weight:bold;color:#ff0000;">,loooooooc.                        </span><span style="font-weight:bold;color:#ff0000;">.loooo.
+   </span><span style="font-weight:bold;color:#ff0000;">.,;;;&apos;.                          </span><span style="font-weight:bold;color:#ff0000;">;ooooc
+       </span><span style="font-weight:bold;color:#ff0000;">...                         </span><span style="font-weight:bold;color:#ff0000;">,ooool.
+    </span><span style="font-weight:bold;color:#ff0000;">.cooooc.              </span><span style="font-weight:bold;color:#ff0000;">..&apos;,,&apos;.  </span><span style="font-weight:bold;color:#ff0000;">.cooo.
+      </span><span style="font-weight:bold;color:#ff0000;">;ooooo:.           </span><span style="font-weight:bold;color:#ff0000;">;oooooooc.  </span><span style="font-weight:bold;color:#ff0000;">:l.
+       </span><span style="font-weight:bold;color:#ff0000;">.coooooc,..      </span><span style="font-weight:bold;color:#ff0000;">coooooooooo.
+         </span><span style="font-weight:bold;color:#ff0000;">.:ooooooolc:. </span><span style="font-weight:bold;color:#ff0000;">.ooooooooooo&apos;
+           </span><span style="font-weight:bold;color:#ff0000;">.&apos;:loooooo;  </span><span style="font-weight:bold;color:#ff0000;">,oooooooooc
+               </span><span style="font-weight:bold;color:#ff0000;">..&apos;;::c&apos;  </span><span style="font-weight:bold;color:#ff0000;">.;loooo:&apos;</span>
+</div><div class=info>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">alifeee</span>&#64;<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">chunkifeee</span>
+------------------
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">OS</span>: Ubuntu 22.04.5 LTS (Jammy Jellyfish) x86_64
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Host</span>: KVM/QEMU Standard PC (i440FX + PIIX, 1996) (pc-i440fx-9.0)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Kernel</span>: Linux 5.15.0-161-generic
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Uptime</span>: 34 days, 23 hours, 49 mins
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Packages</span>: 1320 (dpkg), 5 (snap)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Shell</span>: bash 5.1.16
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Terminal</span>: 
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">CPU</span>: Intel Xeon (SapphireRapids) &#64; 2.59 GHz
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">GPU</span>: Unknown Device 1111 (VGA compatible)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Memory</span>: 1.33 GiB / 1.92 GiB (<span style="color:#ffff00;">70%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Swap</span>: 71.54 MiB / 2.00 GiB (<span style="color:#00cd00;">3%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Disk (/)</span>: 52.92 GiB / 78.63 GiB (<span style="color:#ffff00;">67%</span>) - ext4
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Local IP (eth0)</span>: 185.53.211.139/24
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Locale</span>: en_US.UTF-8
+
+<span style="background-color:#000000;">   </span><span style="background-color:#cd0000;">   </span><span style="background-color:#00cd00;">   </span><span style="background-color:#cdcd00;">   </span><span style="background-color:#0000ee;">   </span><span style="background-color:#cd00cd;">   </span><span style="background-color:#00cdcd;">   </span><span style="background-color:#e5e5e5;">   </span>
+<span style="background-color:#7f7f7f;">   </span><span style="background-color:#ff0000;">   </span><span style="background-color:#00ff00;">   </span><span style="background-color:#ffff00;">   </span><span style="background-color:#5c5cff;">   </span><span style="background-color:#ff00ff;">   </span><span style="background-color:#00ffff;">   </span><span style="background-color:#ffffff;">   </span>
+
+</div></div>
+<span class=user>alifeee@chunkifeee</span>:<span class=dir>~</span>$ <span class=cursor></span>
+</pre>
+
+      <h2 id="raspberrypi">home raspberry pi</h2>
+      <pre class="terminal fastfetch">
+<span class=user>alifeee@alifeeeGAMINGPC</span>:<span class=dir>~</span>$ fastfetch
+<div class=result><div class=logo>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">   </span><span style="font-weight:bold;color:#00ff00;">`.::///+:/-.        --///+//-:`
+ `+oooooooooooo:   `+oooooooooooo:
+  /oooo++//ooooo:  ooooo+//+ooooo.
+  `+ooooooo:-:oo-  +o+::/ooooooo:
+   `:oooooooo+``    `.oooooooo+-
+     `:++ooo/.        :+ooo+/.`</span><span style="font-weight:bold;color:#ff0000;">
+        ...`  `.----.` ``..
+     .::::-``:::::::::.`-:::-`
+    -:::-`   .:::::::-`  `-:::-
+   `::.  `.--.`  `` `.---.``.::`
+       .::::::::`  -::::::::` `
+ .::` .:::::::::- `::::::::::``::.
+-:::` ::::::::::.  ::::::::::.`:::-
+::::  -::::::::.   `-::::::::  ::::
+-::-   .-:::-.``....``.-::-.   -::-
+ .. ``       .::::::::.     `..`..
+   -:::-`   -::::::::::`  .:::::`
+   :::::::` -::::::::::` :::::::.
+   .:::::::  -::::::::. ::::::::
+    `-:::::`   ..--.`   ::::::.
+      `...`  `...--..`  `...`
+            .::::::::::
+             `.-::::-`</span>
+</div><div class=info>
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ff00;">alifeee</span>&#64;<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#00ff00;">raspberrypi</span>
+-------------------
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">OS</span>: Raspberry Pi OS 12.12 (bookworm) aarch64
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Host</span>: Raspberry Pi 4 Model B Rev 1.5
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Kernel</span>: Linux 6.12.47+rpt-rpi-v8
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Uptime</span>: 12 mins
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Packages</span>: 1720 (dpkg)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Shell</span>: bash 5.2.15
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Terminal</span>: sshd
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">CPU</span>: BCM2711 (4) &#64; 1.80 GHz
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">GPU</span>: Broadcom bcm2711-vc5 [Integrated]
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Memory</span>: 729.07 MiB / 1.80 GiB (<span style="color:#00cd00;">39%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Swap</span>: 0 B / 512.00 MiB (<span style="color:#00cd00;">0%</span>)
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Disk (/)</span>: 10.15 GiB / 28.69 GiB (<span style="color:#00cd00;">35%</span>) - ext4
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Disk (/media/alifeee/thearchivist)</span>: 150.60 GiB / 879.14 GiB (<span style="color:#00cd00;">17%</span>) - ext4
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Local IP (eth0)</span>: 192.168.0.20/24
+<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">Locale</span>: en_GB
+
+<span style="background-color:#000000;">   </span><span style="background-color:#cd0000;">   </span><span style="background-color:#00cd00;">   </span><span style="background-color:#cdcd00;">   </span><span style="background-color:#0000ee;">   </span><span style="background-color:#cd00cd;">   </span><span style="background-color:#00cdcd;">   </span><span style="background-color:#e5e5e5;">   </span>
+<span style="background-color:#7f7f7f;">   </span><span style="background-color:#ff0000;">   </span><span style="background-color:#00ff00;">   </span><span style="background-color:#ffff00;">   </span><span style="background-color:#5c5cff;">   </span><span style="background-color:#ff00ff;">   </span><span style="background-color:#00ffff;">   </span><span style="background-color:#ffffff;">   </span>
+</div></div>
+<span class=user>alifeee@alifeeeGAMINGPC</span>:<span class=dir>~</span>$ <span class=cursor></span>
+</pre>
+
+      <h2>More soon …</h2>
+      <p>
+        When I turn on the computers
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </p>
+    </main>
+
+    <footer>
+      <a class="backlink" href="/">Back to main page</a>
+    </footer>
+  </body>
+</html>
