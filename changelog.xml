@@ -4,12 +4,21 @@
 
 <title>alifeee's website changelog</title>
 <link href='https://alifeee.net/changelog.xml' rel='self' />
-<updated>2026-01-05T00:00:00+00:00</updated>
+<updated>2026-01-09T00:00:00+00:00</updated>
 <author>
   <name>alifeee</name>
 </author>
 <id>https://alifeee.net/</id>
 <icon>https://alifeee.net/profile-picture.png</icon>
+<entry>
+    <title>update 2026-01-09</title>
+    <link href="https://alifeee.net/#2026-01-09" />
+    <id>https://alifeee.net/#2026-01-09</id>
+    <updated>2026-01-09T00:00:00+00:00</updated>
+    <summary>
+add an &quot;all my computers&quot; page on [/technology/](./technology/)
+  </summary>
+</entry>
 <entry>
     <title>update 2026-01-05</title>
     <link href="https://alifeee.net/#2026-01-05" />

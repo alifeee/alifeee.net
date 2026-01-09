@@ -124,3 +124,6 @@
 
 2026-01-05
 : added WHO BROKE THE INTERNET to my [favourite podcasts](./favourites/#podcasts) page
+
+2026-01-09
+: add an "all my computers" page on [/technology/](./technology/)
