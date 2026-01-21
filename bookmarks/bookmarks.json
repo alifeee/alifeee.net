@@ -1,5 +1,5 @@
 {
-    "last_modified": "2025-12-15T12:18:13.706680Z",
+    "last_modified": "2026-01-19T00:23:34.172889Z",
     "bookmarks": {
         "TOP 10 personal websites/blogs": [
             {
@@ -1012,6 +1012,16 @@
                 "title": "robinwhittleton.com - Robin Whittleton",
                 "url": "https://www.robinwhittleton.com/",
                 "date_added": "2025-12-11T23:54:39.328000Z"
+            },
+            {
+                "title": "Derek Sivers",
+                "url": "https://sive.rs/",
+                "date_added": "2025-12-20T02:01:02.916000Z"
+            },
+            {
+                "title": "silverphish",
+                "url": "https://www.silverphish.io/",
+                "date_added": "2025-12-20T12:39:32.852000Z"
             }
         ],
         "personal websites (without blog)": [
@@ -1596,6 +1606,11 @@
                 "title": "Two thoughts about key art",
                 "url": "https://www.robinsloan.com/lab/key-art/",
                 "date_added": "2025-10-30T21:59:32.522000Z"
+            },
+            {
+                "title": "Map of UK Labyrinths & Mazes - Labyrinths in Britain",
+                "url": "https://labyrinthsinbritain.uk/map-of-uk-labyrinths-mazes/",
+                "date_added": "2026-01-04T09:55:08.265000Z"
             }
         ],
         "Articles (random)": [
@@ -1958,6 +1973,31 @@
                 "title": "The biggest mystery in neuroscience, according to me. Worm brain simulation",
                 "url": "https://ccli.substack.com/p/the-biggest-mystery-in-neuroscience?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true",
                 "date_added": "2025-11-13T16:16:14.186000Z"
+            },
+            {
+                "title": "Give Up Seventy Percent Of The Way Through The Hyperstitious Slur Cascade",
+                "url": "https://www.astralcodexten.com/p/give-up-seventy-percent-of-the-way",
+                "date_added": "2025-12-19T23:14:52.563000Z"
+            },
+            {
+                "title": "John Lanchester · For Every Winner a Loser: What is finance for?",
+                "url": "https://www.lrb.co.uk/the-paper/v46/n17/john-lanchester/for-every-winner-a-loser",
+                "date_added": "2025-12-20T11:09:50.301000Z"
+            },
+            {
+                "title": "How I rebooted my social life - by James O'Malley",
+                "url": "https://takes.jamesomalley.co.uk/p/this-might-be-oversharing",
+                "date_added": "2026-01-03T10:18:58.390000Z"
+            },
+            {
+                "title": "If a Tree Falls, by Rosa Lyster",
+                "url": "https://harpers.org/archive/2026/01/if-a-tree-falls-rosa-lyster-sycamore-gap/",
+                "date_added": "2026-01-05T16:50:53.985000Z"
+            },
+            {
+                "title": "How to be less awkward - by Adam Mastroianni",
+                "url": "https://www.experimental-history.com/p/how-to-be-less-awkward",
+                "date_added": "2026-01-08T10:39:06.292000Z"
             }
         ],
         "Articles (programming)": [
@@ -2365,6 +2405,21 @@
                 "title": "Pluralistic: The Reverse-Centaur’s Guide to Criticizing AI (05 Dec 2025) – Pluralistic: Daily links from Cory Doctorow",
                 "url": "https://pluralistic.net/2025/12/05/pop-that-bubble/",
                 "date_added": "2025-12-06T12:32:06.173000Z"
+            },
+            {
+                "title": "The Zine | AI MUST DIE!",
+                "url": "https://www.aimustdie.info/",
+                "date_added": "2025-12-23T22:02:59.318000Z"
+            },
+            {
+                "title": "Pluralistic: A world without people (05 Jan 2026) – Pluralistic: Daily links from Cory Doctorow",
+                "url": "https://pluralistic.net/2026/01/05/fisher-price-steering-wheel/",
+                "date_added": "2026-01-06T14:10:10.110000Z"
+            },
+            {
+                "title": "A Social Filesystem — overreacted",
+                "url": "https://overreacted.io/a-social-filesystem/",
+                "date_added": "2026-01-18T14:47:10.617000Z"
             }
         ],
         "video playlists/channels": [
@@ -2704,6 +2759,11 @@
                 "title": "Bandle - Guess the song played by the band",
                 "url": "https://bandle.app/",
                 "date_added": "2024-02-12T18:44:52.505000Z"
+            },
+            {
+                "title": "Keyfordle - Daily Card Guessing Game | KFStats",
+                "url": "https://kfstats.com/keyfordle",
+                "date_added": "2026-01-09T11:07:49.443000Z"
             }
         ],
         "mobile games": [
