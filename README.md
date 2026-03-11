@@ -1,3 +1,5 @@
+> [!CAUTION]
+> MOVED! see <https://git.alifeee.net/alifeee.net/about/>
 # `alifeee.github.io`
 
 My personal website!
@@ -33,4 +35,3 @@ npm test -- --watch
 DNS Configuration
 
 ![Screenshot of DNS configuration](https://github.com/alifeee/alifeee.github.io/assets/13833017/fedf21fa-be25-4a77-aefd-bd69346f640c)
-
